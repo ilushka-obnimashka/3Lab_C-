@@ -27,9 +27,6 @@ private:
     std::regex distortionRegex;
 
     void initializeRegex();
-    Converter* createMuteConverter(uint32_t left, uint32_t right);
-    Converter* createMixConverter(uint32_t start, const std::string& src_file);
-    Converter* createDistortionConverter(float gain);
 };
 
 #endif // CONFIGPARSER_H
