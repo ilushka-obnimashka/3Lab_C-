@@ -16,5 +16,6 @@ set(SOURCES main.cpp
         WriterWAV.cpp
         Creators.h
         Creators.cpp
+        ConfigParser.cpp
 )
 add_executable(3Lab_C++ ${SOURCES})
