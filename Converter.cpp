@@ -13,13 +13,15 @@ const std::string kYELLOW = "\033[33m";
 MuteOption MuteOption(uint32_t left, uint32_t right) {
     if (left < 0 || right < 0) {
         std::cerr << kRED << "Incorrect data: " << left << " " << right << kRESET << std::endl;
-        std::cerr << kYELLOW << "Check for correctness, plese: " << "left > 0, right > 0";
+        std::cerr << kYELLOW << "Check for correctness, plese: " << "left > 0, right > 0" << std::endl;
         exit (4);
     }
 
-    if (left > right) {
-
+    {
+        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET << std::endl;
+        std::swap(left, right);
     }
+
 }
 
 void MuteOption::Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) {
