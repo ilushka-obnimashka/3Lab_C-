@@ -164,8 +164,8 @@ void DistortionOption::Convert(std::string input_file, std::string output_file, 
 
 void DistortionOption::applyDistortionOption(std::vector<int16_t> &samples) {
     for (auto &sample : samples) {
-        float normalizedSample = sample / 32767;
-        float distortedSample = std::tanh(gain_ * normalizedSample);
+        double normalizedSample = sample / 32767;
+        double distortedSample = std::tanh(gain_ * normalizedSample);
         sample = static_cast<int16_t>(distortedSample * 32767);
     }
 }
