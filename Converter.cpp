@@ -47,13 +47,7 @@ void MuteOption::Convert(std::string input_file, std::string output_file, Reader
     writer.CloseWAVFile();
 }
 
-MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
-    if (start < 0) {
-        std::cerr << kRED << "Incorrect data: " << start << kRESET << std::endl;
-        std::cerr << kYELLOW << "Check for correctness. please: " << "start > 0" << std::endl;
-        exit(4);
-    }
-}
+MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {};
 
 void MixOption::Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) {
     std::cout << kGREEN << "mix " << src_file_ << " " << start_ << kRESET << std::endl;
