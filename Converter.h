@@ -4,7 +4,6 @@
  */
 
 #pragma once
-#include <cstdint>
 #include <vector>
 #include <string>
 #include "ReaderWAV.h"
@@ -45,9 +44,10 @@ public:
  */
 class MuteOption : public Converter {
 public:
+    MuteOption();
     MuteOption(uint32_t left, uint32_t right);
 
-    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+    void Convert(std::string input_file, std::string output_file) override;
 
     /**
      * @brief Displays help information for the MuteOption converter.
@@ -68,9 +68,10 @@ private:
  */
 class MixOption : public Converter {
 public:
+    MixOption();
     MixOption(std::string src_file, uint32_t start);
 
-    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+    void Convert(std::string input_file, std::string output_file) override;
 
     /**
      * @brief Displays help information for the MixOption converter.
@@ -99,8 +100,9 @@ private:
  */
 class DistortionOption : public Converter {
     public:
+        DistortionOption();
         DistortionOption(double gain);
-        void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+        void Convert(std::string input_file, std::string output_file) override;
 
     /**
      * @brief Displays help information for the DistortionOption converter.

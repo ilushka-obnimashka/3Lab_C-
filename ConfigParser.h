@@ -5,14 +5,10 @@
 
 #ifndef CONFIGPARSER_H
 #define CONFIGPARSER_H
-
-#include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 #include <queue>
 #include <regex>
-#include <stdexcept>
 #include "Converter.h"
 
 /**
