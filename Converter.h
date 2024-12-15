@@ -12,16 +12,17 @@ public:
 
     virtual ~Converter() = default;
 
-    virtual void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) = 0;
+    virtual void Convert(std::string input_file, std::string output_file) = 0;
 
     virtual void help() const = 0;
 };
 
 class MuteOption : public Converter {
 public:
+    MuteOption();
     MuteOption(uint32_t left, uint32_t right);
 
-    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+    void Convert(std::string input_file, std::string output_file) override;
 
     void help() const override {
         std::cout << "MuteOption converter: \n";
@@ -36,9 +37,10 @@ private:
 
 class MixOption : public Converter {
 public:
+    MixOption();
     MixOption(std::string src_file, uint32_t start);
 
-    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+    void Convert(std::string input_file, std::string output_file) override;
 
     void help() const override {
         std::cout << "MixOption converter\n" << std::endl;
@@ -56,8 +58,9 @@ private:
 
 class DistortionOption : public Converter {
     public:
+        DistortionOption();
         DistortionOption(double gain);
-        void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+        void Convert(std::string input_file, std::string output_file) override;
 
         void help() const override {
             std::cout << "DistortionOption converter:\n" << std::endl;
