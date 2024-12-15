@@ -8,7 +8,7 @@ const std::string kRED = "\033[1;31m";
 const std::string kRESET = "\033[0m";
 const std::string kYELLOW = "\033[33m";
 
-void ArgumentParser::Parse() {
+bool ArgumentParser::Parse() {
     int opt;
     int opt_idx;
     while ((opt = getopt_long(argc_, argv_, short_option_, long_options_, &opt_idx)) != -1) {
@@ -18,7 +18,7 @@ void ArgumentParser::Parse() {
                 break;
             case 'h':
                 PrintHelp();
-                exit(1);
+                return false;
             default:
                 throw std::invalid_argument(
                     "Usage: ./sound_processor [-h] [-c config.txt] output.wav input1.wav [input2.wav ...]");
@@ -37,6 +37,7 @@ void ArgumentParser::Parse() {
         }
         input_files_.push_back(std::string(argv_[optind++]));
     }
+    return true;
 }
 
 std::vector<std::string> ArgumentParser::GetInputFiles() const{

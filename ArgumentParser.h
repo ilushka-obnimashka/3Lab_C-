@@ -26,7 +26,7 @@ public:
      * char * short_option_, struct option long_options_[4] -command line options that need to be supported.
      * @return true - if help command not called, false - otherwise.
      */
-    void Parse();
+    bool Parse();
 
     /**
      * @return std::vector<std::string> input_samples_ .
