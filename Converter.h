@@ -12,14 +12,14 @@ public:
 
     virtual ~Converter() = default;
 
-    virtual void Convert(std::string input_file, std::string output_file) = 0;
+    virtual void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) = 0;
 };
 
 class MuteOption : public Converter {
 public:
     MuteOption(uint32_t left, uint32_t right);
 
-    void Convert(std::string input_file, std::string output_file) override;
+    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
 private:
     uint32_t left_;
@@ -30,7 +30,7 @@ class MixOption : public Converter {
 public:
     MixOption(std::string src_file, uint32_t start);
 
-    void Convert(std::string input_file, std::string output_file) override;
+    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
 private:
     std::string src_file_;
@@ -43,7 +43,7 @@ class DistortionOption : public Converter {
     public:
         DistortionOption(double gain);
 
-        void Convert(std::string input_file, std::string output_file) override;
+        void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
     private:
         float gain_;
