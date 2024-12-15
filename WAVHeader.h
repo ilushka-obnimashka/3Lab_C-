@@ -1,5 +1,4 @@
-#ifndef WAVHEADER_H
-#define WAVHEADER_H
+#pragma once
 #define FIXED_SAMPLE_RATE 44100
 /**
  * @brief A structure representing the header of a WAV file.
@@ -27,4 +26,3 @@ struct WAVHeader {
     uint32_t chunk2_data_size;  ///< Size of the audio data in bytes.
 };
 
-#endif // WAVHEADER_H

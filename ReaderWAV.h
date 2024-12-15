@@ -1,5 +1,4 @@
-#ifndef WAVHANDLER_H
-#define WAVHANDLER_H
+#pragma once
 #include <fstream>
 #include <vector>
 #include "WAVHeader.h"
@@ -78,4 +77,3 @@ private:
     uint64_t remaining_audio_data_size_; ///< Remaining size of the audio data in the WAV file.
     struct WAVHeader *WAVHeader_; ///< Pointer to the WAV header structure.
 };
-#endif //WAVHANDLER_H
