@@ -6,8 +6,10 @@
 #pragma once
 #include <vector>
 #include <string>
+#include <iostream>
 #include "ReaderWAV.h"
 #include "WriterWAV.h"
+
 
 /**
  * @brief Base class for audio converters.
@@ -44,7 +46,6 @@ public:
  */
 class MuteOption : public Converter {
 public:
-    MuteOption();
     MuteOption(uint32_t left, uint32_t right);
 
     void Convert(std::string input_file, std::string output_file) override;
@@ -68,7 +69,6 @@ private:
  */
 class MixOption : public Converter {
 public:
-    MixOption();
     MixOption(std::string src_file, uint32_t start);
 
     void Convert(std::string input_file, std::string output_file) override;
@@ -100,7 +100,6 @@ private:
  */
 class DistortionOption : public Converter {
     public:
-        DistortionOption();
         DistortionOption(double gain);
         void Convert(std::string input_file, std::string output_file) override;
 

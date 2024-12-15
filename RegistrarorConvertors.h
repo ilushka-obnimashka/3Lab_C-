@@ -41,7 +41,9 @@ public:
     *
     * @param converter A unique pointer to a Converter object.
     */
-    void RegisterConverter(std::unique_ptr<Converter> converter);
+    void RegisterConverter(std::unique_ptr<Converter> converter) {
+        converters_.push_back(std::move(converter));
+    }
 
     /**
     * @brief Prints help information for all registered converters.

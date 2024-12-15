@@ -51,9 +51,9 @@ void SoundProcessor::Processing(ArgumentParser& argument_parser){
 void SoundProcessor::HeplPrint() {
     RegistrarConvertors& registrar_convertors = RegistrarConvertors::GetInstance();
 
-    registrar_convertors.RegisterConverter(std::make_unique<Converter>(MuteOption()));
-    registrar_convertors.RegisterConverter(std::make_unique<Converter>(MixOption()));
-    registrar_convertors.RegisterConverter(std::make_unique<Converter>(DistortionOption()));
+    registrar_convertors.RegisterConverter(std::make_unique<MuteOption>(MuteOption(1,2)));
+    registrar_convertors.RegisterConverter(std::make_unique<MixOption>(MixOption("in",2)));
+    registrar_convertors.RegisterConverter(std::make_unique<DistortionOption>(DistortionOption(4.5)));
 
     registrar_convertors.printHelp();
 

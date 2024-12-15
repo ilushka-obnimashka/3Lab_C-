@@ -19,6 +19,6 @@ set(SOURCES main.cpp
         ConfigParser.cpp
         SoundProcessor.h
         SoundProcessor.cpp
-        RegisterConvert.h
+        RegistrarorConvertors.h
 )
 add_executable(3Lab_C++ ${SOURCES})
