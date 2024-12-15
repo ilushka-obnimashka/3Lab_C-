@@ -157,7 +157,6 @@ void DistortionOption::Convert(std::string input_file, std::string output_file, 
             writer.SaveSamples(samples, i);
         }
     }
-//XD
     reader.CloseWAVFile();
     writer.CloseWAVFile();
 }

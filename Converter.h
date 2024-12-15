@@ -28,8 +28,7 @@ private:
 
 class MixOption : public Converter {
 public:
-    MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
-    };
+    MixOption(std::string src_file, uint32_t start);
 
     void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
@@ -42,7 +41,7 @@ private:
 
 class DistortionOption : public Converter {
     public:
-        DistortionOption(double gain) : gain_(gain) {}
+        DistortionOption(double gain);
 
         void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
