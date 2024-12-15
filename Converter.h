@@ -56,7 +56,7 @@ private:
 
 class DistortionOption : public Converter {
     public:
-        DistortionOption(double gain);cgh
+        DistortionOption(double gain);
         void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
         void help() const override {
