@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <filesystem>
+#include <cmath>
 #include "Converter.h"
 #include "WAVHeader.h"
 
@@ -10,10 +11,10 @@ const std::string kRED = "\033[1;31m";
 const std::string kYELLOW = "\033[33m";
 
 
-MuteOption MuteOption(uint32_t left, uint32_t right) {
+MuteOption::MuteOption(uint32_t left, uint32_t right) {
     if (left < 0 || right < 0) {
         std::cerr << kRED << "Incorrect data: " << left << " " << right << kRESET << std::endl;
-        std::cerr << kYELLOW << "Check for correctness, plese: " << "left > 0, right > 0" << std::endl;
+        std::cerr << kYELLOW << "Check for correctness, please: " << "left > 0, right > 0" << std::endl;
         exit (4);
     }
 
@@ -50,4 +51,11 @@ void MuteOption::Convert(std::string input_file, std::string output_file, Reader
     }
 
     writer.CloseWAVFile();
+}
+
+MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
+    if (start < 0) {
+        std::cerr << kRED << "Incorrect data: " << start << kRESET << std::endl;
+        std::cerr << kYELLOW
+    }
 }
