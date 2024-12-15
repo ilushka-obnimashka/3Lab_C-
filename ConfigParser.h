@@ -18,7 +18,7 @@
 class ConfigParser {
 public:
     ConfigParser(const std::string& config_file_name);
-    std::queue<Converter*> parse(const std::vector<std::string>& input_files);
+    std::queue<Converter*> Parse(const std::vector<std::string>& input_files);
 
 private:
     std::string configFileName;
@@ -26,7 +26,7 @@ private:
     std::regex mixRegex;
     std::regex distortionRegex;
 
-    void initializeRegex();
+    void InitializeRegex();
 };
 
 #endif // CONFIGPARSER_H
