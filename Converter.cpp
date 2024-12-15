@@ -10,7 +10,7 @@ const std::string kRED = "\033[1;31m";
 const std::string kYELLOW = "\033[33m";
 
 
-MuteOption MuteOption(uint32_t left, uint32_t right) {
+MuteOption::MuteOption(uint32_t left, uint32_t right) {
     if (left < 0 || right < 0) {
         std::cerr << kRED << "Incorrect data: " << left << " " << right << kRESET << std::endl;
         std::cerr << kYELLOW << "Check for correctness, plese: " << "left > 0, right > 0" << std::endl;

@@ -17,7 +17,7 @@ public:
 
 class MuteOption : public Converter {
 public:
-    MuteOption(uint32_t left, uint32_t right) {};
+    MuteOption(uint32_t left, uint32_t right);
 
     void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
@@ -40,16 +40,16 @@ private:
     void AvgSamples(std::vector<int16_t> &samples, std::vector<int16_t> &scr_samples);
 };
 
-class Distortion : public Converter {
+class DistortionOption : public Converter {
     public:
-        Distortion(float gain) : gain_(gain) {}
+        DistortionOption(float gain) : gain_(gain) {}
 
         void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
     private:
         float gain_;
 
-        void applyDistortion(std::vector<int16_t> &samples);
+        void applyDistortionOption(std::vector<int16_t> &samples);
 };
 
 
