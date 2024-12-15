@@ -13,7 +13,7 @@ public:
     virtual void Convert(std::string input_file, std::string output_file, ReadWAV &reader, WriteWAV &writer) = 0;
 };
 
-class MuteOption : Converter {
+class MuteOption : public Converter {
 public:
     MuteOption(uint32_t left, uint32_t right) : left_(left), right_(right) {
     };
@@ -50,5 +50,7 @@ class Distortion : public Converter {
 
         void applyDistortion(std::vector<int16_t> &samples);
 };
+
+
 
 #endif //CONVERTER_H

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.sh": "bat",
+        "vector": "cpp"
+    }
+}
