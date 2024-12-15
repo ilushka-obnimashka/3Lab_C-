@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "WAVHeader.h"
 #include "WriterWAV.h"
 
 const std::string kRED = "\033[1;31m";

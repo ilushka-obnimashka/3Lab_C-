@@ -17,8 +17,7 @@ public:
 
 class MuteOption : Converter {
 public:
-    MuteOption(uint32_t left, uint32_t right) : left_(left), right_(right) {
-    };
+    MuteOption(uint32_t left, uint32_t right) {};
 
     void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
