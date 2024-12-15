@@ -10,11 +10,6 @@
 #include "Converter.h"
 #include "WAVHeader.h"
 
-const std::string kRESET = "\033[0m";
-const std::string kGREEN = "\033[32m";
-const std::string kRED = "\033[1;31m";
-const std::string kYELLOW = "\033[33m";
-
 /**
  * @brief Constructor for the MuteOption class.
  * @param left The left boundary for the mute operation.

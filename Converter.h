@@ -10,6 +10,10 @@
 #include "ReaderWAV.h"
 #include "WriterWAV.h"
 
+const std::string kRESET = "\033[0m";
+const std::string kGREEN = "\033[32m";
+const std::string kRED = "\033[1;31m";
+const std::string kYELLOW = "\033[33m";
 
 /**
  * @brief Base class for audio converters.
@@ -54,8 +58,8 @@ public:
      * @brief Displays help information for the MuteOption converter.
      */
     void help() const override {
-        std::cout << "MuteOption converter: \n";
-        std::cout << "Provide muting the audio from <n> to <m> seconds. \n" << std::endl;
+        std::cout << kGREEN << "MuteOption converter: " << kRESET << std::endl;
+        std::cout << "Provide muting the audio from <n> to <m> seconds." << std::endl;
         std::cout << "Example: mute 1 4" << std::endl;
     }
 
@@ -77,10 +81,10 @@ public:
      * @brief Displays help information for the MixOption converter.
      */
     void help() const override {
-        std::cout << "MixOption converter\n" << std::endl;
-        std::cout << "Provide mixing of two audio files into one\n" << std::endl;
-        std::cout << "Example: mix $2 10\n" << std::endl;
-        std::cout << "It means that we mixed audio with file 2 starting from 10 seconds\n" << std::endl;
+        std::cout << kGREEN << "MixOption converter" << kRESET << std::endl;
+        std::cout << "Provide mixing of two audio files into one" << std::endl;
+        std::cout << "Example: mix $2 10" << std::endl;
+        std::cout << "It means that we mixed audio with file 2 starting from 10 seconds" << std::endl;
     }
 
 private:
@@ -107,9 +111,9 @@ class DistortionOption : public Converter {
      * @brief Displays help information for the DistortionOption converter.
      */
     void help() const override {
-        std::cout << "DistortionOption converter:\n" << std::endl;
-        std::cout << "Provide overdriving of the original sound\n" << std::endl;
-        std::cout << "Example: distortion 1.5\n" << std::endl;
+        std::cout << kGREEN << "DistortionOption converter: " << kRESET <<std::endl;
+        std::cout << "Provide overdriving of the original sound " << std::endl;
+        std::cout << "Example: distortion 1.5 " << std::endl;
     }
 
 private:
