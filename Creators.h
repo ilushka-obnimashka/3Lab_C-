@@ -35,7 +35,7 @@ public:
     * @param end The end time in seconds.
     * @return A pointer to the created Converter object.
     */
-    Converter* creatConverter(u_int32_t start, u_int32_t end);
+    Converter* CreateConverter(u_int32_t start, u_int32_t end);
 };
 
 /**
@@ -51,7 +51,7 @@ public:
      * @param file The name of the file to mix.
      * @return A pointer to the created Converter object.
      */
-    Converter* creatConverter(uint32_t start, std::string file);
+    Converter* CreateConverter(uint32_t start, std::string file);
 };
 
 /**
@@ -66,5 +66,5 @@ public:
     * @param gain The gain level.
     * @return A pointer to the created Converter object.
     */
-    Converter* creatConverter(double gain);
+    Converter* CreateConverter(double gain);
 };
