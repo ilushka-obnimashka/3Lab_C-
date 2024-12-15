@@ -1,5 +1,11 @@
+/**
+ * @file WAVHeader.h
+ * @brief Header file defining the structure of a WAV file header.
+ */
+
 #pragma once
 #define FIXED_SAMPLE_RATE 44100
+
 /**
  * @brief A structure representing the header of a WAV file.
  *
@@ -19,10 +25,9 @@ struct WAVHeader {
     uint32_t sample_rate;       ///< Sampling frequency in Hz (e.g., 44100 for CD-quality audio).
     uint32_t byte_rate;         ///< Byte rate (sampleRate * numChannels * bitsPerSample / 8).
     uint16_t block_align;       ///< Block align (numChannels * bitsPerSample / 8).
-    uint16_t bits_per_sample;  ///< Bits per sample (e.g., 8, 16, 24, or 32).
+    uint16_t bits_per_sample;   ///< Bits per sample (e.g., 8, 16, 24, or 32).
 
     /* "data" sub-chunk */
     uint8_t chunk2_id[4];       ///< Data sub-chunk ID. Indicates that the following sub-chunk contains audio data.
     uint32_t chunk2_data_size;  ///< Size of the audio data in bytes.
 };
-

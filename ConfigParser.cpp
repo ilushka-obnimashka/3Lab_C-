@@ -1,17 +1,34 @@
+/**
+ * @file ConfigParser.cpp
+ * @brief Implementation of the ConfigParser class.
+ */
+
 #include "ConfigParser.h"
 #include "Converter.h"
 #include "Creators.h"
 
+/**
+ * @brief Constructor for the ConfigParser class.
+ * @param configFileName The name of the configuration file to parse.
+ */
 ConfigParser::ConfigParser(const std::string &configFileName) : configFileName(configFileName) {
     InitializeRegex();
 }
 
+/**
+ * @brief Initializes the regular expressions used for parsing the configuration file.
+ */
 void ConfigParser::InitializeRegex() {
     muteRegex = std::regex(R"(mute\s+(\d+)\s+(\d+))");
     mixRegex = std::regex(R"(mix\s+\$(\d+)\s+(\d+))");
     distortionRegex = std::regex(R"(distortion\s+([0-9]+(\.[0-9]+)?))");
 }
 
+/**
+ * @brief Parses the configuration file and creates a queue of Converter objects.
+ * @param inputFiles A vector of input file names.
+ * @return A queue of Converter objects created based on the configuration file.
+ */
 std::queue<Converter *> ConfigParser::Parse(const std::vector<std::string> &inputFiles) {
     std::queue<Converter *> converters;
     std::ifstream configFile(configFileName);
@@ -29,12 +46,11 @@ std::queue<Converter *> ConfigParser::Parse(const std::vector<std::string> &inpu
         std::smatch matches;
 
         if (std::regex_search(line, matches, muteRegex)) {
-
             uint32_t left = std::stoi(matches[1]);
             uint32_t right = std::stoi(matches[2]);
             converters.push(mute_creater.CreateConverter(left, right));
 
-        }else if (std::regex_search(line, matches, mixRegex)) {
+        } else if (std::regex_search(line, matches, mixRegex)) {
             uint32_t fileIndex = std::stoi(matches[1]);
             uint32_t start = std::stoi(matches[2]);
             if (fileIndex >= inputFiles.size()) {
@@ -43,7 +59,7 @@ std::queue<Converter *> ConfigParser::Parse(const std::vector<std::string> &inpu
             }
             converters.push(mix_creater.CreateConverter(start, inputFiles[fileIndex]));
 
-        }else if (std::regex_search(line, matches, distortionRegex)) {
+        } else if (std::regex_search(line, matches, distortionRegex)) {
             float gain = std::stof(matches[1]);
             converters.push(distortion_creater.CreateConverter(gain));
 

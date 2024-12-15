@@ -1,3 +1,8 @@
+/**
+ * @file Converter.cpp
+ * @brief Implementation of the Converter class and its derived classes.
+ */
+
 #include <string>
 #include <iostream>
 #include <filesystem>
@@ -10,25 +15,35 @@ const std::string kGREEN = "\033[32m";
 const std::string kRED = "\033[1;31m";
 const std::string kYELLOW = "\033[33m";
 
-
+/**
+ * @brief Constructor for the MuteOption class.
+ * @param left The left boundary for the mute operation.
+ * @param right The right boundary for the mute operation.
+ */
 MuteOption::MuteOption(uint32_t left, uint32_t right) {
-    {
-        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET <<
-                std::endl;
+    if (left > right) {
+        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET << std::endl;
         std::swap(left, right);
     }
+    left_ = left;
+    right_ = right;
 }
 
+/**
+ * @brief Applies the mute operation to the input file and saves the result to the output file.
+ * @param input_file The input WAV file.
+ * @param output_file The output WAV file.
+ */
 void MuteOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "mute " << left_ << " " << right_ << kRESET << std::endl;
 
-    if (!(std::filesystem::exists(input_file))) {
-        std::cerr << kRED << "File: " << input_file << "does not exist." << kRESET << std::endl;
+    if (!std::filesystem::exists(input_file)) {
+        std::cerr << kRED << "File: " << input_file << " does not exist." << kRESET << std::endl;
         exit(3);
     }
 
-    if (!(std::filesystem::exists(output_file))) {
-        std::cerr << kRED << "File: " << output_file << "does not exist." << kRESET << std::endl;
+    if (!std::filesystem::exists(output_file)) {
+        std::cerr << kRED << "File: " << output_file << " does not exist." << kRESET << std::endl;
         exit(3);
     }
 
@@ -36,7 +51,7 @@ void MuteOption::Convert(std::string input_file, std::string output_file) {
 
     int count_sec = left_ - right_;
 
-    WriterWAV writer (output_file);
+    WriterWAV writer(output_file);
     writer.OpenWAVFile();
     std::vector<int16_t> samples(FIXED_SAMPLE_RATE, 0);
     while (count_sec) {
@@ -47,9 +62,18 @@ void MuteOption::Convert(std::string input_file, std::string output_file) {
     writer.CloseWAVFile();
 }
 
-MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
-};
+/**
+ * @brief Constructor for the MixOption class.
+ * @param src_file The source file to mix.
+ * @param start The starting point for the mix operation.
+ */
+MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {}
 
+/**
+ * @brief Applies the mix operation to the input file and saves the result to the output file.
+ * @param input_file The input WAV file.
+ * @param output_file The output WAV file.
+ */
 void MixOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "mix " << src_file_ << " " << start_ << kRESET << std::endl;
 
@@ -72,7 +96,7 @@ void MixOption::Convert(std::string input_file, std::string output_file) {
         exit(3);
     }
 
-    ReaderWAV reader (input_file);
+    ReaderWAV reader(input_file);
     reader.OpenWAVFile();
     reader.ReadHead();
     if (!reader.CheckingFileValidity()) {
@@ -80,7 +104,7 @@ void MixOption::Convert(std::string input_file, std::string output_file) {
         exit(3);
     }
 
-    WriterWAV writer (output_file);
+    WriterWAV writer(output_file);
     writer.OpenWAVFile();
 
     int input_size = reader.GetSizeFileInSec();
@@ -101,6 +125,11 @@ void MixOption::Convert(std::string input_file, std::string output_file) {
     writer.CloseWAVFile();
 }
 
+/**
+ * @brief Averages the samples from the input and source files.
+ * @param samples The input samples.
+ * @param src_samples The source samples.
+ */
 void MixOption::AvgSamples(std::vector<int16_t> &samples, std::vector<int16_t> &src_samples) {
     auto it1 = samples.begin();
     auto it2 = src_samples.begin();
@@ -112,6 +141,10 @@ void MixOption::AvgSamples(std::vector<int16_t> &samples, std::vector<int16_t> &
     }
 }
 
+/**
+ * @brief Constructor for the DistortionOption class.
+ * @param gain The gain value for the distortion operation.
+ */
 DistortionOption::DistortionOption(double gain) : gain_(gain) {
     if (gain < 0) {
         std::cerr << kRED << "Incorrect data: " << gain << kRESET << std::endl;
@@ -120,6 +153,11 @@ DistortionOption::DistortionOption(double gain) : gain_(gain) {
     }
 }
 
+/**
+ * @brief Applies the distortion operation to the input file and saves the result to the output file.
+ * @param input_file The input WAV file.
+ * @param output_file The output WAV file.
+ */
 void DistortionOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "DistortionOption " << gain_ << kRESET << std::endl;
 
@@ -130,7 +168,7 @@ void DistortionOption::Convert(std::string input_file, std::string output_file) 
 
     std::filesystem::copy(input_file, output_file, std::filesystem::copy_options::overwrite_existing);
 
-    ReaderWAV reader (input_file);
+    ReaderWAV reader(input_file);
     reader.OpenWAVFile();
     reader.ReadHead();
     if (!reader.CheckingFileValidity()) {
@@ -138,7 +176,7 @@ void DistortionOption::Convert(std::string input_file, std::string output_file) 
         exit(3);
     }
 
-    WriterWAV writer (output_file);
+    WriterWAV writer(output_file);
     writer.OpenWAVFile();
 
     int input_size = reader.GetSizeFileInSec();
@@ -155,8 +193,12 @@ void DistortionOption::Convert(std::string input_file, std::string output_file) 
     writer.CloseWAVFile();
 }
 
+/**
+ * @brief Applies the distortion effect to the samples.
+ * @param samples The samples to apply the distortion to.
+ */
 void DistortionOption::applyDistortionOption(std::vector<int16_t> &samples) {
-    for (auto &sample: samples) {
+    for (auto &sample : samples) {
         double normalizedSample = sample / 32767;
         double distortedSample = std::tanh(gain_ * normalizedSample);
         sample = static_cast<int16_t>(distortedSample * 32767);
