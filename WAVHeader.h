@@ -1,3 +1,4 @@
+#include <cstdint>
 /**
  * @file WAVHeader.h
  * @brief Header file defining the structure of a WAV file header.
