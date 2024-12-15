@@ -24,7 +24,6 @@ void SoundProcessor::Processing(ArgumentParser& argument_parser){
 
     ConfigParser config_parser (config_file);
 
-
     std::vector<std::string> input_files = argument_parser.GetInputFiles();
     std::queue<Converter *> convverters = config_parser.Parse(input_files);
 
