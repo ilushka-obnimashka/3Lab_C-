@@ -69,11 +69,11 @@ bool ReaderWAV::GetSamples(std::vector<int16_t> &samples, uint32_t start, uint32
     }
 }
 
-WAVHeader* ReaderWAV::GetWAVHeader() {
+WAVHeader* ReaderWAV::GetWAVHeader() const{
     return WAVHeader_;
 }
 
 
-int ReaderWAV::GetSizeFileInSec() {
+int ReaderWAV::GetSizeFileInSec() const{
     return WAVHeader_->chunk2_data_size / (2* WAVHeader_->sample_rate);
 }
