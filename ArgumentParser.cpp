@@ -1,8 +1,8 @@
-#include "ArgumentParser.h"
 #include <getopt.h>
 #include <string>
 #include <iostream>
 #include <stdexcept>
+#include "ArgumentParser.h"
 
 const std::string kRED = "\033[1;31m";
 const std::string kRESET = "\033[0m";
@@ -59,6 +59,6 @@ const void ArgumentParser::PrintHelp() {
     std::cout << "  -c, --config CONFIG_FILE  Specify the configuration file" << std::endl;
     std::cout << "  output.wav                Output WAV file" << std::endl;
     std::cout << "  input1.wav                First input WAV file" << std::endl;
-    std::cout << "  [input2.wav ...]         Additional input WAV files (optional)" << std::endl;
+    std::cout << "  [input2.wav ...]          Additional input WAV files (optional)" << std::endl;
     std::cout << kRESET;
 }
