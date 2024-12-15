@@ -17,5 +17,8 @@ set(SOURCES main.cpp
         Creators.h
         Creators.cpp
         ConfigParser.cpp
+        SoundProcessor.h
+        SoundProcessor.cpp
+        RegisterConvert.h
 )
 add_executable(3Lab_C++ ${SOURCES})

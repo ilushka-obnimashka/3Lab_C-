@@ -32,7 +32,7 @@ public:
      * @param reader The ReaderWAV object to read the input file.
      * @param writer The WriterWAV object to write the output file.
      */
-    virtual void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) = 0;
+    virtual void Convert(std::string input_file, std::string output_file) = 0;
 
     /**
      * @brief Pure virtual function to display help information.
@@ -45,20 +45,8 @@ public:
  */
 class MuteOption : public Converter {
 public:
-    /**
-     * @brief Constructor for the MuteOption class.
-     * @param left The left boundary for the mute operation.
-     * @param right The right boundary for the mute operation.
-     */
     MuteOption(uint32_t left, uint32_t right);
 
-    /**
-     * @brief Applies the mute operation to the input file and saves the result to the output file.
-     * @param input_file The input WAV file.
-     * @param output_file The output WAV file.
-     * @param reader The ReaderWAV object to read the input file.
-     * @param writer The WriterWAV object to write the output file.
-     */
     void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
     /**
@@ -80,20 +68,8 @@ private:
  */
 class MixOption : public Converter {
 public:
-    /**
-     * @brief Constructor for the MixOption class.
-     * @param src_file The source file to mix.
-     * @param start The starting point for the mix operation.
-     */
     MixOption(std::string src_file, uint32_t start);
 
-    /**
-     * @brief Applies the mix operation to the input file and saves the result to the output file.
-     * @param input_file The input WAV file.
-     * @param output_file The output WAV file.
-     * @param reader The ReaderWAV object to read the input file.
-     * @param writer The WriterWAV object to write the output file.
-     */
     void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
     /**
@@ -122,21 +98,9 @@ private:
  * @brief Class for applying distortion to an audio file.
  */
 class DistortionOption : public Converter {
-public:
-    /**
-     * @brief Constructor for the DistortionOption class.
-     * @param gain The gain value for the distortion operation.
-     */
-    DistortionOption(double gain);
-
-    /**
-     * @brief Applies the distortion operation to the input file and saves the result to the output file.
-     * @param input_file The input WAV file.
-     * @param output_file The output WAV file.
-     * @param reader The ReaderWAV object to read the input file.
-     * @param writer The WriterWAV object to write the output file.
-     */
-    void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
+    public:
+        DistortionOption(double gain);
+        void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 
     /**
      * @brief Displays help information for the DistortionOption converter.
