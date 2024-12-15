@@ -13,21 +13,21 @@ const std::string kYELLOW = "\033[33m";
 
 MuteOption::MuteOption(uint32_t left, uint32_t right) {
     {
-        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET << std::endl;
+        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET <<
+                std::endl;
         std::swap(left, right);
     }
-
 }
 
-void MuteOption::Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) {
+void MuteOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "mute " << left_ << " " << right_ << kRESET << std::endl;
 
-    if(!(std::filesystem::exists(input_file))) {
+    if (!(std::filesystem::exists(input_file))) {
         std::cerr << kRED << "File: " << input_file << "does not exist." << kRESET << std::endl;
         exit(3);
     }
 
-    if(!(std::filesystem::exists(output_file))) {
+    if (!(std::filesystem::exists(output_file))) {
         std::cerr << kRED << "File: " << output_file << "does not exist." << kRESET << std::endl;
         exit(3);
     }
@@ -36,10 +36,10 @@ void MuteOption::Convert(std::string input_file, std::string output_file, Reader
 
     int count_sec = left_ - right_;
 
-
+    WriterWAV writer (output_file);
+    writer.OpenWAVFile();
     std::vector<int16_t> samples(FIXED_SAMPLE_RATE, 0);
-    while (count_sec)
-    {
+    while (count_sec) {
         writer.SaveSamples(samples, left_);
         --count_sec;
     }
@@ -47,16 +47,17 @@ void MuteOption::Convert(std::string input_file, std::string output_file, Reader
     writer.CloseWAVFile();
 }
 
-MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {};
+MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
+};
 
-void MixOption::Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) {
+void MixOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "mix " << src_file_ << " " << start_ << kRESET << std::endl;
 
-    if(!std::filesystem::exists(input_file)) {
+    if (!std::filesystem::exists(input_file)) {
         std::cerr << kRED << "File: " << input_file << " does not exist." << kRESET << std::endl;
         exit(3);
     }
-    if(!std::filesystem::exists(src_file_)) {
+    if (!std::filesystem::exists(src_file_)) {
         std::cerr << kRED << "File: " << src_file_ << " does not exist." << kRESET << std::endl;
         exit(3);
     }
@@ -66,18 +67,20 @@ void MixOption::Convert(std::string input_file, std::string output_file, ReaderW
     ReaderWAV src_reader(src_file_);
     src_reader.OpenWAVFile();
     src_reader.ReadHead();
-    if(!src_reader.CheckingFileValidity()) {
+    if (!src_reader.CheckingFileValidity()) {
         std::cerr << kRED << "Source file is not a valid WAV format" << kRESET << std::endl;
         exit(3);
     }
 
+    ReaderWAV reader (input_file);
     reader.OpenWAVFile();
     reader.ReadHead();
-    if(!reader.CheckingFileValidity()) {
+    if (!reader.CheckingFileValidity()) {
         std::cerr << kRED << "Input file is not a valid format" << kRESET << std::endl;
         exit(3);
     }
 
+    WriterWAV writer (output_file);
     writer.OpenWAVFile();
 
     int input_size = reader.GetSizeFileInSec();
@@ -117,7 +120,7 @@ DistortionOption::DistortionOption(double gain) : gain_(gain) {
     }
 }
 
-void DistortionOption::Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) {
+void DistortionOption::Convert(std::string input_file, std::string output_file) {
     std::cout << kGREEN << "DistortionOption " << gain_ << kRESET << std::endl;
 
     if (!std::filesystem::exists(input_file)) {
@@ -127,6 +130,7 @@ void DistortionOption::Convert(std::string input_file, std::string output_file, 
 
     std::filesystem::copy(input_file, output_file, std::filesystem::copy_options::overwrite_existing);
 
+    ReaderWAV reader (input_file);
     reader.OpenWAVFile();
     reader.ReadHead();
     if (!reader.CheckingFileValidity()) {
@@ -134,6 +138,7 @@ void DistortionOption::Convert(std::string input_file, std::string output_file, 
         exit(3);
     }
 
+    WriterWAV writer (output_file);
     writer.OpenWAVFile();
 
     int input_size = reader.GetSizeFileInSec();
@@ -145,12 +150,13 @@ void DistortionOption::Convert(std::string input_file, std::string output_file, 
             writer.SaveSamples(samples, i);
         }
     }
+
     reader.CloseWAVFile();
     writer.CloseWAVFile();
 }
 
 void DistortionOption::applyDistortionOption(std::vector<int16_t> &samples) {
-    for (auto &sample : samples) {
+    for (auto &sample: samples) {
         double normalizedSample = sample / 32767;
         double distortedSample = std::tanh(gain_ * normalizedSample);
         sample = static_cast<int16_t>(distortedSample * 32767);
