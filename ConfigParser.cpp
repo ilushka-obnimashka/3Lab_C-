@@ -3,16 +3,16 @@
 #include "Creators.h"
 
 ConfigParser::ConfigParser(const std::string &configFileName) : configFileName(configFileName) {
-    initializeRegex();
+    InitializeRegex();
 }
 
-void ConfigParser::initializeRegex() {
+void ConfigParser::InitializeRegex() {
     muteRegex = std::regex(R"(mute\s+(\d+)\s+(\d+))");
     mixRegex = std::regex(R"(mix\s+\$(\d+)\s+(\d+))");
     distortionRegex = std::regex(R"(distortion\s+([0-9]+(\.[0-9]+)?))");
 }
 
-std::queue<Converter *> ConfigParser::parse(const std::vector<std::string> &inputFiles) {
+std::queue<Converter *> ConfigParser::Parse(const std::vector<std::string> &inputFiles) {
     std::queue<Converter *> converters;
     std::ifstream configFile(configFileName);
     if (!configFile.is_open()) {
