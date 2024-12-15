@@ -1,8 +1,7 @@
-#ifndef WAVHANDLER_H
-#define WAVHANDLER_H
+#pragma once
 #include <fstream>
 #include <vector>
-#include "WAVHeader.h"
+
 
 /**
 * @class WriterWAV
@@ -37,4 +36,3 @@ private:
     std::fstream file_;          ///< File stream for reading the WAV file.
     std::string output_file_path_; ///< Path to the output WAV file.
 };
-#endif //WAVHANDLER_H
