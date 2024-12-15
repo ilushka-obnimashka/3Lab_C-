@@ -1,20 +1,17 @@
 #include "Creators.h"
 #include "Converter.h"
 
-Converter *MuteCreater::creatConverter(uint32_t left, uint32_t rigth)
+Converter *MuteCreater::CreateConverter(uint32_t left, uint32_t rigth)
 {
-    MuteOption *mute = new MuteOption(left, rigth);
-    return mute;
+    return new MuteOption(left, rigth);
 }
 
-Converter *MixCreater::creatConverter(uint32_t start, std::string name_src_file)
+Converter *MixCreater::CreateConverter(uint32_t start, std::string name_src_file)
 {
-    MixOption *mix = new MixOption(name_src_file, start);
-    return mix;
+    return new MixOption(name_src_file, start);
 }
 
-Converter *DistortionCreater::creatConverter(double gain)
+Converter *DistortionCreater::CreateConverter(double gain)
 {
-    DistortionOption *distortion = new DistortionOption(gain);
-    return distortion;
+    return new DistortionOption(gain);
 }

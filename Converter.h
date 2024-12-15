@@ -42,7 +42,7 @@ private:
 
 class DistortionOption : public Converter {
     public:
-        DistortionOption(float gain) : gain_(gain) {}
+        DistortionOption(double gain) : gain_(gain) {}
 
         void Convert(std::string input_file, std::string output_file, ReaderWAV &reader, WriterWAV &writer) override;
 

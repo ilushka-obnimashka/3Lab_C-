@@ -64,12 +64,17 @@ public:
     */
     bool GetSamples (std::vector<int16_t> &samples, uint32_t start, uint32_t end);
 
-    WAVHeader *GetWAVHeader();
+    /**
+    * @brief Retrieves the WAV header.
+    * This method returns a pointer to the WAVHeader_. WAV Header defined in file "WAVHeader.h"
+    * @return A pointer to the WAVHeader object.
+    */
+    WAVHeader *GetWAVHeader() const;
     /**
     * @brief Calculates the size of the WAV file in seconds.
     * @return The duration of the audio data in seconds.
     */
-    int GetSizeFileInSec();
+    int GetSizeFileInSec() const;
 
 private:
     std::ifstream file_;          ///< File stream for reading the WAV file.
