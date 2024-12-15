@@ -121,7 +121,7 @@ void MixOption::AvgSamples(std::vector<int16_t> &samples, std::vector<int16_t> &
     }
 }
 
-DistortionOption::DistortionOption(float gain) : gain_(gain) {
+DistortionOption::DistortionOption(double gain) : gain_(gain) {
     if (gain < 0) {
         std::cerr << kRED << "Incorrect data: " << gain << kRESET << std::endl;
         std::cerr << kYELLOW << "Check for correctness, please: " << "gain > 0" << std::endl;
