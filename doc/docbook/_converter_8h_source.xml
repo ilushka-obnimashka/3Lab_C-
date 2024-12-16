@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__converter_8h_source" xml:lang="en-US">
+<title>Converter.h</title>
+<indexterm><primary>3Lab/Converter.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&quot;ReaderWAV.h&quot;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__writer_w_a_v_8h">WriterWAV.h</link>&quot;</emphasis>
+12 
+13 <emphasis role="keyword">const</emphasis>&#32;std::string&#32;kRESET&#32;=&#32;<emphasis role="stringliteral">&quot;\033[0m&quot;</emphasis>;
+14 <emphasis role="keyword">const</emphasis>&#32;std::string&#32;kGREEN&#32;=&#32;<emphasis role="stringliteral">&quot;\033[32m&quot;</emphasis>;
+15 <emphasis role="keyword">const</emphasis>&#32;std::string&#32;kRED&#32;=&#32;<emphasis role="stringliteral">&quot;\033[1;31m&quot;</emphasis>;
+16 <emphasis role="keyword">const</emphasis>&#32;std::string&#32;kYELLOW&#32;=&#32;<emphasis role="stringliteral">&quot;\033[33m&quot;</emphasis>;
+17 
+21 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_converter">Converter</link>&#32;{
+22 <emphasis role="keyword">public</emphasis>:
+26 &#32;&#32;&#32;&#32;<link linkend="_class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc">Converter</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+27 
+31 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_converter_1a99cea4f852f70999e858e69291464772">~Converter</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+32 
+40 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_converter_1aa372ef198028ecc08af6c80462e427cc">Convert</link>(std::string&#32;input_file,&#32;std::string&#32;output_file)&#32;=&#32;0;
+41 
+45 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_converter_1a3720c9083eee5ca517e63a3f92994e0b">help</link>()&#32;<emphasis role="keyword">const</emphasis>&#32;=&#32;0;
+46 };
+47 
+51 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_mute_option">MuteOption</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_converter">Converter</link>&#32;{
+52 <emphasis role="keyword">public</emphasis>:
+53 &#32;&#32;&#32;&#32;<link linkend="_class_mute_option_1a9547f6c020349ba76c88e17986665357">MuteOption</link>(uint32_t&#32;left,&#32;uint32_t&#32;right);
+54 
+55 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86">Convert</link>(std::string&#32;input_file,&#32;std::string&#32;output_file)&#32;<emphasis role="keyword">override</emphasis>;
+56 
+60 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mute_option_1a7ece9c7268c414dbb9917c84253407d8">help</link>()<emphasis role="keyword">&#32;const&#32;override&#32;</emphasis>{
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;kGREEN&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;MuteOption&#32;converter:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;kRESET&#32;&lt;&lt;&#32;std::endl;
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Provide&#32;muting&#32;the&#32;audio&#32;from&#32;&lt;n&gt;&#32;to&#32;&lt;m&gt;&#32;seconds.&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Example:&#32;mute&#32;1&#32;4&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+64 &#32;&#32;&#32;&#32;}
+65 
+66 <emphasis role="keyword">private</emphasis>:
+67 &#32;&#32;&#32;&#32;uint32_t&#32;left_;&#32;
+68 &#32;&#32;&#32;&#32;uint32_t&#32;right_;&#32;
+69 };
+70 
+74 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_mix_option">MixOption</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_converter">Converter</link>&#32;{
+75 <emphasis role="keyword">public</emphasis>:
+76 &#32;&#32;&#32;&#32;<link linkend="_class_mix_option_1a9ca76c4eea39165126fc102c63df2d35">MixOption</link>(std::string&#32;src_file,&#32;uint32_t&#32;start);
+77 
+78 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3">Convert</link>(std::string&#32;input_file,&#32;std::string&#32;output_file)&#32;<emphasis role="keyword">override</emphasis>;
+79 
+83 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c">help</link>()<emphasis role="keyword">&#32;const&#32;override&#32;</emphasis>{
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;kGREEN&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;MixOption&#32;converter&quot;</emphasis>&#32;&lt;&lt;&#32;kRESET&#32;&lt;&lt;&#32;std::endl;
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Provide&#32;mixing&#32;of&#32;two&#32;audio&#32;files&#32;into&#32;one&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Example:&#32;mix&#32;$2&#32;10&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;It&#32;means&#32;that&#32;we&#32;mixed&#32;audio&#32;with&#32;file&#32;2&#32;starting&#32;from&#32;10&#32;seconds&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+88 &#32;&#32;&#32;&#32;}
+89 
+90 <emphasis role="keyword">private</emphasis>:
+91 &#32;&#32;&#32;&#32;std::string&#32;src_file_;&#32;
+92 &#32;&#32;&#32;&#32;uint32_t&#32;start_;&#32;
+93 
+99 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;AvgSamples(std::vector&lt;int16_t&gt;&#32;&amp;samples,&#32;std::vector&lt;int16_t&gt;&#32;&amp;scr_samples);
+100 };
+101 
+105 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_distortion_option">DistortionOption</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_converter">Converter</link>&#32;{
+106 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597">DistortionOption</link>(<emphasis role="keywordtype">double</emphasis>&#32;gain);
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_distortion_option_1af48ba42d143775f2a9b53241d95411f8">Convert</link>(std::string&#32;input_file,&#32;std::string&#32;output_file)&#32;<emphasis role="keyword">override</emphasis>;
+109 
+113 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0">help</link>()<emphasis role="keyword">&#32;const&#32;override&#32;</emphasis>{
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;kGREEN&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;DistortionOption&#32;converter:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;kRESET&#32;&lt;&lt;std::endl;
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Provide&#32;overdriving&#32;of&#32;the&#32;original&#32;sound&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Example:&#32;distortion&#32;1.5&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+117 &#32;&#32;&#32;&#32;}
+118 
+119 <emphasis role="keyword">private</emphasis>:
+120 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;gain_;&#32;
+121 
+126 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;applyDistortionOption(std::vector&lt;int16_t&gt;&#32;&amp;samples);
+127 };
+</programlisting></section>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_mix_creater" kind="class" language="C++" prot="public">
+    <compoundname>MixCreater</compoundname>
+    <basecompoundref refid="class_creater" prot="public" virt="non-virtual">Creater</basecompoundref>
+    <includes refid="_creators_8h" local="no">Creators.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mix_creater_1ac72368488344b436dee61ac329ef1889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_converter" kindref="compound">Converter</ref> *</type>
+        <definition>Converter * MixCreater::CreateConverter</definition>
+        <argsstring>(uint32_t start, std::string file)</argsstring>
+        <name>CreateConverter</name>
+        <qualifiedname>MixCreater::CreateConverter</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>file</declname>
+          <defname>name_src_file</defname>
+        </param>
+        <briefdescription>
+<para>Creates a Mix converter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="class_mix_option" kindref="compound">MixOption</ref> converter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start time in seconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file to mix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the created <ref refid="class_converter" kindref="compound">Converter</ref> object.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting point for the mix operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_src_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the source file to mix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a new <ref refid="class_mix_option" kindref="compound">MixOption</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Creators.h" line="56" column="15" bodyfile="3Lab/Creators.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class responsible for the creation of Mix converters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Creater</label>
+        <link refid="class_creater"/>
+      </node>
+      <node id="1">
+        <label>MixCreater</label>
+        <link refid="class_mix_creater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Creater</label>
+        <link refid="class_creater"/>
+      </node>
+      <node id="1">
+        <label>MixCreater</label>
+        <link refid="class_mix_creater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="3Lab/Creators.h" line="47" column="1" bodyfile="3Lab/Creators.h" bodystart="47" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_mix_creater_1ac72368488344b436dee61ac329ef1889" prot="public" virt="non-virtual"><scope>MixCreater</scope><name>CreateConverter</name></member>
+      <member refid="class_creater_1a55a808445e328c8628db9aca21b892e2" prot="public" virt="non-virtual"><scope>MixCreater</scope><name>Creater</name></member>
+      <member refid="class_creater_1a548642211f7478639a26954b037359e0" prot="public" virt="virtual"><scope>MixCreater</scope><name>~Creater</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

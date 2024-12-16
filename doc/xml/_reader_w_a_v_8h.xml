@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_reader_w_a_v_8h" kind="file" language="C++">
+    <compoundname>ReaderWAV.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="_w_a_v_header_8h" local="yes">WAVHeader.h</includes>
+    <includedby refid="_converter_8h" local="yes">3Lab/Converter.h</includedby>
+    <includedby refid="_reader_w_a_v_8cpp" local="yes">3Lab/ReaderWAV.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>3Lab/ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>3Lab/ConfigParser.cpp</label>
+        <link refid="_config_parser_8cpp"/>
+      </node>
+      <node id="4">
+        <label>3Lab/ConfigParser.h</label>
+        <link refid="_config_parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>3Lab/Converter.cpp</label>
+        <link refid="_converter_8cpp"/>
+      </node>
+      <node id="2">
+        <label>3Lab/Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>3Lab/Creators.cpp</label>
+        <link refid="_creators_8cpp"/>
+      </node>
+      <node id="7">
+        <label>3Lab/Creators.h</label>
+        <link refid="_creators_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>3Lab/ReaderWAV.cpp</label>
+        <link refid="_reader_w_a_v_8cpp"/>
+      </node>
+      <node id="1">
+        <label>3Lab/ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>3Lab/RegistrarorConvertors.h</label>
+        <link refid="_registraror_convertors_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_reader_w_a_v" prot="public">ReaderWAV</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_w_a_v_header_8h" kindref="compound">WAVHeader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_reader_w_a_v" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_reader_w_a_v" kindref="compound">ReaderWAV</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca" kindref="member">ReaderWAV</ref>(std::string<sp/>input_file_path)<sp/>:<sp/>input_file_path_(std::move(input_file_path))<sp/>{};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596" kindref="member">OpenWAVFile</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa" kindref="member">CloseWAVFile</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1" kindref="member">ReadHead</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230" kindref="member">CheckingFileValidity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750" kindref="member">GetSamples</ref><sp/>(std::vector&lt;int16_t&gt;<sp/>&amp;samples,<sp/>uint32_t<sp/>start,<sp/>uint32_t<sp/>end);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref><sp/>*<ref refid="class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4" kindref="member">GetWAVHeader</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f" kindref="member">GetSizeFileInSec</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>file_;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>input_file_path_;<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>remaining_audio_data_size_;<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref><sp/>*WAVHeader_;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/ReaderWAV.h"/>
+  </compounddef>
+</doxygen>

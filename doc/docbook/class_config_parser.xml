@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_config_parser" xml:lang="en-US">
+<title>ConfigParser Class Reference</title>
+<indexterm><primary>ConfigParser</primary></indexterm>
+<para>
+
+<para>Class <link linkend="_class_config_parser">ConfigParser</link> provides a convenient interface for parsing a configuration file using std::regex. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;ConfigParser.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_config_parser_1a9d373a979d513362304f68641770ad3b">ConfigParser</link> (const std::string &amp;config_file_name)</para>
+
+<para>Constructor for the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+</listitem>
+            <listitem><para>std::queue&lt; <link linkend="_class_converter">Converter</link> * &gt; <link linkend="_class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f">Parse</link> (const std::vector&lt; std::string &gt; &amp;input_files)</para>
+
+<para>Parses the configuration file and creates a queue of <link linkend="_class_converter">Converter</link> objects. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class <link linkend="_class_config_parser">ConfigParser</link> provides a convenient interface for parsing a configuration file using std::regex. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_config_parser_1a9d373a979d513362304f68641770ad3b"/><section>
+    <title>ConfigParser()</title>
+<indexterm><primary>ConfigParser</primary><secondary>ConfigParser</secondary></indexterm>
+<indexterm><primary>ConfigParser</primary><secondary>ConfigParser</secondary></indexterm>
+<para><computeroutput>ConfigParser::ConfigParser (const std::string &amp; configFileName)</computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>config_file_name</entry><entry>
+<para>The name of the configuration file to parse.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>configFileName</entry><entry>
+<para>The name of the configuration file to parse. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f"/><section>
+    <title>Parse()</title>
+<indexterm><primary>Parse</primary><secondary>ConfigParser</secondary></indexterm>
+<indexterm><primary>ConfigParser</primary><secondary>Parse</secondary></indexterm>
+<para><computeroutput>std::queue&lt; <link linkend="_class_converter">Converter</link> * &gt; ConfigParser::Parse (const std::vector&lt; std::string &gt; &amp; inputFiles)</computeroutput></para><para>
+
+<para>Parses the configuration file and creates a queue of <link linkend="_class_converter">Converter</link> objects. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input_files</entry><entry>
+<para>A vector of input file names. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A queue of <link linkend="_class_converter">Converter</link> objects created based on the configuration file.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>inputFiles</entry><entry>
+<para>A vector of input file names. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A queue of <link linkend="_class_converter">Converter</link> objects created based on the configuration file. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__config_parser_8h">ConfigParser.h</link>3Lab/<link linkend="__config_parser_8cpp">ConfigParser.cpp</link></section>
+</section>

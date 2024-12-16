@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__converter_8cpp" xml:lang="en-US">
+<title>3Lab/Converter.cpp File Reference</title>
+<indexterm><primary>3Lab/Converter.cpp</primary></indexterm>
+<para>
+
+<para>Implementation of the <link linkend="_class_converter">Converter</link> class and its derived classes. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;algorithm&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;filesystem&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &quot;Converter.h&quot;<?linebreak?>#include &quot;WAVHeader.h&quot;<?linebreak?></programlisting><section>
+<title>Detailed Description</title>
+
+<para>Implementation of the <link linkend="_class_converter">Converter</link> class and its derived classes. </para>
+</section>
+</section>

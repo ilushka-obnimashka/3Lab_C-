@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_sound_processor_8cpp" kind="file" language="C++">
+    <compoundname>SoundProcessor.cpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">filesystem</includes>
+    <includes refid="_sound_processor_8h" local="yes">SoundProcessor.h</includes>
+    <includes refid="_argument_parser_8h" local="yes">ArgumentParser.h</includes>
+    <includes refid="_config_parser_8h" local="yes">ConfigParser.h</includes>
+    <includes refid="_registraror_convertors_8h" local="yes">RegistrarorConvertors.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>ArgumentParser.h</label>
+        <link refid="_argument_parser_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ConfigParser.h</label>
+        <link refid="_config_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>RegistrarorConvertors.h</label>
+        <link refid="_registraror_convertors_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>3Lab/SoundProcessor.cpp</label>
+        <link refid="_sound_processor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SoundProcessor.h</label>
+        <link refid="_sound_processor_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>WriterWAV.h</label>
+        <link refid="_writer_w_a_v_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>filesystem</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>getopt.h</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>queue</label>
+      </node>
+      <node id="10">
+        <label>regex</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SoundProcessor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_argument_parser_8h" kindref="compound">ArgumentParser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_parser_8h" kindref="compound">ConfigParser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RegistrarorConvertors.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SoundProcessor::Control(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_argument_parser" kindref="compound">ArgumentParser</ref><sp/>argument_parser(argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argument_parser.Parse())<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Processing(argument_parser);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HeplPrint();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SoundProcessor::Processing(<ref refid="class_argument_parser" kindref="compound">ArgumentParser</ref>&amp;<sp/>argument_parser){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>config_file<sp/>=<sp/>argument_parser.<ref refid="class_argument_parser_1a34938826d32a26b88fd93b3fda16b230" kindref="member">GetConfigFile</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_config_parser" kindref="compound">ConfigParser</ref><sp/>config_parser<sp/>(config_file);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>input_files<sp/>=<sp/>argument_parser.<ref refid="class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd" kindref="member">GetInputFiles</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::queue&lt;Converter<sp/>*&gt;<sp/>convverters<sp/>=<sp/>config_parser.Parse(input_files);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>main_file<sp/>=<sp/>input_files[0];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>out_file<sp/>=<sp/>argument_parser.<ref refid="class_argument_parser_1a414ac72457e67377032b26378cab1ac1" kindref="member">GetOutputFile</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::copy(main_file,<sp/></highlight><highlight class="stringliteral">&quot;./tmp1.wav&quot;</highlight><highlight class="normal">,<sp/>std::filesystem::copy_options::overwrite_existing);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::copy(main_file,<sp/></highlight><highlight class="stringliteral">&quot;./tmp2.wav&quot;</highlight><highlight class="normal">,<sp/>std::filesystem::copy_options::overwrite_existing);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;std::string,<sp/>std::string&gt;<sp/>names{</highlight><highlight class="stringliteral">&quot;./tmp1.wav&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;./tmp2.wav&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::filesystem::exists(out_file))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::filesystem::remove(out_file);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!convverters.empty())<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_converter" kindref="compound">Converter</ref>*<sp/>conv<sp/>=<sp/>convverters.front();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>convverters.pop();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conv-&gt;<ref refid="class_converter_1aa372ef198028ecc08af6c80462e427cc" kindref="member">Convert</ref>(names.first,<sp/>names.second);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::swap(names.first,<sp/>names.second);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::remove(names.second);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::rename(names.first.c_str(),<sp/>out_file.c_str());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SoundProcessor::HeplPrint()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>&amp;<sp/>registrar_convertors<sp/>=<sp/><ref refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" kindref="member">RegistrarConvertors::GetInstance</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>registrar_convertors.<ref refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" kindref="member">RegisterConverter</ref>(std::make_unique&lt;MuteOption&gt;(<ref refid="class_mute_option" kindref="compound">MuteOption</ref>(1,2)));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>registrar_convertors.<ref refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" kindref="member">RegisterConverter</ref>(std::make_unique&lt;MixOption&gt;(<ref refid="class_mix_option" kindref="compound">MixOption</ref>(</highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">,2)));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>registrar_convertors.<ref refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" kindref="member">RegisterConverter</ref>(std::make_unique&lt;DistortionOption&gt;(<ref refid="class_distortion_option" kindref="compound">DistortionOption</ref>(4.5)));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>registrar_convertors.<ref refid="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" kindref="member">printHelp</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="3Lab/SoundProcessor.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+.TH "ConfigParser" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConfigParser \- Class \fBConfigParser\fP provides a convenient interface for parsing a configuration file using std::regex\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <ConfigParser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConfigParser\fP (const std::string &config_file_name)"
+.br
+.RI "Constructor for the \fBConfigParser\fP class\&. "
+.ti -1c
+.RI "std::queue< \fBConverter\fP * > \fBParse\fP (const std::vector< std::string > &input_files)"
+.br
+.RI "Parses the configuration file and creates a queue of \fBConverter\fP objects\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class \fBConfigParser\fP provides a convenient interface for parsing a configuration file using std::regex\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ConfigParser::ConfigParser (const std::string & configFileName)"
+
+.PP
+Constructor for the \fBConfigParser\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIconfig_file_name\fP The name of the configuration file to parse\&.
+.br
+\fIconfigFileName\fP The name of the configuration file to parse\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::queue< \fBConverter\fP * > ConfigParser::Parse (const std::vector< std::string > & inputFiles)"
+
+.PP
+Parses the configuration file and creates a queue of \fBConverter\fP objects\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput_files\fP A vector of input file names\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A queue of \fBConverter\fP objects created based on the configuration file\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIinputFiles\fP A vector of input file names\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A queue of \fBConverter\fP objects created based on the configuration file\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

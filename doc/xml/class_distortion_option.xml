@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_distortion_option" kind="class" language="C++" prot="public">
+    <compoundname>DistortionOption</compoundname>
+    <basecompoundref refid="class_converter" prot="public" virt="non-virtual">Converter</basecompoundref>
+    <includes refid="_converter_8h" local="no">Converter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_distortion_option_1a7aee8d9c675ff6de261abf6c109d9331" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DistortionOption::gain_</definition>
+        <argsstring></argsstring>
+        <name>gain_</name>
+        <qualifiedname>DistortionOption::gain_</qualifiedname>
+        <briefdescription>
+<para>The gain value for the distortion operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="120" column="12" bodyfile="3Lab/Converter.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DistortionOption::DistortionOption</definition>
+        <argsstring>(double gain)</argsstring>
+        <name>DistortionOption</name>
+        <qualifiedname>DistortionOption::DistortionOption</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_distortion_option" kindref="compound">DistortionOption</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gain value for the distortion operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="107" column="9" bodyfile="3Lab/Converter.cpp" bodystart="158" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_distortion_option_1af48ba42d143775f2a9b53241d95411f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DistortionOption::Convert</definition>
+        <argsstring>(std::string input_file, std::string output_file) override</argsstring>
+        <name>Convert</name>
+        <qualifiedname>DistortionOption::Convert</qualifiedname>
+        <reimplements refid="class_converter_1aa372ef198028ecc08af6c80462e427cc">Convert</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+<para>Applies the distortion operation to the input file and saves the result to the output file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input WAV file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output WAV file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="108" column="14" bodyfile="3Lab/Converter.cpp" bodystart="171" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void DistortionOption::help</definition>
+        <argsstring>() const override</argsstring>
+        <name>help</name>
+        <qualifiedname>DistortionOption::help</qualifiedname>
+        <reimplements refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b">help</reimplements>
+        <briefdescription>
+<para>Displays help information for the <ref refid="class_distortion_option" kindref="compound">DistortionOption</ref> converter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="113" column="10" bodyfile="3Lab/Converter.h" bodystart="113" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_distortion_option_1a84169256e4b5dd21a18af2a3a44fc1f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DistortionOption::applyDistortionOption</definition>
+        <argsstring>(std::vector&lt; int16_t &gt; &amp;samples)</argsstring>
+        <name>applyDistortionOption</name>
+        <qualifiedname>DistortionOption::applyDistortionOption</qualifiedname>
+        <param>
+          <type>std::vector&lt; int16_t &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Applies the distortion effect to the samples. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The samples to apply the distortion to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="126" column="10" bodyfile="3Lab/Converter.cpp" bodystart="210" bodyend="216"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for applying distortion to an audio file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>DistortionOption</label>
+        <link refid="class_distortion_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>DistortionOption</label>
+        <link refid="class_distortion_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="3Lab/Converter.h" line="105" column="1" bodyfile="3Lab/Converter.h" bodystart="105" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_distortion_option_1a84169256e4b5dd21a18af2a3a44fc1f1" prot="private" virt="non-virtual"><scope>DistortionOption</scope><name>applyDistortionOption</name></member>
+      <member refid="class_distortion_option_1af48ba42d143775f2a9b53241d95411f8" prot="public" virt="virtual"><scope>DistortionOption</scope><name>Convert</name></member>
+      <member refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" prot="public" virt="non-virtual"><scope>DistortionOption</scope><name>Converter</name></member>
+      <member refid="class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597" prot="public" virt="non-virtual"><scope>DistortionOption</scope><name>DistortionOption</name></member>
+      <member refid="class_distortion_option_1a7aee8d9c675ff6de261abf6c109d9331" prot="private" virt="non-virtual"><scope>DistortionOption</scope><name>gain_</name></member>
+      <member refid="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0" prot="public" virt="virtual"><scope>DistortionOption</scope><name>help</name></member>
+      <member refid="class_converter_1a99cea4f852f70999e858e69291464772" prot="public" virt="virtual"><scope>DistortionOption</scope><name>~Converter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

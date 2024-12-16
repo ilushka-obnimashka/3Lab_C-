@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__config_parser_8h" xml:lang="en-US">
+<title>3Lab/ConfigParser.h File Reference</title>
+<indexterm><primary>3Lab/ConfigParser.h</primary></indexterm>
+<para>
+
+<para>Header file for the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;string&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &lt;queue&gt;<?linebreak?>#include &lt;regex&gt;<?linebreak?>#include &quot;Converter.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_config_parser">ConfigParser</link></para>
+
+<para>Class <link linkend="_class_config_parser">ConfigParser</link> provides a convenient interface for parsing a configuration file using std::regex. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Header file for the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+</section>
+</section>

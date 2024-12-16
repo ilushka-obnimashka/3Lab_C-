@@ -1,0 +1,70 @@
+.TH "WriterWAV" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WriterWAV \- A class to write WAV audio files\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <WriterWAV\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWriterWAV\fP (std::string output_file_path)"
+.br
+.RI "Constructor for the \fBWriterWAV\fP class\&. "
+.ti -1c
+.RI "void \fBOpenWAVFile\fP ()"
+.br
+.RI "Opens the WAV file for writing\&. "
+.ti -1c
+.RI "void \fBCloseWAVFile\fP ()"
+.br
+.RI "Closes the WAV file\&. "
+.ti -1c
+.RI "void \fBSaveSamples\fP (std::vector< int16_t > &samples, int start)"
+.br
+.RI "Writes audio samples to the WAV file\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class to write WAV audio files\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WriterWAV::WriterWAV (std::string output_file_path)\fR [inline]\fP, \fR [explicit]\fP"
+
+.PP
+Constructor for the \fBWriterWAV\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoutput_file_path\fP The path to the output WAV file\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void WriterWAV::SaveSamples (std::vector< int16_t > & samples, int start)"
+
+.PP
+Writes audio samples to the WAV file\&. Saves audio samples to the WAV file\&.
+
+.PP
+This method writes the provided audio samples to the WAV file starting from the specified position\&. The offset is calculated based on the sample rate and the starting position\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIsamples\fP A reference to a vector of int16_t containing the audio samples to be written\&. 
+.br
+\fIstart\fP The starting second from which to begin writing audio samples\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

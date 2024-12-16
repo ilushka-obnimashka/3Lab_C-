@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_reader_w_a_v_8cpp" kind="file" language="C++">
+    <compoundname>ReaderWAV.cpp</compoundname>
+    <includes refid="_reader_w_a_v_8h" local="yes">ReaderWAV.h</includes>
+    <includes refid="_w_a_v_header_8h" local="yes">WAVHeader.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>3Lab/ReaderWAV.cpp</label>
+        <link refid="_reader_w_a_v_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_reader_w_a_v_8cpp_1a4ba1d7f38ca796df58a8723bd63499cf" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRED</definition>
+        <argsstring></argsstring>
+        <name>kRED</name>
+        <initializer>= &quot;\033[1;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.cpp" line="10" column="19" bodyfile="3Lab/ReaderWAV.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_reader_w_a_v_8cpp_1ab3608fdd3c8f5fc58500df03011a5613" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRESET</definition>
+        <argsstring></argsstring>
+        <name>kRESET</name>
+        <initializer>= &quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.cpp" line="11" column="19" bodyfile="3Lab/ReaderWAV.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_reader_w_a_v_8cpp_1a2fd6ff92d1128f0142151fe0c3f81cd2" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kYELLOW</definition>
+        <argsstring></argsstring>
+        <name>kYELLOW</name>
+        <initializer>= &quot;\033[33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.cpp" line="12" column="19" bodyfile="3Lab/ReaderWAV.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Implementation of the <ref refid="class_reader_w_a_v" kindref="compound">ReaderWAV</ref> class for reading WAV files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ReaderWAV.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_w_a_v_header_8h" kindref="compound">WAVHeader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRED<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[1;31m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRESET<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[0m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kYELLOW<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[33m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596" kindref="member">ReaderWAV::OpenWAVFile</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.open(input_file_path_,<sp/>std::ios::binary);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file_.is_open())<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>kRED<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>the<sp/>file.<sp/>Please<sp/>check<sp/>the<sp/>file<sp/>name<sp/>or<sp/>path<sp/>and<sp/>try<sp/>again&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(2);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa" kindref="member">ReaderWAV::CloseWAVFile</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.close();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1" kindref="member">ReaderWAV::ReadHead</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>WAVHeader_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.read((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)WAVHeader_,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref>));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230" kindref="member">ReaderWAV::CheckingFileValidity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::string((WAVHeader_-&gt;chunk_id),<sp/>4)<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;RIFF&quot;</highlight><highlight class="normal"><sp/>||<sp/>std::string(WAVHeader_-&gt;riff_type_id,<sp/>4)<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;WAVE&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>kRED<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>file<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>WAV<sp/>format!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!((WAVHeader_-&gt;format_tag<sp/>==<sp/>1)<sp/>&amp;&amp;<sp/>(WAVHeader_-&gt;num_channels<sp/>==<sp/>1)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(WAVHeader_-&gt;sample_rate<sp/>==<sp/>44100)<sp/>&amp;&amp;<sp/>(WAVHeader_-&gt;bits_per_sample<sp/>==<sp/>16)))<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>kRED<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>program<sp/>supports<sp/>only<sp/>PCM,<sp/>mono<sp/>audio,<sp/>16<sp/>bit,<sp/>sampling<sp/>rate<sp/>44100!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750" kindref="member">ReaderWAV::GetSamples</ref>(std::vector&lt;int16_t&gt;<sp/>&amp;samples,<sp/>uint32_t<sp/>start,<sp/>uint32_t<sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>offset<sp/>=<sp/>2<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(WAVHeader_-&gt;sample_rate)<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(start)<sp/>+<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref>));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>std::streampos<sp/>current_pos_in_file<sp/>=<sp/>file_.tellg();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_pos_in_file<sp/>&lt;=<sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_.seekg(offset,<sp/>std::ios::beg);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remaining_audio_data_size_<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(end<sp/>-<sp/>start)<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(WAVHeader_-&gt;sample_rate);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(remaining_audio_data_size_<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes_to_read<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(FIXED_SAMPLE_RATE)<sp/>&lt;<sp/>remaining_audio_data_size_</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>FIXED_SAMPLE_RATE</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>remaining_audio_data_size_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>samples.resize(bytes_to_read);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_.read((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/>samples.data(),<sp/>bytes_to_read<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int16_t));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remaining_audio_data_size_<sp/>-=<sp/>bytes_to_read;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref>*<sp/><ref refid="class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4" kindref="member">ReaderWAV::GetWAVHeader</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>WAVHeader_;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f" kindref="member">ReaderWAV::GetSizeFileInSec</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>this-&gt;input_file_path_<sp/>&lt;&lt;<sp/>std::<sp/>endl;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>WAVHeader_-&gt;chunk2_data_size<sp/>/<sp/>(2<sp/>*<sp/>WAVHeader_-&gt;sample_rate);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/ReaderWAV.cpp"/>
+  </compounddef>
+</doxygen>

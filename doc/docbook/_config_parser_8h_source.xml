@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__config_parser_8h_source" xml:lang="en-US">
+<title>ConfigParser.h</title>
+<indexterm><primary>3Lab/ConfigParser.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#ifndef&#32;CONFIGPARSER_H</emphasis>
+7 <emphasis role="preprocessor">#define&#32;CONFIGPARSER_H</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;queue&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;regex&gt;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__converter_8h">Converter.h</link>&quot;</emphasis>
+13 
+17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_config_parser">ConfigParser</link>&#32;{
+18 <emphasis role="keyword">public</emphasis>:
+23 &#32;&#32;&#32;&#32;<link linkend="_class_config_parser_1a9d373a979d513362304f68641770ad3b">ConfigParser</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&amp;&#32;config_file_name);
+24 
+30 &#32;&#32;&#32;&#32;std::queue&lt;Converter*&gt;&#32;<link linkend="_class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f">Parse</link>(<emphasis role="keyword">const</emphasis>&#32;std::vector&lt;std::string&gt;&amp;&#32;input_files);
+31 
+32 <emphasis role="keyword">private</emphasis>:
+33 &#32;&#32;&#32;&#32;std::string&#32;configFileName;&#32;
+34 &#32;&#32;&#32;&#32;std::regex&#32;muteRegex;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+35 &#32;&#32;&#32;&#32;std::regex&#32;mixRegex;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+36 &#32;&#32;&#32;&#32;std::regex&#32;distortionRegex;&#32;
+37 
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;InitializeRegex();
+42 };
+43 
+44 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CONFIGPARSER_H</emphasis>
+</programlisting></section>

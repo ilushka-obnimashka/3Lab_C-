@@ -1,0 +1,181 @@
+.TH "ReaderWAV" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ReaderWAV \- A class to read and handle WAV audio files\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <ReaderWAV\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBReaderWAV\fP (std::string input_file_path)"
+.br
+.RI "Constructor for the \fBReaderWAV\fP class\&. "
+.ti -1c
+.RI "void \fBOpenWAVFile\fP ()"
+.br
+.RI "Opens the WAV file_ for reading\&. "
+.ti -1c
+.RI "void \fBCloseWAVFile\fP ()"
+.br
+.RI "Closes the WAV file_\&. "
+.ti -1c
+.RI "void \fBReadHead\fP ()"
+.br
+.RI "Reads the header of the WAV file\&. "
+.ti -1c
+.RI "bool \fBCheckingFileValidity\fP () const"
+.br
+.RI "Validates that the WAV file is in the proper format and has specific properties\&. "
+.ti -1c
+.RI "bool \fBGetSamples\fP (std::vector< int16_t > &samples, uint32_t start, uint32_t end)"
+.br
+.RI "Reads a portion of audio samples from the WAV file\&. "
+.ti -1c
+.RI "\fBWAVHeader\fP * \fBGetWAVHeader\fP () const"
+.br
+.RI "Retrieves the WAV header\&. This method returns a pointer to the WAVHeader_\&. WAV Header defined in file 'WAVHeader\&.h'\&. "
+.ti -1c
+.RI "int \fBGetSizeFileInSec\fP () const"
+.br
+.RI "Calculates the size of the WAV file in seconds\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class to read and handle WAV audio files\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ReaderWAV::ReaderWAV (std::string input_file_path)\fR [inline]\fP, \fR [explicit]\fP"
+
+.PP
+Constructor for the \fBReaderWAV\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput_file_path\fP The path to the input WAV file\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool ReaderWAV::CheckingFileValidity () const"
+
+.PP
+Validates that the WAV file is in the proper format and has specific properties\&. Checks the validity of the WAV file\&.
+
+.PP
+This method checks the header of the WAV file to ensure that it is a valid WAV file and that it meets the required properties for this program\&. Specifically, it checks:
+.IP "\(bu" 2
+The chunk ID is 'RIFF' and the RIFF type ID is 'WAVE'\&.
+.IP "\(bu" 2
+The format tag is PCM (1)\&.
+.IP "\(bu" 2
+The number of channels is 1 (mono audio)\&.
+.IP "\(bu" 2
+The sample rate is 44100 Hz\&.
+.IP "\(bu" 2
+The bits per sample is 16\&.
+.PP
+
+.PP
+If any of these conditions are not met, the method throws a std::runtime_error with an appropriate message\&. If all conditions are met, the method returns true\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+true if the WAV file is valid and meets the required properties\&. 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::runtime_error\fP if the WAV file is not valid or does not meet the required properties\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the file is a valid WAV file, false otherwise\&. 
+.RE
+.PP
+
+.SS "void ReaderWAV::CloseWAVFile ()"
+
+.PP
+Closes the WAV file_\&. Closes the WAV file\&. 
+.SS "bool ReaderWAV::GetSamples (std::vector< int16_t > & samples, uint32_t start, uint32_t end)"
+
+.PP
+Reads a portion of audio samples from the WAV file\&. Gets the audio samples from the WAV file\&.
+
+.PP
+This method reads a specified range of audio samples from the WAV file and stores them in the provided vector\&. The range is defined by the start and end seconds\&. The method calculates the offset in the file where the audio samples start and reads the samples into the vector\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIsamples\fP A reference to a vector of int16_t where the audio samples will be stored\&. 
+.br
+\fIstart\fP The starting second from which to begin reading audio samples\&. 
+.br
+\fIend\fP The ending second up to which to read audio samples\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the samples were successfully read, false otherwise\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIsamples\fP The vector to store the samples\&. 
+.br
+\fIstart\fP The start time in seconds\&. 
+.br
+\fIend\fP The end time in seconds\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if samples were successfully read, false otherwise\&. 
+.RE
+.PP
+
+.SS "int ReaderWAV::GetSizeFileInSec () const"
+
+.PP
+Calculates the size of the WAV file in seconds\&. Gets the size of the file in seconds\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+The duration of the audio data in seconds\&.
+
+.PP
+The size of the file in seconds\&. 
+.RE
+.PP
+
+.SS "\fBWAVHeader\fP * ReaderWAV::GetWAVHeader () const"
+
+.PP
+Retrieves the WAV header\&. This method returns a pointer to the WAVHeader_\&. WAV Header defined in file 'WAVHeader\&.h'\&. Gets the WAV header of the file\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the \fBWAVHeader\fP object\&. 
+.RE
+.PP
+
+.SS "void ReaderWAV::OpenWAVFile ()"
+
+.PP
+Opens the WAV file_ for reading\&. Opens the WAV file for reading\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

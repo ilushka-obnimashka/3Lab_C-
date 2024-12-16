@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_f03fa882022768eaf77554bd1cf069d1" kind="dir">
+    <compoundname>3Lab</compoundname>
+    <innerfile refid="_argument_parser_8cpp">ArgumentParser.cpp</innerfile>
+    <innerfile refid="_argument_parser_8h">ArgumentParser.h</innerfile>
+    <innerfile refid="_config_parser_8cpp">ConfigParser.cpp</innerfile>
+    <innerfile refid="_config_parser_8h">ConfigParser.h</innerfile>
+    <innerfile refid="_converter_8cpp">Converter.cpp</innerfile>
+    <innerfile refid="_converter_8h">Converter.h</innerfile>
+    <innerfile refid="_creators_8cpp">Creators.cpp</innerfile>
+    <innerfile refid="_creators_8h">Creators.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_reader_w_a_v_8cpp">ReaderWAV.cpp</innerfile>
+    <innerfile refid="_reader_w_a_v_8h">ReaderWAV.h</innerfile>
+    <innerfile refid="_registraror_convertors_8h">RegistrarorConvertors.h</innerfile>
+    <innerfile refid="_sound_processor_8cpp">SoundProcessor.cpp</innerfile>
+    <innerfile refid="_sound_processor_8h">SoundProcessor.h</innerfile>
+    <innerfile refid="_w_a_v_header_8h">WAVHeader.h</innerfile>
+    <innerfile refid="_writer_w_a_v_8cpp">WriterWAV.cpp</innerfile>
+    <innerfile refid="_writer_w_a_v_8h">WriterWAV.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/"/>
+  </compounddef>
+</doxygen>

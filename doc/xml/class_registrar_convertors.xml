@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_registrar_convertors" kind="class" language="C++" prot="public">
+    <compoundname>RegistrarConvertors</compoundname>
+    <includes refid="_registraror_convertors_8h" local="no">RegistrarorConvertors.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_registrar_convertors_1af127932da675c8e8d42994867130a91c" prot="private" static="yes" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; RegistrarConvertors &gt; RegistrarConvertors::singleton_</definition>
+        <argsstring></argsstring>
+        <name>singleton_</name>
+        <qualifiedname>RegistrarConvertors::singleton_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>The single instance of the <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="63" column="28" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_registrar_convertors_1aca0048a1edfceb1252539db9eee2fa14" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="class_converter" kindref="compound">Converter</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Converter&gt; &gt; RegistrarConvertors::converters_</definition>
+        <argsstring></argsstring>
+        <name>converters_</name>
+        <qualifiedname>RegistrarConvertors::converters_</qualifiedname>
+        <briefdescription>
+<para>The collection of converters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="73" column="17" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RegistrarConvertors::RegistrarConvertors</definition>
+        <argsstring>(RegistrarConvertors &amp;other)=delete</argsstring>
+        <name>RegistrarConvertors</name>
+        <qualifiedname>RegistrarConvertors::RegistrarConvertors</qualifiedname>
+        <param>
+          <type><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor to prevent copying of the Singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="21" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RegistrarConvertors::operator=</definition>
+        <argsstring>(const RegistrarConvertors &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>RegistrarConvertors::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted assignment operator to prevent assignment of the Singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="26" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RegistrarConvertors::RegisterConverter</definition>
+        <argsstring>(std::unique_ptr&lt; Converter &gt; converter)</argsstring>
+        <name>RegisterConverter</name>
+        <qualifiedname>RegistrarConvertors::RegisterConverter</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="class_converter" kindref="compound">Converter</ref> &gt;</type>
+          <declname>converter</declname>
+        </param>
+        <briefdescription>
+<para>Registers a converter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method adds a converter to the internal collection of converters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>converter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A unique pointer to a <ref refid="class_converter" kindref="compound">Converter</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="44" column="10" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RegistrarConvertors::printHelp</definition>
+        <argsstring>()</argsstring>
+        <name>printHelp</name>
+        <qualifiedname>RegistrarConvertors::printHelp</qualifiedname>
+        <briefdescription>
+<para>Prints help information for all registered converters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method iterates through the collection of converters and calls their help method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="53" column="10" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="53" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> &amp;</type>
+        <definition>RegistrarConvertors &amp; RegistrarConvertors::GetInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetInstance</name>
+        <qualifiedname>RegistrarConvertors::GetInstance</qualifiedname>
+        <briefdescription>
+<para>Returns the single instance of the <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method ensures that only one instance of the class is created.</para>
+<para><simplesect kind="return"><para>The single instance of the <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="35" column="32" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="88" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_registrar_convertors_1af0c5db3c316769e6b81956ea75145ae3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RegistrarConvertors::RegistrarConvertors</definition>
+        <argsstring>()=default</argsstring>
+        <name>RegistrarConvertors</name>
+        <qualifiedname>RegistrarConvertors::RegistrarConvertors</qualifiedname>
+        <briefdescription>
+<para>Private constructor to prevent instantiation from outside the class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/RegistrarorConvertors.h" line="68" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This .h file implements a class for creating dynamic help about converters in the general code. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> class implements the Singleton pattern to manage a collection of converters.</para>
+<para>This class ensures that only one instance of <ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref> exists throughout the application. It provides methods to register converters and print help information about them.</para>
+<para><simplesect kind="see"><para><ulink url="https://refactoring.guru/design-patterns/singleton">Singleton Pattern Documentation</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="3Lab/RegistrarorConvertors.h" line="16" column="1" bodyfile="3Lab/RegistrarorConvertors.h" bodystart="16" bodyend="74"/>
+    <listofallmembers>
+      <member refid="class_registrar_convertors_1aca0048a1edfceb1252539db9eee2fa14" prot="private" virt="non-virtual"><scope>RegistrarConvertors</scope><name>converters_</name></member>
+      <member refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" prot="public" virt="non-virtual"><scope>RegistrarConvertors</scope><name>GetInstance</name></member>
+      <member refid="class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef" prot="public" virt="non-virtual"><scope>RegistrarConvertors</scope><name>operator=</name></member>
+      <member refid="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" prot="public" virt="non-virtual"><scope>RegistrarConvertors</scope><name>printHelp</name></member>
+      <member refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" prot="public" virt="non-virtual"><scope>RegistrarConvertors</scope><name>RegisterConverter</name></member>
+      <member refid="class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc" prot="public" virt="non-virtual"><scope>RegistrarConvertors</scope><name>RegistrarConvertors</name></member>
+      <member refid="class_registrar_convertors_1af0c5db3c316769e6b81956ea75145ae3" prot="private" virt="non-virtual"><scope>RegistrarConvertors</scope><name>RegistrarConvertors</name></member>
+      <member refid="class_registrar_convertors_1af127932da675c8e8d42994867130a91c" prot="private" virt="non-virtual"><scope>RegistrarConvertors</scope><name>singleton_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

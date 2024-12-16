@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mute_option" xml:lang="en-US">
+<title>MuteOption Class Reference</title>
+<indexterm><primary>MuteOption</primary></indexterm>
+<para>
+
+<para>Class for muting a section of an audio file. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Converter.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_mute_option_1a9547f6c020349ba76c88e17986665357">MuteOption</link> (uint32_t left, uint32_t right)</para>
+
+<para>Constructor for the <link linkend="_class_mute_option">MuteOption</link> class. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86">Convert</link> (std::string input_file, std::string output_file) override</para>
+
+<para>Applies the mute operation to the input file and saves the result to the output file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mute_option_1a7ece9c7268c414dbb9917c84253407d8">help</link> () const override</para>
+
+<para>Displays help information for the <link linkend="_class_mute_option">MuteOption</link> converter. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_converter">Converter</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">Converter</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>virtual <emphasis role="strong">~Converter</emphasis> ()=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Class for muting a section of an audio file. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mute_option_1a9547f6c020349ba76c88e17986665357"/><section>
+    <title>MuteOption()</title>
+<indexterm><primary>MuteOption</primary><secondary>MuteOption</secondary></indexterm>
+<indexterm><primary>MuteOption</primary><secondary>MuteOption</secondary></indexterm>
+<para><computeroutput>MuteOption::MuteOption (uint32_t left, uint32_t right)</computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_class_mute_option">MuteOption</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>left</entry><entry>
+<para>The left boundary for the mute operation. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>right</entry><entry>
+<para>The right boundary for the mute operation. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86"/><section>
+    <title>Convert()</title>
+<indexterm><primary>Convert</primary><secondary>MuteOption</secondary></indexterm>
+<indexterm><primary>MuteOption</primary><secondary>Convert</secondary></indexterm>
+<para><computeroutput>void MuteOption::Convert (std::string input_file, std::string output_file)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Applies the mute operation to the input file and saves the result to the output file. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input_file</entry><entry>
+<para>The input WAV file. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>output_file</entry><entry>
+<para>The output WAV file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_converter_1aa372ef198028ecc08af6c80462e427cc">Converter</link>.</para>
+</section>
+<anchor xml:id="_class_mute_option_1a7ece9c7268c414dbb9917c84253407d8"/><section>
+    <title>help()</title>
+<indexterm><primary>help</primary><secondary>MuteOption</secondary></indexterm>
+<indexterm><primary>MuteOption</primary><secondary>help</secondary></indexterm>
+<para><computeroutput>void MuteOption::help ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Displays help information for the <link linkend="_class_mute_option">MuteOption</link> converter. </para>
+</para>
+<para>
+Implements <link linkend="_class_converter_1a3720c9083eee5ca517e63a3f92994e0b">Converter</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__converter_8h">Converter.h</link>3Lab/<link linkend="__converter_8cpp">Converter.cpp</link></section>
+</section>

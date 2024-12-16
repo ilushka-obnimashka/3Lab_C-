@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_registraror_convertors_8h" kind="file" language="C++">
+    <compoundname>RegistrarorConvertors.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_converter_8h" local="yes">Converter.h</includes>
+    <includedby refid="_sound_processor_8cpp" local="yes">3Lab/SoundProcessor.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>3Lab/RegistrarorConvertors.h</label>
+        <link refid="_registraror_convertors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>WriterWAV.h</label>
+        <link refid="_writer_w_a_v_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_registrar_convertors" prot="public">RegistrarConvertors</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_converter_8h" kindref="compound">Converter.h</ref>&quot;</highlight></codeline>
+<codeline lineno="16" refid="class_registrar_convertors" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc" kindref="member">RegistrarConvertors</ref>(<ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>&amp;<sp/><ref refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" kindref="member">GetInstance</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" kindref="member">RegisterConverter</ref>(std::unique_ptr&lt;Converter&gt;<sp/>converter)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converters_.push_back(std::move(converter));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" kindref="member">printHelp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>converter<sp/>:<sp/>converters_)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converter-&gt;help();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;RegistrarConvertors&gt;<sp/>singleton_;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::unique_ptr&lt;Converter&gt;&gt;<sp/>converters_;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">std::unique_ptr&lt;RegistrarConvertors&gt;<sp/>RegistrarConvertors::singleton_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" refkind="member"><highlight class="normal"><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>&amp;<sp/><ref refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" kindref="member">RegistrarConvertors::GetInstance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(singleton_<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>singleton_<sp/>=<sp/>std::unique_ptr&lt;RegistrarConvertors&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_registrar_convertors" kindref="compound">RegistrarConvertors</ref>());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*singleton_;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/RegistrarorConvertors.h"/>
+  </compounddef>
+</doxygen>

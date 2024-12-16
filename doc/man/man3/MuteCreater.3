@@ -1,0 +1,71 @@
+.TH "MuteCreater" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MuteCreater \- Class responsible for the creation of Mute \fBConverter\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Creators\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConverter\fP * \fBCreateConverter\fP (uint32_t start, uint32_t end)"
+.br
+.RI "Creates a Mute converter\&. "
+.in -1c
+
+Public Member Functions inherited from \fBCreater\fP
+.in +1c
+.ti -1c
+.RI "\fBCreater\fP ()=default"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "virtual \fB~Creater\fP ()=default"
+.br
+.RI "Virtual destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class responsible for the creation of Mute \fBConverter\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBConverter\fP * MuteCreater::CreateConverter (uint32_t left, uint32_t right)"
+
+.PP
+Creates a Mute converter\&. Creates a \fBMuteOption\fP converter\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP The start time in seconds\&. 
+.br
+\fIend\fP The end time in seconds\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the created \fBConverter\fP object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIleft\fP The left boundary for the mute operation\&. 
+.br
+\fIright\fP The right boundary for the mute operation\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to a new \fBMuteOption\fP object\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

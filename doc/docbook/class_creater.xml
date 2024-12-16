@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_creater" xml:lang="en-US">
+<title>Creater Class Reference</title>
+<indexterm><primary>Creater</primary></indexterm>
+<para>
+
+<para>Base class for factory method. Base class for all creater classes. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Creators.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_creater_1a55a808445e328c8628db9aca21b892e2"/><emphasis role="strong">Creater</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_creater_1a548642211f7478639a26954b037359e0"/>virtual <emphasis role="strong">~Creater</emphasis> ()=default</para>
+
+<para>Virtual destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Base class for factory method. Base class for all creater classes. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+3Lab/<link linkend="__creators_8h">Creators.h</link></section>
+</section>

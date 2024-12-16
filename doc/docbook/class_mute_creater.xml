@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mute_creater" xml:lang="en-US">
+<title>MuteCreater Class Reference</title>
+<indexterm><primary>MuteCreater</primary></indexterm>
+<para>
+
+<para>Class responsible for the creation of Mute <link linkend="_class_converter">Converter</link>. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Creators.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_converter">Converter</link> * <link linkend="_class_mute_creater_1a92ee69caf91ee6930deea654bb323c79">CreateConverter</link> (uint32_t start, uint32_t end)</para>
+
+<para>Creates a Mute converter. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_creater">Creater</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">Creater</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>virtual <emphasis role="strong">~Creater</emphasis> ()=default</para>
+
+<para>Virtual destructor. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Class responsible for the creation of Mute <link linkend="_class_converter">Converter</link>. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mute_creater_1a92ee69caf91ee6930deea654bb323c79"/><section>
+    <title>CreateConverter()</title>
+<indexterm><primary>CreateConverter</primary><secondary>MuteCreater</secondary></indexterm>
+<indexterm><primary>MuteCreater</primary><secondary>CreateConverter</secondary></indexterm>
+<para><computeroutput><link linkend="_class_converter">Converter</link> * MuteCreater::CreateConverter (uint32_t left, uint32_t right)</computeroutput></para><para>
+
+<para>Creates a Mute converter. </para>
+</para>
+
+<para>Creates a <link linkend="_class_mute_option">MuteOption</link> converter.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>start</entry><entry>
+<para>The start time in seconds. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>end</entry><entry>
+<para>The end time in seconds. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the created <link linkend="_class_converter">Converter</link> object.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>left</entry><entry>
+<para>The left boundary for the mute operation. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>right</entry><entry>
+<para>The right boundary for the mute operation. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to a new <link linkend="_class_mute_option">MuteOption</link> object. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__creators_8h">Creators.h</link>3Lab/<link linkend="__creators_8cpp">Creators.cpp</link></section>
+</section>

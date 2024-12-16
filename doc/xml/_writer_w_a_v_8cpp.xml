@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_writer_w_a_v_8cpp" kind="file" language="C++">
+    <compoundname>WriterWAV.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_w_a_v_header_8h" local="yes">WAVHeader.h</includes>
+    <includes refid="_writer_w_a_v_8h" local="yes">WriterWAV.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>3Lab/WriterWAV.cpp</label>
+        <link refid="_writer_w_a_v_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>WriterWAV.h</label>
+        <link refid="_writer_w_a_v_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_writer_w_a_v_8cpp_1a4ba1d7f38ca796df58a8723bd63499cf" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRED</definition>
+        <argsstring></argsstring>
+        <name>kRED</name>
+        <initializer>= &quot;\033[1;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.cpp" line="11" column="19" bodyfile="3Lab/WriterWAV.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_writer_w_a_v_8cpp_1ab3608fdd3c8f5fc58500df03011a5613" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRESET</definition>
+        <argsstring></argsstring>
+        <name>kRESET</name>
+        <initializer>= &quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.cpp" line="12" column="19" bodyfile="3Lab/WriterWAV.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_writer_w_a_v_8cpp_1a2fd6ff92d1128f0142151fe0c3f81cd2" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kYELLOW</definition>
+        <argsstring></argsstring>
+        <name>kYELLOW</name>
+        <initializer>= &quot;\033[33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.cpp" line="13" column="19" bodyfile="3Lab/WriterWAV.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Implementation of the <ref refid="class_writer_w_a_v" kindref="compound">WriterWAV</ref> class for writing WAV files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_w_a_v_header_8h" kindref="compound">WAVHeader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_writer_w_a_v_8h" kindref="compound">WriterWAV.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRED<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[1;31m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRESET<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[0m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kYELLOW<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[33m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6" kindref="member">WriterWAV::OpenWAVFile</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.open(output_file_path_,<sp/>std::ios::in<sp/>|<sp/>std::ios::out<sp/>|<sp/>std::ios::binary);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file_.is_open())<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>kRED<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>the<sp/>file.<sp/>Please<sp/>check<sp/>the<sp/>file<sp/>name<sp/>or<sp/>path<sp/>and<sp/>try<sp/>again&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(2);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b" kindref="member">WriterWAV::CloseWAVFile</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.close();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f" kindref="member">WriterWAV::SaveSamples</ref>(std::vector&lt;int16_t&gt;<sp/>&amp;samples,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>offset<sp/>=<sp/>2<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(FIXED_SAMPLE_RATE)<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(start)<sp/>+<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::streampos<sp/>currentPos<sp/>=<sp/>file_.tellp();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currentPos<sp/>&lt;<sp/>offset)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_.seekp(offset,<sp/>std::ios::beg);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>file_.write((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)(samples.data()),<sp/>samples.size()<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int16_t));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/WriterWAV.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_mix_option" kind="class" language="C++" prot="public">
+    <compoundname>MixOption</compoundname>
+    <basecompoundref refid="class_converter" prot="public" virt="non-virtual">Converter</basecompoundref>
+    <includes refid="_converter_8h" local="no">Converter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mix_option_1a43e407f6342f7edcffb05f0fd48b45bf" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MixOption::src_file_</definition>
+        <argsstring></argsstring>
+        <name>src_file_</name>
+        <qualifiedname>MixOption::src_file_</qualifiedname>
+        <briefdescription>
+<para>The source file to mix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="91" column="17" bodyfile="3Lab/Converter.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mix_option_1a711a17aafcefc8d38091f5f7e83cbd49" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MixOption::start_</definition>
+        <argsstring></argsstring>
+        <name>start_</name>
+        <qualifiedname>MixOption::start_</qualifiedname>
+        <briefdescription>
+<para>The starting point for the mix operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="92" column="14" bodyfile="3Lab/Converter.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mix_option_1a9ca76c4eea39165126fc102c63df2d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MixOption::MixOption</definition>
+        <argsstring>(std::string src_file, uint32_t start)</argsstring>
+        <name>MixOption</name>
+        <qualifiedname>MixOption::MixOption</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>src_file</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_mix_option" kindref="compound">MixOption</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source file to mix. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting point for the mix operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="76" column="5" bodyfile="3Lab/Converter.cpp" bodystart="77" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MixOption::Convert</definition>
+        <argsstring>(std::string input_file, std::string output_file) override</argsstring>
+        <name>Convert</name>
+        <qualifiedname>MixOption::Convert</qualifiedname>
+        <reimplements refid="class_converter_1aa372ef198028ecc08af6c80462e427cc">Convert</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+<para>Applies the mix operation to the input file and saves the result to the output file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input WAV file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output WAV file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="78" column="10" bodyfile="3Lab/Converter.cpp" bodystart="85" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void MixOption::help</definition>
+        <argsstring>() const override</argsstring>
+        <name>help</name>
+        <qualifiedname>MixOption::help</qualifiedname>
+        <reimplements refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b">help</reimplements>
+        <briefdescription>
+<para>Displays help information for the <ref refid="class_mix_option" kindref="compound">MixOption</ref> converter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="83" column="10" bodyfile="3Lab/Converter.h" bodystart="83" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mix_option_1a01d6b737664bedd122bfd84bfdd1de33" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MixOption::AvgSamples</definition>
+        <argsstring>(std::vector&lt; int16_t &gt; &amp;samples, std::vector&lt; int16_t &gt; &amp;scr_samples)</argsstring>
+        <name>AvgSamples</name>
+        <qualifiedname>MixOption::AvgSamples</qualifiedname>
+        <param>
+          <type>std::vector&lt; int16_t &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int16_t &gt; &amp;</type>
+          <declname>scr_samples</declname>
+          <defname>src_samples</defname>
+        </param>
+        <briefdescription>
+<para>Averages the samples from the input and source files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input samples. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scr_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source samples.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input samples. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source samples. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="99" column="10" bodyfile="3Lab/Converter.cpp" bodystart="143" bodyend="152"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for mixing two audio files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>MixOption</label>
+        <link refid="class_mix_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>MixOption</label>
+        <link refid="class_mix_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="3Lab/Converter.h" line="74" column="1" bodyfile="3Lab/Converter.h" bodystart="74" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_mix_option_1a01d6b737664bedd122bfd84bfdd1de33" prot="private" virt="non-virtual"><scope>MixOption</scope><name>AvgSamples</name></member>
+      <member refid="class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3" prot="public" virt="virtual"><scope>MixOption</scope><name>Convert</name></member>
+      <member refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" prot="public" virt="non-virtual"><scope>MixOption</scope><name>Converter</name></member>
+      <member refid="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c" prot="public" virt="virtual"><scope>MixOption</scope><name>help</name></member>
+      <member refid="class_mix_option_1a9ca76c4eea39165126fc102c63df2d35" prot="public" virt="non-virtual"><scope>MixOption</scope><name>MixOption</name></member>
+      <member refid="class_mix_option_1a43e407f6342f7edcffb05f0fd48b45bf" prot="private" virt="non-virtual"><scope>MixOption</scope><name>src_file_</name></member>
+      <member refid="class_mix_option_1a711a17aafcefc8d38091f5f7e83cbd49" prot="private" virt="non-virtual"><scope>MixOption</scope><name>start_</name></member>
+      <member refid="class_converter_1a99cea4f852f70999e858e69291464772" prot="public" virt="virtual"><scope>MixOption</scope><name>~Converter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__reader_w_a_v_8h_source" xml:lang="en-US">
+<title>ReaderWAV.h</title>
+<indexterm><primary>3Lab/ReaderWAV.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__w_a_v_header_8h">WAVHeader.h</link>&quot;</emphasis>
+6 
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_reader_w_a_v">ReaderWAV</link>&#32;{
+12 <emphasis role="keyword">public</emphasis>:
+17 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca">ReaderWAV</link>(std::string&#32;input_file_path)&#32;:&#32;input_file_path_(std::move(input_file_path))&#32;{};
+18 
+22 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596">OpenWAVFile</link>();
+23 
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa">CloseWAVFile</link>();
+29 
+33 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1">ReadHead</link>();
+34 
+52 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230">CheckingFileValidity</link>()&#32;<emphasis role="keyword">const</emphasis>;
+53 
+66 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750">GetSamples</link>&#32;(std::vector&lt;int16_t&gt;&#32;&amp;samples,&#32;uint32_t&#32;start,&#32;uint32_t&#32;end);
+67 
+73 &#32;&#32;&#32;&#32;<link linkend="_struct_w_a_v_header">WAVHeader</link>&#32;*<link linkend="_class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4">GetWAVHeader</link>()&#32;<emphasis role="keyword">const</emphasis>;
+78 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f">GetSizeFileInSec</link>()&#32;<emphasis role="keyword">const</emphasis>;
+79 
+80 <emphasis role="keyword">private</emphasis>:
+81 &#32;&#32;&#32;&#32;std::ifstream&#32;file_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+82 &#32;&#32;&#32;&#32;std::string&#32;input_file_path_;&#32;
+83 &#32;&#32;&#32;&#32;uint64_t&#32;remaining_audio_data_size_;&#32;
+84 &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_w_a_v_header">WAVHeader</link>&#32;*WAVHeader_;&#32;
+85 };
+</programlisting></section>

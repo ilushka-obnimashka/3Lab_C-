@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_distortion_option" xml:lang="en-US">
+<title>DistortionOption Class Reference</title>
+<indexterm><primary>DistortionOption</primary></indexterm>
+<para>
+
+<para>Class for applying distortion to an audio file. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Converter.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597">DistortionOption</link> (double gain)</para>
+
+<para>Constructor for the <link linkend="_class_distortion_option">DistortionOption</link> class. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_distortion_option_1af48ba42d143775f2a9b53241d95411f8">Convert</link> (std::string input_file, std::string output_file) override</para>
+
+<para>Applies the distortion operation to the input file and saves the result to the output file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0">help</link> () const override</para>
+
+<para>Displays help information for the <link linkend="_class_distortion_option">DistortionOption</link> converter. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_converter">Converter</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">Converter</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>virtual <emphasis role="strong">~Converter</emphasis> ()=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Class for applying distortion to an audio file. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597"/><section>
+    <title>DistortionOption()</title>
+<indexterm><primary>DistortionOption</primary><secondary>DistortionOption</secondary></indexterm>
+<indexterm><primary>DistortionOption</primary><secondary>DistortionOption</secondary></indexterm>
+<para><computeroutput>DistortionOption::DistortionOption (double gain)</computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_class_distortion_option">DistortionOption</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gain</entry><entry>
+<para>The gain value for the distortion operation. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_distortion_option_1af48ba42d143775f2a9b53241d95411f8"/><section>
+    <title>Convert()</title>
+<indexterm><primary>Convert</primary><secondary>DistortionOption</secondary></indexterm>
+<indexterm><primary>DistortionOption</primary><secondary>Convert</secondary></indexterm>
+<para><computeroutput>void DistortionOption::Convert (std::string input_file, std::string output_file)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Applies the distortion operation to the input file and saves the result to the output file. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input_file</entry><entry>
+<para>The input WAV file. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>output_file</entry><entry>
+<para>The output WAV file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_converter_1aa372ef198028ecc08af6c80462e427cc">Converter</link>.</para>
+</section>
+<anchor xml:id="_class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0"/><section>
+    <title>help()</title>
+<indexterm><primary>help</primary><secondary>DistortionOption</secondary></indexterm>
+<indexterm><primary>DistortionOption</primary><secondary>help</secondary></indexterm>
+<para><computeroutput>void DistortionOption::help ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Displays help information for the <link linkend="_class_distortion_option">DistortionOption</link> converter. </para>
+</para>
+<para>
+Implements <link linkend="_class_converter_1a3720c9083eee5ca517e63a3f92994e0b">Converter</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__converter_8h">Converter.h</link>3Lab/<link linkend="__converter_8cpp">Converter.cpp</link></section>
+</section>

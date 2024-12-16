@@ -1,0 +1,89 @@
+.TH "RegistrarConvertors" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RegistrarConvertors \- This \&.h file implements a class for creating dynamic help about converters in the general code\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <RegistrarorConvertors\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRegistrarConvertors\fP (\fBRegistrarConvertors\fP &other)=delete"
+.br
+.RI "Deleted copy constructor to prevent copying of the Singleton instance\&. "
+.ti -1c
+.RI "void \fBoperator=\fP (const \fBRegistrarConvertors\fP &)=delete"
+.br
+.RI "Deleted assignment operator to prevent assignment of the Singleton instance\&. "
+.ti -1c
+.RI "void \fBRegisterConverter\fP (std::unique_ptr< \fBConverter\fP > converter)"
+.br
+.RI "Registers a converter\&. "
+.ti -1c
+.RI "void \fBprintHelp\fP ()"
+.br
+.RI "Prints help information for all registered converters\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRegistrarConvertors\fP & \fBGetInstance\fP ()"
+.br
+.RI "Returns the single instance of the \fBRegistrarConvertors\fP class\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This \&.h file implements a class for creating dynamic help about converters in the general code\&. 
+
+The \fBRegistrarConvertors\fP class implements the Singleton pattern to manage a collection of converters\&.
+
+.PP
+This class ensures that only one instance of \fBRegistrarConvertors\fP exists throughout the application\&. It provides methods to register converters and print help information about them\&.
+
+.PP
+\fBSee also\fP
+.RS 4
+\fRSingleton Pattern Documentation\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBRegistrarConvertors\fP & RegistrarConvertors::GetInstance ()\fR [static]\fP"
+
+.PP
+Returns the single instance of the \fBRegistrarConvertors\fP class\&. This method ensures that only one instance of the class is created\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+The single instance of the \fBRegistrarConvertors\fP class\&. 
+.RE
+.PP
+
+.SS "void RegistrarConvertors::printHelp ()\fR [inline]\fP"
+
+.PP
+Prints help information for all registered converters\&. This method iterates through the collection of converters and calls their help method\&. 
+.SS "void RegistrarConvertors::RegisterConverter (std::unique_ptr< \fBConverter\fP > converter)\fR [inline]\fP"
+
+.PP
+Registers a converter\&. This method adds a converter to the internal collection of converters\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIconverter\fP A unique pointer to a \fBConverter\fP object\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

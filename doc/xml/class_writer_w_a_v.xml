@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_writer_w_a_v" kind="class" language="C++" prot="public">
+    <compoundname>WriterWAV</compoundname>
+    <includes refid="_writer_w_a_v_8h" local="no">WriterWAV.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_writer_w_a_v_1a7a6cd59ebfbdd5e975d6272708b06c2a" prot="private" static="no" mutable="no">
+        <type>std::fstream</type>
+        <definition>std::fstream WriterWAV::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <qualifiedname>WriterWAV::file_</qualifiedname>
+        <briefdescription>
+<para>File stream for writing the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="44" column="18" bodyfile="3Lab/WriterWAV.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_writer_w_a_v_1a72cc795e3a9ea959efdf3e0fc8312123" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string WriterWAV::output_file_path_</definition>
+        <argsstring></argsstring>
+        <name>output_file_path_</name>
+        <qualifiedname>WriterWAV::output_file_path_</qualifiedname>
+        <briefdescription>
+<para>Path to the output WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="45" column="17" bodyfile="3Lab/WriterWAV.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WriterWAV::WriterWAV</definition>
+        <argsstring>(std::string output_file_path)</argsstring>
+        <name>WriterWAV</name>
+        <qualifiedname>WriterWAV::WriterWAV</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>output_file_path</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_writer_w_a_v" kindref="compound">WriterWAV</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the output WAV file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="20" column="14" bodyfile="3Lab/WriterWAV.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterWAV::OpenWAVFile</definition>
+        <argsstring>()</argsstring>
+        <name>OpenWAVFile</name>
+        <qualifiedname>WriterWAV::OpenWAVFile</qualifiedname>
+        <briefdescription>
+<para>Opens the WAV file for writing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="25" column="10" bodyfile="3Lab/WriterWAV.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterWAV::CloseWAVFile</definition>
+        <argsstring>()</argsstring>
+        <name>CloseWAVFile</name>
+        <qualifiedname>WriterWAV::CloseWAVFile</qualifiedname>
+        <briefdescription>
+<para>Closes the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="30" column="10" bodyfile="3Lab/WriterWAV.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterWAV::SaveSamples</definition>
+        <argsstring>(std::vector&lt; int16_t &gt; &amp;samples, int start)</argsstring>
+        <name>SaveSamples</name>
+        <qualifiedname>WriterWAV::SaveSamples</qualifiedname>
+        <param>
+          <type>std::vector&lt; int16_t &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+<para>Writes audio samples to the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves audio samples to the WAV file.</para>
+<para>This method writes the provided audio samples to the WAV file starting from the specified position. The offset is calculated based on the sample rate and the starting position.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of int16_t containing the audio samples to be written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting second from which to begin writing audio samples. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WriterWAV.h" line="41" column="10" bodyfile="3Lab/WriterWAV.cpp" bodystart="42" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class to write WAV audio files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/WriterWAV.h" line="14" column="1" bodyfile="3Lab/WriterWAV.h" bodystart="14" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b" prot="public" virt="non-virtual"><scope>WriterWAV</scope><name>CloseWAVFile</name></member>
+      <member refid="class_writer_w_a_v_1a7a6cd59ebfbdd5e975d6272708b06c2a" prot="private" virt="non-virtual"><scope>WriterWAV</scope><name>file_</name></member>
+      <member refid="class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6" prot="public" virt="non-virtual"><scope>WriterWAV</scope><name>OpenWAVFile</name></member>
+      <member refid="class_writer_w_a_v_1a72cc795e3a9ea959efdf3e0fc8312123" prot="private" virt="non-virtual"><scope>WriterWAV</scope><name>output_file_path_</name></member>
+      <member refid="class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f" prot="public" virt="non-virtual"><scope>WriterWAV</scope><name>SaveSamples</name></member>
+      <member refid="class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb" prot="public" virt="non-virtual"><scope>WriterWAV</scope><name>WriterWAV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

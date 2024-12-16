@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_converter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Converter</compoundname>
+    <derivedcompoundref refid="class_distortion_option" prot="public" virt="non-virtual">DistortionOption</derivedcompoundref>
+    <derivedcompoundref refid="class_mix_option" prot="public" virt="non-virtual">MixOption</derivedcompoundref>
+    <derivedcompoundref refid="class_mute_option" prot="public" virt="non-virtual">MuteOption</derivedcompoundref>
+    <includes refid="_converter_8h" local="no">Converter.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Converter::Converter</definition>
+        <argsstring>()=default</argsstring>
+        <name>Converter</name>
+        <qualifiedname>Converter::Converter</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_converter_1a99cea4f852f70999e858e69291464772" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Converter::~Converter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Converter</name>
+        <qualifiedname>Converter::~Converter</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="31" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_converter_1aa372ef198028ecc08af6c80462e427cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Converter::Convert</definition>
+        <argsstring>(std::string input_file, std::string output_file)=0</argsstring>
+        <name>Convert</name>
+        <qualifiedname>Converter::Convert</qualifiedname>
+        <reimplementedby refid="class_distortion_option_1af48ba42d143775f2a9b53241d95411f8">Convert</reimplementedby>
+        <reimplementedby refid="class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3">Convert</reimplementedby>
+        <reimplementedby refid="class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86">Convert</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to convert audio files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input WAV file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output WAV file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_reader_w_a_v" kindref="compound">ReaderWAV</ref> object to read the input file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_writer_w_a_v" kindref="compound">WriterWAV</ref> object to write the output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_converter_1a3720c9083eee5ca517e63a3f92994e0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Converter::help</definition>
+        <argsstring>() const =0</argsstring>
+        <name>help</name>
+        <qualifiedname>Converter::help</qualifiedname>
+        <reimplementedby refid="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0">help</reimplementedby>
+        <reimplementedby refid="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c">help</reimplementedby>
+        <reimplementedby refid="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8">help</reimplementedby>
+        <briefdescription>
+<para>Pure virtual function to display help information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="45" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for audio converters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="2">
+        <label>DistortionOption</label>
+        <link refid="class_distortion_option"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MixOption</label>
+        <link refid="class_mix_option"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MuteOption</label>
+        <link refid="class_mute_option"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="3Lab/Converter.h" line="21" column="1" bodyfile="3Lab/Converter.h" bodystart="21" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_converter_1aa372ef198028ecc08af6c80462e427cc" prot="public" virt="pure-virtual"><scope>Converter</scope><name>Convert</name></member>
+      <member refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" prot="public" virt="non-virtual"><scope>Converter</scope><name>Converter</name></member>
+      <member refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b" prot="public" virt="pure-virtual"><scope>Converter</scope><name>help</name></member>
+      <member refid="class_converter_1a99cea4f852f70999e858e69291464772" prot="public" virt="virtual"><scope>Converter</scope><name>~Converter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

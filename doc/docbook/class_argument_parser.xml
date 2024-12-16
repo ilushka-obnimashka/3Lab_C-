@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_argument_parser" xml:lang="en-US">
+<title>ArgumentParser Class Reference</title>
+<indexterm><primary>ArgumentParser</primary></indexterm>
+<para>
+
+<para>Class <link linkend="_class_argument_parser">ArgumentParser</link> provides a convenient interface for parsing command line arguments using the getopt_long(3) function. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;ArgumentParser.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04">ArgumentParser</link> (int argc, char *argv[])</para>
+
+<para>Constructor of the <link linkend="_class_argument_parser">ArgumentParser</link> class. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_argument_parser_1aaff61b771796a27a7596f809e6d75795">Parse</link> ()</para>
+
+<para>Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported. </para>
+</listitem>
+            <listitem><para>std::vector&lt; std::string &gt; <link linkend="_class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd">GetInputFiles</link> () const</para>
+
+<para>Gets the list of input files. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_argument_parser_1a414ac72457e67377032b26378cab1ac1">GetOutputFile</link> () const</para>
+
+<para>Gets the output file name. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_argument_parser_1a34938826d32a26b88fd93b3fda16b230">GetConfigFile</link> () const</para>
+
+<para>Gets the configuration file name. </para>
+</listitem>
+            <listitem><para>const void <link linkend="_class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba">PrintHelp</link> ()</para>
+
+<para>Method for printing the help message. Will be called when the user runs the program with the -h or &#8211;help option. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class <link linkend="_class_argument_parser">ArgumentParser</link> provides a convenient interface for parsing command line arguments using the getopt_long(3) function. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04"/><section>
+    <title>ArgumentParser()</title>
+<indexterm><primary>ArgumentParser</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>ArgumentParser</secondary></indexterm>
+<para><computeroutput>ArgumentParser::ArgumentParser (int argc, char * argv[])<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Constructor of the <link linkend="_class_argument_parser">ArgumentParser</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>argc</entry><entry>
+<para>Counter for the number of command line arguments. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>argv</entry><entry>
+<para>Pointer to an array of single- or multi-byte strings that contains the program&apos;s arguments. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_argument_parser_1a34938826d32a26b88fd93b3fda16b230"/><section>
+    <title>GetConfigFile()</title>
+<indexterm><primary>GetConfigFile</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>GetConfigFile</secondary></indexterm>
+<para><computeroutput>std::string ArgumentParser::GetConfigFile ( ) const</computeroutput></para><para>
+
+<para>Gets the configuration file name. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The configuration file name. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd"/><section>
+    <title>GetInputFiles()</title>
+<indexterm><primary>GetInputFiles</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>GetInputFiles</secondary></indexterm>
+<para><computeroutput>std::vector&lt; std::string &gt; ArgumentParser::GetInputFiles ( ) const</computeroutput></para><para>
+
+<para>Gets the list of input files. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A vector of input file names. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_argument_parser_1a414ac72457e67377032b26378cab1ac1"/><section>
+    <title>GetOutputFile()</title>
+<indexterm><primary>GetOutputFile</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>GetOutputFile</secondary></indexterm>
+<para><computeroutput>std::string ArgumentParser::GetOutputFile ( ) const</computeroutput></para><para>
+
+<para>Gets the output file name. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The output file name. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_argument_parser_1aaff61b771796a27a7596f809e6d75795"/><section>
+    <title>Parse()</title>
+<indexterm><primary>Parse</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>Parse</secondary></indexterm>
+<para><computeroutput>bool ArgumentParser::Parse ( )</computeroutput></para><para>
+
+<para>Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported. </para>
+</para>
+
+<para>Parses the command line arguments.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true if help command not called, false otherwise.</para>
+</formalpara>
+This function uses getopt_long to parse the command line arguments and sets the corresponding member variables.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true if parsing is successful, false if help is requested. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>std::invalid_argument</entry><entry>
+<para>if there is an error in the arguments. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba"/><section>
+    <title>PrintHelp()</title>
+<indexterm><primary>PrintHelp</primary><secondary>ArgumentParser</secondary></indexterm>
+<indexterm><primary>ArgumentParser</primary><secondary>PrintHelp</secondary></indexterm>
+<para><computeroutput>const void ArgumentParser::PrintHelp ( )</computeroutput></para><para>
+
+<para>Method for printing the help message. Will be called when the user runs the program with the -h or &#8211;help option. </para>
+</para>
+
+<para>Prints the help message.</para>
+
+<para>This function prints the usage information and available options to the standard output. </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__argument_parser_8h">ArgumentParser.h</link>3Lab/<link linkend="__argument_parser_8cpp">ArgumentParser.cpp</link></section>
+</section>

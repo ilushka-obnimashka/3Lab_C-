@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__w_a_v_header_8h" xml:lang="en-US">
+<title>3Lab/WAVHeader.h File Reference</title>
+<indexterm><primary>3Lab/WAVHeader.h</primary></indexterm>
+<para>
+
+<para>Header file defining the structure of a WAV file header. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_w_a_v_header">WAVHeader</link></para>
+
+<para>A structure representing the header of a WAV file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="__w_a_v_header_8h_1ad591d3fc4c2d06f098fd2234b6d74f62"/>#define <emphasis role="strong">FIXED_SAMPLE_RATE</emphasis>&#160;&#160;&#160;44100</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Header file defining the structure of a WAV file header. </para>
+</section>
+</section>

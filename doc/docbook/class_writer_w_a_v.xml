@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_writer_w_a_v" xml:lang="en-US">
+<title>WriterWAV Class Reference</title>
+<indexterm><primary>WriterWAV</primary></indexterm>
+<para>
+
+<para>A class to write WAV audio files. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;WriterWAV.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb">WriterWAV</link> (std::string output_file_path)</para>
+
+<para>Constructor for the <link linkend="_class_writer_w_a_v">WriterWAV</link> class. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6"/>void <emphasis role="strong">OpenWAVFile</emphasis> ()</para>
+
+<para>Opens the WAV file for writing. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b"/>void <emphasis role="strong">CloseWAVFile</emphasis> ()</para>
+
+<para>Closes the WAV file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f">SaveSamples</link> (std::vector&lt; int16_t &gt; &amp;samples, int start)</para>
+
+<para>Writes audio samples to the WAV file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A class to write WAV audio files. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb"/><section>
+    <title>WriterWAV()</title>
+<indexterm><primary>WriterWAV</primary><secondary>WriterWAV</secondary></indexterm>
+<indexterm><primary>WriterWAV</primary><secondary>WriterWAV</secondary></indexterm>
+<para><computeroutput>WriterWAV::WriterWAV (std::string output_file_path)<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_class_writer_w_a_v">WriterWAV</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>output_file_path</entry><entry>
+<para>The path to the output WAV file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f"/><section>
+    <title>SaveSamples()</title>
+<indexterm><primary>SaveSamples</primary><secondary>WriterWAV</secondary></indexterm>
+<indexterm><primary>WriterWAV</primary><secondary>SaveSamples</secondary></indexterm>
+<para><computeroutput>void WriterWAV::SaveSamples (std::vector&lt; int16_t &gt; &amp; samples, int start)</computeroutput></para><para>
+
+<para>Writes audio samples to the WAV file. </para>
+</para>
+
+<para>Saves audio samples to the WAV file.</para>
+
+<para>This method writes the provided audio samples to the WAV file starting from the specified position. The offset is calculated based on the sample rate and the starting position.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>samples</entry><entry>
+<para>A reference to a vector of int16_t containing the audio samples to be written. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>start</entry><entry>
+<para>The starting second from which to begin writing audio samples. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__writer_w_a_v_8h">WriterWAV.h</link>3Lab/<link linkend="__writer_w_a_v_8cpp">WriterWAV.cpp</link></section>
+</section>

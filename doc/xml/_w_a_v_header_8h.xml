@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_w_a_v_header_8h" kind="file" language="C++">
+    <compoundname>WAVHeader.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="_converter_8cpp" local="yes">3Lab/Converter.cpp</includedby>
+    <includedby refid="_reader_w_a_v_8cpp" local="yes">3Lab/ReaderWAV.cpp</includedby>
+    <includedby refid="_reader_w_a_v_8h" local="yes">3Lab/ReaderWAV.h</includedby>
+    <includedby refid="_writer_w_a_v_8cpp" local="yes">3Lab/WriterWAV.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>3Lab/WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>3Lab/ConfigParser.cpp</label>
+        <link refid="_config_parser_8cpp"/>
+      </node>
+      <node id="7">
+        <label>3Lab/ConfigParser.h</label>
+        <link refid="_config_parser_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>3Lab/Converter.cpp</label>
+        <link refid="_converter_8cpp"/>
+      </node>
+      <node id="5">
+        <label>3Lab/Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>3Lab/Creators.cpp</label>
+        <link refid="_creators_8cpp"/>
+      </node>
+      <node id="9">
+        <label>3Lab/Creators.h</label>
+        <link refid="_creators_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>3Lab/ReaderWAV.cpp</label>
+        <link refid="_reader_w_a_v_8cpp"/>
+      </node>
+      <node id="4">
+        <label>3Lab/ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>3Lab/RegistrarorConvertors.h</label>
+        <link refid="_registraror_convertors_8h_source"/>
+      </node>
+      <node id="1">
+        <label>3Lab/WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>3Lab/WriterWAV.cpp</label>
+        <link refid="_writer_w_a_v_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_w_a_v_header" prot="public">WAVHeader</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_w_a_v_header_8h_1ad591d3fc4c2d06f098fd2234b6d74f62" prot="public" static="no">
+        <name>FIXED_SAMPLE_RATE</name>
+        <initializer>44100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="8" column="10" bodyfile="3Lab/WAVHeader.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Header file defining the structure of a WAV file header. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIXED_SAMPLE_RATE<sp/>44100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_w_a_v_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RIFF<sp/>Chunk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_w_a_v_header_1a8e6ef695dd4bfce231b7e55f2ddbb89e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_w_a_v_header_1a8e6ef695dd4bfce231b7e55f2ddbb89e" kindref="member">chunk_id</ref>[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="struct_w_a_v_header_1ab3f1b4cd6396eb5ed6c17dcabd665c64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_w_a_v_header_1ab3f1b4cd6396eb5ed6c17dcabd665c64" kindref="member">chunk_data_size</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="struct_w_a_v_header_1af9551a7af2c6efc6733272da35f8002d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_w_a_v_header_1af9551a7af2c6efc6733272da35f8002d" kindref="member">riff_type_id</ref>[4];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>format<sp/>sub-chunk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="struct_w_a_v_header_1a01c28e447304b2dcfd6e0a595c383bcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_w_a_v_header_1a01c28e447304b2dcfd6e0a595c383bcb" kindref="member">chunk1_id</ref>[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="struct_w_a_v_header_1a5ae8b03ae90b2a496cb070e68933c8de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_w_a_v_header_1a5ae8b03ae90b2a496cb070e68933c8de" kindref="member">chunk1_data_size</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="struct_w_a_v_header_1a26c04172af65913e0173dc6664eb78a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_w_a_v_header_1a26c04172af65913e0173dc6664eb78a8" kindref="member">format_tag</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="struct_w_a_v_header_1abe6c42489869feb63b481fac8e563924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_w_a_v_header_1abe6c42489869feb63b481fac8e563924" kindref="member">num_channels</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="struct_w_a_v_header_1af5f6e042a9b1bd708ba675d09dad8cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_w_a_v_header_1af5f6e042a9b1bd708ba675d09dad8cb2" kindref="member">sample_rate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="struct_w_a_v_header_1a41e79c78587152df883c39eb3ed36704" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_w_a_v_header_1a41e79c78587152df883c39eb3ed36704" kindref="member">byte_rate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="struct_w_a_v_header_1adc03e5728e262fb3ada7127116cdd523" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_w_a_v_header_1adc03e5728e262fb3ada7127116cdd523" kindref="member">block_align</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="struct_w_a_v_header_1a02aa855310257cf4009cc74d25d163d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_w_a_v_header_1a02aa855310257cf4009cc74d25d163d8" kindref="member">bits_per_sample</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&quot;data&quot;<sp/>sub-chunk<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="struct_w_a_v_header_1a6a26b9cd27aa90283493c33cac65c9eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_w_a_v_header_1a6a26b9cd27aa90283493c33cac65c9eb" kindref="member">chunk2_id</ref>[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="struct_w_a_v_header_1a6d1eda450a4cfb726584bd3a8e0af553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_w_a_v_header_1a6d1eda450a4cfb726584bd3a8e0af553" kindref="member">chunk2_data_size</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/WAVHeader.h"/>
+  </compounddef>
+</doxygen>

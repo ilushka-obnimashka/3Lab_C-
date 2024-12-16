@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_argument_parser" kind="class" language="C++" prot="public">
+    <compoundname>ArgumentParser</compoundname>
+    <includes refid="_argument_parser_8h" local="no">ArgumentParser.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_argument_parser_1a5504d7e4547e657800b043e63833b5a5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ArgumentParser::argc_</definition>
+        <argsstring></argsstring>
+        <name>argc_</name>
+        <qualifiedname>ArgumentParser::argc_</qualifiedname>
+        <briefdescription>
+<para>Number of command line arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="61" column="9" bodyfile="3Lab/ArgumentParser.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1ad9f8afccf9f14aa07d21ebd3da6c4d1d" prot="private" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** ArgumentParser::argv_</definition>
+        <argsstring></argsstring>
+        <name>argv_</name>
+        <qualifiedname>ArgumentParser::argv_</qualifiedname>
+        <briefdescription>
+<para>Array of command line arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="62" column="10" bodyfile="3Lab/ArgumentParser.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1a7a75184a364c74e8570b725637156073" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ArgumentParser::short_option_</definition>
+        <argsstring></argsstring>
+        <name>short_option_</name>
+        <qualifiedname>ArgumentParser::short_option_</qualifiedname>
+        <briefdescription>
+<para>Short options string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="63" column="16" bodyfile="3Lab/ArgumentParser.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1a7516de1ca1a118c52a2cdadfc7ad7e78" prot="private" static="no" mutable="no">
+        <type>struct option</type>
+        <definition>struct option ArgumentParser::long_options_[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>long_options_</name>
+        <qualifiedname>ArgumentParser::long_options_</qualifiedname>
+        <briefdescription>
+<para>Array of long options. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="64" column="17" bodyfile="3Lab/ArgumentParser.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1aaacd1fe67ead51a59e726ea4a8ee7128" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; ArgumentParser::input_files_</definition>
+        <argsstring></argsstring>
+        <name>input_files_</name>
+        <qualifiedname>ArgumentParser::input_files_</qualifiedname>
+        <briefdescription>
+<para>Vector of input file names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="66" column="17" bodyfile="3Lab/ArgumentParser.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1a800e08a98bcad98e69b6244b6ac0dd8f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ArgumentParser::config_file_</definition>
+        <argsstring></argsstring>
+        <name>config_file_</name>
+        <qualifiedname>ArgumentParser::config_file_</qualifiedname>
+        <briefdescription>
+<para>Configuration file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="67" column="17" bodyfile="3Lab/ArgumentParser.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_argument_parser_1a72cce1ae187394a29127d0f7158120fb" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ArgumentParser::output_file_</definition>
+        <argsstring></argsstring>
+        <name>output_file_</name>
+        <qualifiedname>ArgumentParser::output_file_</qualifiedname>
+        <briefdescription>
+<para>Output file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="68" column="17" bodyfile="3Lab/ArgumentParser.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArgumentParser::ArgumentParser</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>ArgumentParser</name>
+        <qualifiedname>ArgumentParser::ArgumentParser</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="class_argument_parser" kindref="compound">ArgumentParser</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter for the number of command line arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an array of single- or multi-byte strings that contains the program&apos;s arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="23" column="5" bodyfile="3Lab/ArgumentParser.h" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_argument_parser_1aaff61b771796a27a7596f809e6d75795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArgumentParser::Parse</definition>
+        <argsstring>()</argsstring>
+        <name>Parse</name>
+        <qualifiedname>ArgumentParser::Parse</qualifiedname>
+        <briefdescription>
+<para>Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses the command line arguments.</para>
+<para><simplesect kind="return"><para>true if help command not called, false otherwise.</para>
+</simplesect>
+This function uses getopt_long to parse the command line arguments and sets the corresponding member variables.</para>
+<para><simplesect kind="return"><para>true if parsing is successful, false if help is requested. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is an error in the arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="35" column="10" bodyfile="3Lab/ArgumentParser.cpp" bodystart="25" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; ArgumentParser::GetInputFiles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInputFiles</name>
+        <qualifiedname>ArgumentParser::GetInputFiles</qualifiedname>
+        <briefdescription>
+<para>Gets the list of input files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A vector of input file names. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="41" column="17" bodyfile="3Lab/ArgumentParser.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_argument_parser_1a414ac72457e67377032b26378cab1ac1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ArgumentParser::GetOutputFile</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOutputFile</name>
+        <qualifiedname>ArgumentParser::GetOutputFile</qualifiedname>
+        <briefdescription>
+<para>Gets the output file name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The output file name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="47" column="17" bodyfile="3Lab/ArgumentParser.cpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_argument_parser_1a34938826d32a26b88fd93b3fda16b230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ArgumentParser::GetConfigFile</definition>
+        <argsstring>() const</argsstring>
+        <name>GetConfigFile</name>
+        <qualifiedname>ArgumentParser::GetConfigFile</qualifiedname>
+        <briefdescription>
+<para>Gets the configuration file name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The configuration file name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="53" column="17" bodyfile="3Lab/ArgumentParser.cpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const void</type>
+        <definition>const void ArgumentParser::PrintHelp</definition>
+        <argsstring>()</argsstring>
+        <name>PrintHelp</name>
+        <qualifiedname>ArgumentParser::PrintHelp</qualifiedname>
+        <briefdescription>
+<para>Method for printing the help message. Will be called when the user runs the program with the -h or <ndash/>help option. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints the help message.</para>
+<para>This function prints the usage information and available options to the standard output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ArgumentParser.h" line="58" column="16" bodyfile="3Lab/ArgumentParser.cpp" bodystart="90" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="class_argument_parser" kindref="compound">ArgumentParser</ref> provides a convenient interface for parsing command line arguments using the getopt_long(3) function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/ArgumentParser.h" line="16" column="1" bodyfile="3Lab/ArgumentParser.h" bodystart="16" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_argument_parser_1a5504d7e4547e657800b043e63833b5a5" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>argc_</name></member>
+      <member refid="class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>ArgumentParser</name></member>
+      <member refid="class_argument_parser_1ad9f8afccf9f14aa07d21ebd3da6c4d1d" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>argv_</name></member>
+      <member refid="class_argument_parser_1a800e08a98bcad98e69b6244b6ac0dd8f" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>config_file_</name></member>
+      <member refid="class_argument_parser_1a34938826d32a26b88fd93b3fda16b230" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>GetConfigFile</name></member>
+      <member refid="class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>GetInputFiles</name></member>
+      <member refid="class_argument_parser_1a414ac72457e67377032b26378cab1ac1" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>GetOutputFile</name></member>
+      <member refid="class_argument_parser_1aaacd1fe67ead51a59e726ea4a8ee7128" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>input_files_</name></member>
+      <member refid="class_argument_parser_1a7516de1ca1a118c52a2cdadfc7ad7e78" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>long_options_</name></member>
+      <member refid="class_argument_parser_1a72cce1ae187394a29127d0f7158120fb" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>output_file_</name></member>
+      <member refid="class_argument_parser_1aaff61b771796a27a7596f809e6d75795" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>Parse</name></member>
+      <member refid="class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba" prot="public" virt="non-virtual"><scope>ArgumentParser</scope><name>PrintHelp</name></member>
+      <member refid="class_argument_parser_1a7a75184a364c74e8570b725637156073" prot="private" virt="non-virtual"><scope>ArgumentParser</scope><name>short_option_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

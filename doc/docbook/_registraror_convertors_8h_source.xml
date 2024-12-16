@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__registraror_convertors_8h_source" xml:lang="en-US">
+<title>RegistrarorConvertors.h</title>
+<indexterm><primary>3Lab/RegistrarorConvertors.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 
+4 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__converter_8h">Converter.h</link>&quot;</emphasis>
+16 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_registrar_convertors">RegistrarConvertors</link>&#32;{
+17 <emphasis role="keyword">public</emphasis>:
+21 &#32;&#32;&#32;&#32;<link linkend="_class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc">RegistrarConvertors</link>(<link linkend="_class_registrar_convertors">RegistrarConvertors</link>&amp;&#32;other)&#32;=&#32;<emphasis role="keyword">delete</emphasis>;
+22 
+26 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef">operator=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_registrar_convertors">RegistrarConvertors</link>&amp;)&#32;=&#32;<emphasis role="keyword">delete</emphasis>;
+27 
+35 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_registrar_convertors">RegistrarConvertors</link>&amp;&#32;<link linkend="_class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5">GetInstance</link>();
+36 
+44 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af">RegisterConverter</link>(std::unique_ptr&lt;Converter&gt;&#32;converter)&#32;{
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;converters_.push_back(std::move(converter));
+46 &#32;&#32;&#32;&#32;}
+47 
+53 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326">printHelp</link>()&#32;{
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;converter&#32;:&#32;converters_)&#32;{
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;converter-&gt;help();
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+57 &#32;&#32;&#32;&#32;}
+58 
+59 <emphasis role="keyword">private</emphasis>:
+63 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;std::unique_ptr&lt;RegistrarConvertors&gt;&#32;singleton_;
+64 
+68 &#32;&#32;&#32;&#32;<link linkend="_class_registrar_convertors">RegistrarConvertors</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+69 
+73 &#32;&#32;&#32;&#32;std::vector&lt;std::unique_ptr&lt;Converter&gt;&gt;&#32;converters_;
+74 };
+75 
+79 std::unique_ptr&lt;RegistrarConvertors&gt;&#32;RegistrarConvertors::singleton_&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+80 
+88 <link linkend="_class_registrar_convertors">RegistrarConvertors</link>&amp;&#32;<link linkend="_class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5">RegistrarConvertors::GetInstance</link>()&#32;{
+89 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(singleton_&#32;==&#32;<emphasis role="keyword">nullptr</emphasis>)&#32;{
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;singleton_&#32;=&#32;std::unique_ptr&lt;RegistrarConvertors&gt;(<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_registrar_convertors">RegistrarConvertors</link>());
+91 &#32;&#32;&#32;&#32;}
+92 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*singleton_;
+93 }
+</programlisting></section>

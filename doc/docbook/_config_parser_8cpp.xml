@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__config_parser_8cpp" xml:lang="en-US">
+<title>3Lab/ConfigParser.cpp File Reference</title>
+<indexterm><primary>3Lab/ConfigParser.cpp</primary></indexterm>
+<para>
+
+<para>Implementation of the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;<?linebreak?>#include &quot;ConfigParser.h&quot;<?linebreak?>#include &quot;Converter.h&quot;<?linebreak?>#include &quot;Creators.h&quot;<?linebreak?></programlisting><section>
+<title>Detailed Description</title>
+
+<para>Implementation of the <link linkend="_class_config_parser">ConfigParser</link> class. </para>
+</section>
+</section>

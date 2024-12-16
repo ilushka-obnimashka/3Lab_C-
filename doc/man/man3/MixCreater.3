@@ -1,0 +1,71 @@
+.TH "MixCreater" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MixCreater \- Class responsible for the creation of Mix converters\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Creators\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConverter\fP * \fBCreateConverter\fP (uint32_t start, std::string file)"
+.br
+.RI "Creates a Mix converter\&. "
+.in -1c
+
+Public Member Functions inherited from \fBCreater\fP
+.in +1c
+.ti -1c
+.RI "\fBCreater\fP ()=default"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "virtual \fB~Creater\fP ()=default"
+.br
+.RI "Virtual destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class responsible for the creation of Mix converters\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBConverter\fP * MixCreater::CreateConverter (uint32_t start, std::string name_src_file)"
+
+.PP
+Creates a Mix converter\&. Creates a \fBMixOption\fP converter\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP The start time in seconds\&. 
+.br
+\fIfile\fP The name of the file to mix\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the created \fBConverter\fP object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP The starting point for the mix operation\&. 
+.br
+\fIname_src_file\fP The name of the source file to mix\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to a new \fBMixOption\fP object\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_registrar_convertors" xml:lang="en-US">
+<title>RegistrarConvertors Class Reference</title>
+<indexterm><primary>RegistrarConvertors</primary></indexterm>
+<para>
+
+<para>This .h file implements a class for creating dynamic help about converters in the general code. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;RegistrarorConvertors.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc"/><emphasis role="strong">RegistrarConvertors</emphasis> (<link linkend="_class_registrar_convertors">RegistrarConvertors</link> &amp;other)=delete</para>
+
+<para>Deleted copy constructor to prevent copying of the Singleton instance. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef"/>void <emphasis role="strong">operator=</emphasis> (const <link linkend="_class_registrar_convertors">RegistrarConvertors</link> &amp;)=delete</para>
+
+<para>Deleted assignment operator to prevent assignment of the Singleton instance. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af">RegisterConverter</link> (std::unique_ptr&lt; <link linkend="_class_converter">Converter</link> &gt; converter)</para>
+
+<para>Registers a converter. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326">printHelp</link> ()</para>
+
+<para>Prints help information for all registered converters. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_registrar_convertors">RegistrarConvertors</link> &amp; <link linkend="_class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5">GetInstance</link> ()</para>
+
+<para>Returns the single instance of the <link linkend="_class_registrar_convertors">RegistrarConvertors</link> class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This .h file implements a class for creating dynamic help about converters in the general code. </para>
+
+
+
+<para>The <link linkend="_class_registrar_convertors">RegistrarConvertors</link> class implements the Singleton pattern to manage a collection of converters.</para>
+
+<para>This class ensures that only one instance of <link linkend="_class_registrar_convertors">RegistrarConvertors</link> exists throughout the application. It provides methods to register converters and print help information about them.</para>
+
+<para><formalpara><title>See also</title>
+
+<para><link xlink:href="https://refactoring.guru/design-patterns/singleton">Singleton Pattern Documentation</link> </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5"/><section>
+    <title>GetInstance()</title>
+<indexterm><primary>GetInstance</primary><secondary>RegistrarConvertors</secondary></indexterm>
+<indexterm><primary>RegistrarConvertors</primary><secondary>GetInstance</secondary></indexterm>
+<para><computeroutput><link linkend="_class_registrar_convertors">RegistrarConvertors</link> &amp; RegistrarConvertors::GetInstance ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns the single instance of the <link linkend="_class_registrar_convertors">RegistrarConvertors</link> class. </para>
+</para>
+
+<para>This method ensures that only one instance of the class is created.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The single instance of the <link linkend="_class_registrar_convertors">RegistrarConvertors</link> class. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326"/><section>
+    <title>printHelp()</title>
+<indexterm><primary>printHelp</primary><secondary>RegistrarConvertors</secondary></indexterm>
+<indexterm><primary>RegistrarConvertors</primary><secondary>printHelp</secondary></indexterm>
+<para><computeroutput>void RegistrarConvertors::printHelp ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Prints help information for all registered converters. </para>
+</para>
+
+<para>This method iterates through the collection of converters and calls their help method. </para>
+</section>
+<anchor xml:id="_class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af"/><section>
+    <title>RegisterConverter()</title>
+<indexterm><primary>RegisterConverter</primary><secondary>RegistrarConvertors</secondary></indexterm>
+<indexterm><primary>RegistrarConvertors</primary><secondary>RegisterConverter</secondary></indexterm>
+<para><computeroutput>void RegistrarConvertors::RegisterConverter (std::unique_ptr&lt; <link linkend="_class_converter">Converter</link> &gt; converter)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Registers a converter. </para>
+</para>
+
+<para>This method adds a converter to the internal collection of converters.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>converter</entry><entry>
+<para>A unique pointer to a <link linkend="_class_converter">Converter</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+3Lab/RegistrarorConvertors.h</section>
+</section>

@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="struct_w_a_v_header" kind="struct" language="C++" prot="public">
+    <compoundname>WAVHeader</compoundname>
+    <includes refid="_w_a_v_header_8h" local="no">WAVHeader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_w_a_v_header_1a8e6ef695dd4bfce231b7e55f2ddbb89e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char WAVHeader::chunk_id[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>chunk_id</name>
+        <qualifiedname>WAVHeader::chunk_id</qualifiedname>
+        <briefdescription>
+<para>Chunk ID. Indicates that the file is a RIFF file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="17" column="10" bodyfile="3Lab/WAVHeader.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1ab3f1b4cd6396eb5ed6c17dcabd665c64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WAVHeader::chunk_data_size</definition>
+        <argsstring></argsstring>
+        <name>chunk_data_size</name>
+        <qualifiedname>WAVHeader::chunk_data_size</qualifiedname>
+        <briefdescription>
+<para>Size of the RIFF chunk data (file size minus the first 8 bytes). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="18" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1af9551a7af2c6efc6733272da35f8002d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char WAVHeader::riff_type_id[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>riff_type_id</name>
+        <qualifiedname>WAVHeader::riff_type_id</qualifiedname>
+        <briefdescription>
+<para>Format type ID. Indicates that the file is a WAVE file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="19" column="10" bodyfile="3Lab/WAVHeader.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a01c28e447304b2dcfd6e0a595c383bcb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAVHeader::chunk1_id[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>chunk1_id</name>
+        <qualifiedname>WAVHeader::chunk1_id</qualifiedname>
+        <briefdescription>
+<para>Format sub-chunk ID. Indicates that the following sub-chunk contains format information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="22" column="13" bodyfile="3Lab/WAVHeader.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a5ae8b03ae90b2a496cb070e68933c8de" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WAVHeader::chunk1_data_size</definition>
+        <argsstring></argsstring>
+        <name>chunk1_data_size</name>
+        <qualifiedname>WAVHeader::chunk1_data_size</qualifiedname>
+        <briefdescription>
+<para>Size of the format sub-chunk in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="23" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a26c04172af65913e0173dc6664eb78a8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t WAVHeader::format_tag</definition>
+        <argsstring></argsstring>
+        <name>format_tag</name>
+        <qualifiedname>WAVHeader::format_tag</qualifiedname>
+        <briefdescription>
+<para>Audio format code (1 = PCM). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="24" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1abe6c42489869feb63b481fac8e563924" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t WAVHeader::num_channels</definition>
+        <argsstring></argsstring>
+        <name>num_channels</name>
+        <qualifiedname>WAVHeader::num_channels</qualifiedname>
+        <briefdescription>
+<para>Number of audio channels (1 = mono, 2 = stereo, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="25" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1af5f6e042a9b1bd708ba675d09dad8cb2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WAVHeader::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <qualifiedname>WAVHeader::sample_rate</qualifiedname>
+        <briefdescription>
+<para>Sampling frequency in Hz (e.g., 44100 for CD-quality audio). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="26" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a41e79c78587152df883c39eb3ed36704" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WAVHeader::byte_rate</definition>
+        <argsstring></argsstring>
+        <name>byte_rate</name>
+        <qualifiedname>WAVHeader::byte_rate</qualifiedname>
+        <briefdescription>
+<para>Byte rate (sampleRate * numChannels * bitsPerSample / 8). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="27" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1adc03e5728e262fb3ada7127116cdd523" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t WAVHeader::block_align</definition>
+        <argsstring></argsstring>
+        <name>block_align</name>
+        <qualifiedname>WAVHeader::block_align</qualifiedname>
+        <briefdescription>
+<para>Block align (numChannels * bitsPerSample / 8). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="28" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a02aa855310257cf4009cc74d25d163d8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t WAVHeader::bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_sample</name>
+        <qualifiedname>WAVHeader::bits_per_sample</qualifiedname>
+        <briefdescription>
+<para>Bits per sample (e.g., 8, 16, 24, or 32). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="29" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a6a26b9cd27aa90283493c33cac65c9eb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAVHeader::chunk2_id[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>chunk2_id</name>
+        <qualifiedname>WAVHeader::chunk2_id</qualifiedname>
+        <briefdescription>
+<para>Data sub-chunk ID. Indicates that the following sub-chunk contains audio data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="32" column="13" bodyfile="3Lab/WAVHeader.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_w_a_v_header_1a6d1eda450a4cfb726584bd3a8e0af553" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WAVHeader::chunk2_data_size</definition>
+        <argsstring></argsstring>
+        <name>chunk2_data_size</name>
+        <qualifiedname>WAVHeader::chunk2_data_size</qualifiedname>
+        <briefdescription>
+<para>Size of the audio data in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/WAVHeader.h" line="33" column="14" bodyfile="3Lab/WAVHeader.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A structure representing the header of a WAV file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes the format and characteristics of audio data stored in a WAV file. </para>
+    </detaileddescription>
+    <location file="3Lab/WAVHeader.h" line="15" column="1" bodyfile="3Lab/WAVHeader.h" bodystart="15" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_w_a_v_header_1a02aa855310257cf4009cc74d25d163d8" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>bits_per_sample</name></member>
+      <member refid="struct_w_a_v_header_1adc03e5728e262fb3ada7127116cdd523" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>block_align</name></member>
+      <member refid="struct_w_a_v_header_1a41e79c78587152df883c39eb3ed36704" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>byte_rate</name></member>
+      <member refid="struct_w_a_v_header_1a5ae8b03ae90b2a496cb070e68933c8de" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk1_data_size</name></member>
+      <member refid="struct_w_a_v_header_1a01c28e447304b2dcfd6e0a595c383bcb" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk1_id</name></member>
+      <member refid="struct_w_a_v_header_1a6d1eda450a4cfb726584bd3a8e0af553" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk2_data_size</name></member>
+      <member refid="struct_w_a_v_header_1a6a26b9cd27aa90283493c33cac65c9eb" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk2_id</name></member>
+      <member refid="struct_w_a_v_header_1ab3f1b4cd6396eb5ed6c17dcabd665c64" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk_data_size</name></member>
+      <member refid="struct_w_a_v_header_1a8e6ef695dd4bfce231b7e55f2ddbb89e" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>chunk_id</name></member>
+      <member refid="struct_w_a_v_header_1a26c04172af65913e0173dc6664eb78a8" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>format_tag</name></member>
+      <member refid="struct_w_a_v_header_1abe6c42489869feb63b481fac8e563924" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>num_channels</name></member>
+      <member refid="struct_w_a_v_header_1af9551a7af2c6efc6733272da35f8002d" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>riff_type_id</name></member>
+      <member refid="struct_w_a_v_header_1af5f6e042a9b1bd708ba675d09dad8cb2" prot="public" virt="non-virtual"><scope>WAVHeader</scope><name>sample_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.12.0" xml:lang="en-US">
+  <compound refid="class_argument_parser" kind="class"><name>ArgumentParser</name>
+    <member refid="class_argument_parser_1a5504d7e4547e657800b043e63833b5a5" kind="variable"><name>argc_</name></member>
+    <member refid="class_argument_parser_1ad9f8afccf9f14aa07d21ebd3da6c4d1d" kind="variable"><name>argv_</name></member>
+    <member refid="class_argument_parser_1a7a75184a364c74e8570b725637156073" kind="variable"><name>short_option_</name></member>
+    <member refid="class_argument_parser_1a7516de1ca1a118c52a2cdadfc7ad7e78" kind="variable"><name>long_options_</name></member>
+    <member refid="class_argument_parser_1aaacd1fe67ead51a59e726ea4a8ee7128" kind="variable"><name>input_files_</name></member>
+    <member refid="class_argument_parser_1a800e08a98bcad98e69b6244b6ac0dd8f" kind="variable"><name>config_file_</name></member>
+    <member refid="class_argument_parser_1a72cce1ae187394a29127d0f7158120fb" kind="variable"><name>output_file_</name></member>
+    <member refid="class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04" kind="function"><name>ArgumentParser</name></member>
+    <member refid="class_argument_parser_1aaff61b771796a27a7596f809e6d75795" kind="function"><name>Parse</name></member>
+    <member refid="class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd" kind="function"><name>GetInputFiles</name></member>
+    <member refid="class_argument_parser_1a414ac72457e67377032b26378cab1ac1" kind="function"><name>GetOutputFile</name></member>
+    <member refid="class_argument_parser_1a34938826d32a26b88fd93b3fda16b230" kind="function"><name>GetConfigFile</name></member>
+    <member refid="class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba" kind="function"><name>PrintHelp</name></member>
+  </compound>
+  <compound refid="class_config_parser" kind="class"><name>ConfigParser</name>
+    <member refid="class_config_parser_1af44ac06c93b8779a87a4803c3ca6b090" kind="variable"><name>configFileName</name></member>
+    <member refid="class_config_parser_1a14cb7b6fd77e6015b6a46bf325e773a1" kind="variable"><name>muteRegex</name></member>
+    <member refid="class_config_parser_1a4d35affa940a4395db70a775f9cc1767" kind="variable"><name>mixRegex</name></member>
+    <member refid="class_config_parser_1a5b99d0cafd930fa37ca0b61e77136745" kind="variable"><name>distortionRegex</name></member>
+    <member refid="class_config_parser_1a9d373a979d513362304f68641770ad3b" kind="function"><name>ConfigParser</name></member>
+    <member refid="class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f" kind="function"><name>Parse</name></member>
+    <member refid="class_config_parser_1a3328560bcf4f687c80a4d4b4b3be998b" kind="function"><name>InitializeRegex</name></member>
+  </compound>
+  <compound refid="class_converter" kind="class"><name>Converter</name>
+    <member refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" kind="function"><name>Converter</name></member>
+    <member refid="class_converter_1a99cea4f852f70999e858e69291464772" kind="function"><name>~Converter</name></member>
+    <member refid="class_converter_1aa372ef198028ecc08af6c80462e427cc" kind="function"><name>Convert</name></member>
+    <member refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b" kind="function"><name>help</name></member>
+  </compound>
+  <compound refid="class_creater" kind="class"><name>Creater</name>
+    <member refid="class_creater_1a55a808445e328c8628db9aca21b892e2" kind="function"><name>Creater</name></member>
+    <member refid="class_creater_1a548642211f7478639a26954b037359e0" kind="function"><name>~Creater</name></member>
+  </compound>
+  <compound refid="class_distortion_creater" kind="class"><name>DistortionCreater</name>
+    <member refid="class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b" kind="function"><name>CreateConverter</name></member>
+  </compound>
+  <compound refid="class_distortion_option" kind="class"><name>DistortionOption</name>
+    <member refid="class_distortion_option_1a7aee8d9c675ff6de261abf6c109d9331" kind="variable"><name>gain_</name></member>
+    <member refid="class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597" kind="function"><name>DistortionOption</name></member>
+    <member refid="class_distortion_option_1af48ba42d143775f2a9b53241d95411f8" kind="function"><name>Convert</name></member>
+    <member refid="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0" kind="function"><name>help</name></member>
+    <member refid="class_distortion_option_1a84169256e4b5dd21a18af2a3a44fc1f1" kind="function"><name>applyDistortionOption</name></member>
+  </compound>
+  <compound refid="class_mix_creater" kind="class"><name>MixCreater</name>
+    <member refid="class_mix_creater_1ac72368488344b436dee61ac329ef1889" kind="function"><name>CreateConverter</name></member>
+  </compound>
+  <compound refid="class_mix_option" kind="class"><name>MixOption</name>
+    <member refid="class_mix_option_1a43e407f6342f7edcffb05f0fd48b45bf" kind="variable"><name>src_file_</name></member>
+    <member refid="class_mix_option_1a711a17aafcefc8d38091f5f7e83cbd49" kind="variable"><name>start_</name></member>
+    <member refid="class_mix_option_1a9ca76c4eea39165126fc102c63df2d35" kind="function"><name>MixOption</name></member>
+    <member refid="class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3" kind="function"><name>Convert</name></member>
+    <member refid="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c" kind="function"><name>help</name></member>
+    <member refid="class_mix_option_1a01d6b737664bedd122bfd84bfdd1de33" kind="function"><name>AvgSamples</name></member>
+  </compound>
+  <compound refid="class_mute_creater" kind="class"><name>MuteCreater</name>
+    <member refid="class_mute_creater_1a92ee69caf91ee6930deea654bb323c79" kind="function"><name>CreateConverter</name></member>
+  </compound>
+  <compound refid="class_mute_option" kind="class"><name>MuteOption</name>
+    <member refid="class_mute_option_1a27983bc01e15830b9b53fec02971b29c" kind="variable"><name>left_</name></member>
+    <member refid="class_mute_option_1a910f6c75b97d447e5424f0cb435dfcfc" kind="variable"><name>right_</name></member>
+    <member refid="class_mute_option_1a9547f6c020349ba76c88e17986665357" kind="function"><name>MuteOption</name></member>
+    <member refid="class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86" kind="function"><name>Convert</name></member>
+    <member refid="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8" kind="function"><name>help</name></member>
+  </compound>
+  <compound refid="class_reader_w_a_v" kind="class"><name>ReaderWAV</name>
+    <member refid="class_reader_w_a_v_1ab6387a146a59e5c9759a9af672b65d46" kind="variable"><name>file_</name></member>
+    <member refid="class_reader_w_a_v_1a2c03b1c70ca85734327c1cc46d63f70b" kind="variable"><name>input_file_path_</name></member>
+    <member refid="class_reader_w_a_v_1a9d9afa31d97c5bb3825ffbaa8b529c1d" kind="variable"><name>remaining_audio_data_size_</name></member>
+    <member refid="class_reader_w_a_v_1ac1e084e59107cbde24923904af634267" kind="variable"><name>WAVHeader_</name></member>
+    <member refid="class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca" kind="function"><name>ReaderWAV</name></member>
+    <member refid="class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596" kind="function"><name>OpenWAVFile</name></member>
+    <member refid="class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa" kind="function"><name>CloseWAVFile</name></member>
+    <member refid="class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1" kind="function"><name>ReadHead</name></member>
+    <member refid="class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230" kind="function"><name>CheckingFileValidity</name></member>
+    <member refid="class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750" kind="function"><name>GetSamples</name></member>
+    <member refid="class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4" kind="function"><name>GetWAVHeader</name></member>
+    <member refid="class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f" kind="function"><name>GetSizeFileInSec</name></member>
+  </compound>
+  <compound refid="class_registrar_convertors" kind="class"><name>RegistrarConvertors</name>
+    <member refid="class_registrar_convertors_1af127932da675c8e8d42994867130a91c" kind="variable"><name>singleton_</name></member>
+    <member refid="class_registrar_convertors_1aca0048a1edfceb1252539db9eee2fa14" kind="variable"><name>converters_</name></member>
+    <member refid="class_registrar_convertors_1a53c9052bbe50fe003a33d7494a9fd0cc" kind="function"><name>RegistrarConvertors</name></member>
+    <member refid="class_registrar_convertors_1acebf80b95c79dfae5d81600d64f904ef" kind="function"><name>operator=</name></member>
+    <member refid="class_registrar_convertors_1a00c0e1c25e098b13230051bbaae356af" kind="function"><name>RegisterConverter</name></member>
+    <member refid="class_registrar_convertors_1accf38e37cf41f45befb9a558d3a4d326" kind="function"><name>printHelp</name></member>
+    <member refid="class_registrar_convertors_1ad7f18d4f78a8094110e3304184b94dc5" kind="function"><name>GetInstance</name></member>
+    <member refid="class_registrar_convertors_1af0c5db3c316769e6b81956ea75145ae3" kind="function"><name>RegistrarConvertors</name></member>
+  </compound>
+  <compound refid="class_sound_processor" kind="class"><name>SoundProcessor</name>
+    <member refid="class_sound_processor_1a2d96c73e43a438908b1784faf7f76d52" kind="function"><name>Control</name></member>
+    <member refid="class_sound_processor_1ad2dc4341a810805d45d7909649c75d07" kind="function"><name>Processing</name></member>
+    <member refid="class_sound_processor_1a93bfda3c552905d6b2bc6c583f5cabd3" kind="function"><name>HeplPrint</name></member>
+  </compound>
+  <compound refid="struct_w_a_v_header" kind="struct"><name>WAVHeader</name>
+    <member refid="struct_w_a_v_header_1a8e6ef695dd4bfce231b7e55f2ddbb89e" kind="variable"><name>chunk_id</name></member>
+    <member refid="struct_w_a_v_header_1ab3f1b4cd6396eb5ed6c17dcabd665c64" kind="variable"><name>chunk_data_size</name></member>
+    <member refid="struct_w_a_v_header_1af9551a7af2c6efc6733272da35f8002d" kind="variable"><name>riff_type_id</name></member>
+    <member refid="struct_w_a_v_header_1a01c28e447304b2dcfd6e0a595c383bcb" kind="variable"><name>chunk1_id</name></member>
+    <member refid="struct_w_a_v_header_1a5ae8b03ae90b2a496cb070e68933c8de" kind="variable"><name>chunk1_data_size</name></member>
+    <member refid="struct_w_a_v_header_1a26c04172af65913e0173dc6664eb78a8" kind="variable"><name>format_tag</name></member>
+    <member refid="struct_w_a_v_header_1abe6c42489869feb63b481fac8e563924" kind="variable"><name>num_channels</name></member>
+    <member refid="struct_w_a_v_header_1af5f6e042a9b1bd708ba675d09dad8cb2" kind="variable"><name>sample_rate</name></member>
+    <member refid="struct_w_a_v_header_1a41e79c78587152df883c39eb3ed36704" kind="variable"><name>byte_rate</name></member>
+    <member refid="struct_w_a_v_header_1adc03e5728e262fb3ada7127116cdd523" kind="variable"><name>block_align</name></member>
+    <member refid="struct_w_a_v_header_1a02aa855310257cf4009cc74d25d163d8" kind="variable"><name>bits_per_sample</name></member>
+    <member refid="struct_w_a_v_header_1a6a26b9cd27aa90283493c33cac65c9eb" kind="variable"><name>chunk2_id</name></member>
+    <member refid="struct_w_a_v_header_1a6d1eda450a4cfb726584bd3a8e0af553" kind="variable"><name>chunk2_data_size</name></member>
+  </compound>
+  <compound refid="class_writer_w_a_v" kind="class"><name>WriterWAV</name>
+    <member refid="class_writer_w_a_v_1a7a6cd59ebfbdd5e975d6272708b06c2a" kind="variable"><name>file_</name></member>
+    <member refid="class_writer_w_a_v_1a72cc795e3a9ea959efdf3e0fc8312123" kind="variable"><name>output_file_path_</name></member>
+    <member refid="class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb" kind="function"><name>WriterWAV</name></member>
+    <member refid="class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6" kind="function"><name>OpenWAVFile</name></member>
+    <member refid="class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b" kind="function"><name>CloseWAVFile</name></member>
+    <member refid="class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f" kind="function"><name>SaveSamples</name></member>
+  </compound>
+  <compound refid="_argument_parser_8cpp" kind="file"><name>ArgumentParser.cpp</name>
+    <member refid="_argument_parser_8cpp_1a4ba1d7f38ca796df58a8723bd63499cf" kind="variable"><name>kRED</name></member>
+    <member refid="_argument_parser_8cpp_1ab3608fdd3c8f5fc58500df03011a5613" kind="variable"><name>kRESET</name></member>
+    <member refid="_argument_parser_8cpp_1a2fd6ff92d1128f0142151fe0c3f81cd2" kind="variable"><name>kYELLOW</name></member>
+  </compound>
+  <compound refid="_argument_parser_8h" kind="file"><name>ArgumentParser.h</name>
+  </compound>
+  <compound refid="_config_parser_8cpp" kind="file"><name>ConfigParser.cpp</name>
+  </compound>
+  <compound refid="_config_parser_8h" kind="file"><name>ConfigParser.h</name>
+  </compound>
+  <compound refid="_converter_8cpp" kind="file"><name>Converter.cpp</name>
+  </compound>
+  <compound refid="_converter_8h" kind="file"><name>Converter.h</name>
+    <member refid="_converter_8h_1ab3608fdd3c8f5fc58500df03011a5613" kind="variable"><name>kRESET</name></member>
+    <member refid="_converter_8h_1a10327d70c74a48d928572f27e92df537" kind="variable"><name>kGREEN</name></member>
+    <member refid="_converter_8h_1a4ba1d7f38ca796df58a8723bd63499cf" kind="variable"><name>kRED</name></member>
+    <member refid="_converter_8h_1a2fd6ff92d1128f0142151fe0c3f81cd2" kind="variable"><name>kYELLOW</name></member>
+  </compound>
+  <compound refid="_creators_8cpp" kind="file"><name>Creators.cpp</name>
+  </compound>
+  <compound refid="_creators_8h" kind="file"><name>Creators.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_reader_w_a_v_8cpp" kind="file"><name>ReaderWAV.cpp</name>
+    <member refid="_reader_w_a_v_8cpp_1a4ba1d7f38ca796df58a8723bd63499cf" kind="variable"><name>kRED</name></member>
+    <member refid="_reader_w_a_v_8cpp_1ab3608fdd3c8f5fc58500df03011a5613" kind="variable"><name>kRESET</name></member>
+    <member refid="_reader_w_a_v_8cpp_1a2fd6ff92d1128f0142151fe0c3f81cd2" kind="variable"><name>kYELLOW</name></member>
+  </compound>
+  <compound refid="_reader_w_a_v_8h" kind="file"><name>ReaderWAV.h</name>
+  </compound>
+  <compound refid="_registraror_convertors_8h" kind="file"><name>RegistrarorConvertors.h</name>
+  </compound>
+  <compound refid="_sound_processor_8cpp" kind="file"><name>SoundProcessor.cpp</name>
+  </compound>
+  <compound refid="_sound_processor_8h" kind="file"><name>SoundProcessor.h</name>
+  </compound>
+  <compound refid="_w_a_v_header_8h" kind="file"><name>WAVHeader.h</name>
+    <member refid="_w_a_v_header_8h_1ad591d3fc4c2d06f098fd2234b6d74f62" kind="define"><name>FIXED_SAMPLE_RATE</name></member>
+  </compound>
+  <compound refid="_writer_w_a_v_8cpp" kind="file"><name>WriterWAV.cpp</name>
+    <member refid="_writer_w_a_v_8cpp_1a4ba1d7f38ca796df58a8723bd63499cf" kind="variable"><name>kRED</name></member>
+    <member refid="_writer_w_a_v_8cpp_1ab3608fdd3c8f5fc58500df03011a5613" kind="variable"><name>kRESET</name></member>
+    <member refid="_writer_w_a_v_8cpp_1a2fd6ff92d1128f0142151fe0c3f81cd2" kind="variable"><name>kYELLOW</name></member>
+  </compound>
+  <compound refid="_writer_w_a_v_8h" kind="file"><name>WriterWAV.h</name>
+  </compound>
+  <compound refid="dir_f03fa882022768eaf77554bd1cf069d1" kind="dir"><name>3Lab</name>
+  </compound>
+</doxygenindex>

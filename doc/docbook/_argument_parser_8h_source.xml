@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__argument_parser_8h_source" xml:lang="en-US">
+<title>ArgumentParser.h</title>
+<indexterm><primary>3Lab/ArgumentParser.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#ifndef&#32;ARGUMENTPARSER_H</emphasis>
+7 <emphasis role="preprocessor">#define&#32;ARGUMENTPARSER_H</emphasis>
+8 
+9 <emphasis role="preprocessor">#include&#32;&lt;getopt.h&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+12 
+16 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_argument_parser">ArgumentParser</link>&#32;{
+17 <emphasis role="keyword">public</emphasis>:
+23 &#32;&#32;&#32;&#32;<link linkend="_class_argument_parser_1a760403f063ce0bc16b35c7f5d4e84c04">ArgumentParser</link>(<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keywordtype">char</emphasis>&#32;*argv[])
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;argc_(argc),&#32;argv_(argv),&#32;short_option_(<emphasis role="stringliteral">&quot;c:h&quot;</emphasis>),&#32;output_file_(std::string(<emphasis role="stringliteral">&quot;&quot;</emphasis>)),&#32;input_files_()&#32;{
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;long_options_[0]&#32;=&#32;{<emphasis role="stringliteral">&quot;config&quot;</emphasis>,&#32;1,&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;<emphasis role="charliteral">&apos;c&apos;</emphasis>};
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;long_options_[1]&#32;=&#32;{<emphasis role="stringliteral">&quot;help&quot;</emphasis>,&#32;0,&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;<emphasis role="charliteral">&apos;h&apos;</emphasis>};
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;long_options_[2]&#32;=&#32;{<emphasis role="keyword">nullptr</emphasis>,&#32;0,&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;0};
+28 &#32;&#32;&#32;&#32;}
+29 
+35 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_argument_parser_1aaff61b771796a27a7596f809e6d75795">Parse</link>();
+36 
+41 &#32;&#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;<link linkend="_class_argument_parser_1a8f4ef195d0d692321c90f5a30a6326cd">GetInputFiles</link>()&#32;<emphasis role="keyword">const</emphasis>;
+42 
+47 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_argument_parser_1a414ac72457e67377032b26378cab1ac1">GetOutputFile</link>()&#32;<emphasis role="keyword">const</emphasis>;
+48 
+53 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_argument_parser_1a34938826d32a26b88fd93b3fda16b230">GetConfigFile</link>()&#32;<emphasis role="keyword">const</emphasis>;
+54 
+58 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_argument_parser_1ad098fd613c3b5c17f3913ffff7e18cba">PrintHelp</link>();
+59 
+60 <emphasis role="keyword">private</emphasis>:
+61 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;argc_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+62 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;**argv_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+63 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*short_option_;&#32;&#32;&#32;&#32;&#32;&#32;
+64 &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis>option&#32;long_options_[3];&#32;
+65 
+66 &#32;&#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;input_files_;&#32;
+67 &#32;&#32;&#32;&#32;std::string&#32;config_file_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+68 &#32;&#32;&#32;&#32;std::string&#32;output_file_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+69 };
+70 
+71 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ARGUMENTPARSER_H</emphasis>
+</programlisting></section>

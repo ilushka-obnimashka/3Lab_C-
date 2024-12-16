@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_converter" xml:lang="en-US">
+<title>Converter Class Reference</title>
+<indexterm><primary>Converter</primary></indexterm>
+<para>
+
+<para>Base class for audio converters. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Converter.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc"/><emphasis role="strong">Converter</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_converter_1a99cea4f852f70999e858e69291464772"/>virtual <emphasis role="strong">~Converter</emphasis> ()=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_converter_1aa372ef198028ecc08af6c80462e427cc">Convert</link> (std::string input_file, std::string output_file)=0</para>
+
+<para>Pure virtual function to convert audio files. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_converter_1a3720c9083eee5ca517e63a3f92994e0b">help</link> () const =0</para>
+
+<para>Pure virtual function to display help information. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Base class for audio converters. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_converter_1aa372ef198028ecc08af6c80462e427cc"/><section>
+    <title>Convert()</title>
+<indexterm><primary>Convert</primary><secondary>Converter</secondary></indexterm>
+<indexterm><primary>Converter</primary><secondary>Convert</secondary></indexterm>
+<para><computeroutput>virtual void Converter::Convert (std::string input_file, std::string output_file)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Pure virtual function to convert audio files. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input_file</entry><entry>
+<para>The input WAV file. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>output_file</entry><entry>
+<para>The output WAV file. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>reader</entry><entry>
+<para>The <link linkend="_class_reader_w_a_v">ReaderWAV</link> object to read the input file. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>writer</entry><entry>
+<para>The <link linkend="_class_writer_w_a_v">WriterWAV</link> object to write the output file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_distortion_option_1af48ba42d143775f2a9b53241d95411f8">DistortionOption</link>, <link linkend="_class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3">MixOption</link>, and <link linkend="_class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86">MuteOption</link>.</para>
+</section>
+<anchor xml:id="_class_converter_1a3720c9083eee5ca517e63a3f92994e0b"/><section>
+    <title>help()</title>
+<indexterm><primary>help</primary><secondary>Converter</secondary></indexterm>
+<indexterm><primary>Converter</primary><secondary>help</secondary></indexterm>
+<para><computeroutput>virtual void Converter::help ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Pure virtual function to display help information. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0">DistortionOption</link>, <link linkend="_class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c">MixOption</link>, and <link linkend="_class_mute_option_1a7ece9c7268c414dbb9917c84253407d8">MuteOption</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+3Lab/<link linkend="__converter_8h">Converter.h</link></section>
+</section>

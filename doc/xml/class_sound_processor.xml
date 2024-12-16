@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_sound_processor" kind="class" language="C++" prot="public">
+    <compoundname>SoundProcessor</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sound_processor_1a2d96c73e43a438908b1784faf7f76d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoundProcessor::Control</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>Control</name>
+        <qualifiedname>SoundProcessor::Control</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/SoundProcessor.h" line="6" column="10" bodyfile="3Lab/SoundProcessor.cpp" bodystart="11" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sound_processor_1ad2dc4341a810805d45d7909649c75d07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoundProcessor::Processing</definition>
+        <argsstring>(ArgumentParser &amp;argument_parser)</argsstring>
+        <name>Processing</name>
+        <qualifiedname>SoundProcessor::Processing</qualifiedname>
+        <param>
+          <type><ref refid="class_argument_parser" kindref="compound">ArgumentParser</ref> &amp;</type>
+          <declname>argument_parser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/SoundProcessor.h" line="8" column="10" bodyfile="3Lab/SoundProcessor.cpp" bodystart="22" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sound_processor_1a93bfda3c552905d6b2bc6c583f5cabd3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoundProcessor::HeplPrint</definition>
+        <argsstring>()</argsstring>
+        <name>HeplPrint</name>
+        <qualifiedname>SoundProcessor::HeplPrint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/SoundProcessor.h" line="9" column="10" bodyfile="3Lab/SoundProcessor.cpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/SoundProcessor.h" line="4" column="1" bodyfile="3Lab/SoundProcessor.h" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_sound_processor_1a2d96c73e43a438908b1784faf7f76d52" prot="public" virt="non-virtual"><scope>SoundProcessor</scope><name>Control</name></member>
+      <member refid="class_sound_processor_1a93bfda3c552905d6b2bc6c583f5cabd3" prot="private" virt="non-virtual"><scope>SoundProcessor</scope><name>HeplPrint</name></member>
+      <member refid="class_sound_processor_1ad2dc4341a810805d45d7909649c75d07" prot="private" virt="non-virtual"><scope>SoundProcessor</scope><name>Processing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

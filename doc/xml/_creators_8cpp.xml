@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_creators_8cpp" kind="file" language="C++">
+    <compoundname>Creators.cpp</compoundname>
+    <includes refid="_creators_8h" local="yes">Creators.h</includes>
+    <includes refid="_converter_8h" local="yes">Converter.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>3Lab/Creators.cpp</label>
+        <link refid="_creators_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Creators.h</label>
+        <link refid="_creators_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>WriterWAV.h</label>
+        <link refid="_writer_w_a_v_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementation of the creator classes for different converter types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_creators_8h" kindref="compound">Creators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_converter_8h" kindref="compound">Converter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_converter" kindref="compound">Converter</ref><sp/>*<ref refid="class_mute_creater_1a92ee69caf91ee6930deea654bb323c79" kindref="member">MuteCreater::CreateConverter</ref>(uint32_t<sp/>left,<sp/>uint32_t<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mute_option" kindref="compound">MuteOption</ref>(left,<sp/>right);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="class_converter" kindref="compound">Converter</ref><sp/>*<ref refid="class_mix_creater_1ac72368488344b436dee61ac329ef1889" kindref="member">MixCreater::CreateConverter</ref>(uint32_t<sp/>start,<sp/>std::string<sp/>name_src_file)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mix_option" kindref="compound">MixOption</ref>(name_src_file,<sp/>start);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="class_converter" kindref="compound">Converter</ref><sp/>*<ref refid="class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b" kindref="member">DistortionCreater::CreateConverter</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gain)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_distortion_option" kindref="compound">DistortionOption</ref>(gain);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/Creators.cpp"/>
+  </compounddef>
+</doxygen>

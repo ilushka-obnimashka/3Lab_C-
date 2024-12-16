@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_config_parser" kind="class" language="C++" prot="public">
+    <compoundname>ConfigParser</compoundname>
+    <includes refid="_config_parser_8h" local="no">ConfigParser.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_config_parser_1af44ac06c93b8779a87a4803c3ca6b090" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ConfigParser::configFileName</definition>
+        <argsstring></argsstring>
+        <name>configFileName</name>
+        <qualifiedname>ConfigParser::configFileName</qualifiedname>
+        <briefdescription>
+<para>The name of the configuration file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="33" column="17" bodyfile="3Lab/ConfigParser.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_parser_1a14cb7b6fd77e6015b6a46bf325e773a1" prot="private" static="no" mutable="no">
+        <type>std::regex</type>
+        <definition>std::regex ConfigParser::muteRegex</definition>
+        <argsstring></argsstring>
+        <name>muteRegex</name>
+        <qualifiedname>ConfigParser::muteRegex</qualifiedname>
+        <briefdescription>
+<para>Regular expression for the mute command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="34" column="16" bodyfile="3Lab/ConfigParser.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_parser_1a4d35affa940a4395db70a775f9cc1767" prot="private" static="no" mutable="no">
+        <type>std::regex</type>
+        <definition>std::regex ConfigParser::mixRegex</definition>
+        <argsstring></argsstring>
+        <name>mixRegex</name>
+        <qualifiedname>ConfigParser::mixRegex</qualifiedname>
+        <briefdescription>
+<para>Regular expression for the mix command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="35" column="16" bodyfile="3Lab/ConfigParser.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_parser_1a5b99d0cafd930fa37ca0b61e77136745" prot="private" static="no" mutable="no">
+        <type>std::regex</type>
+        <definition>std::regex ConfigParser::distortionRegex</definition>
+        <argsstring></argsstring>
+        <name>distortionRegex</name>
+        <qualifiedname>ConfigParser::distortionRegex</qualifiedname>
+        <briefdescription>
+<para>Regular expression for the distortion command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="36" column="16" bodyfile="3Lab/ConfigParser.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_config_parser_1a9d373a979d513362304f68641770ad3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigParser::ConfigParser</definition>
+        <argsstring>(const std::string &amp;config_file_name)</argsstring>
+        <name>ConfigParser</name>
+        <qualifiedname>ConfigParser::ConfigParser</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>config_file_name</declname>
+          <defname>configFileName</defname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_config_parser" kindref="compound">ConfigParser</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config_file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the configuration file to parse.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the configuration file to parse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="23" column="5" bodyfile="3Lab/ConfigParser.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::queue&lt; <ref refid="class_converter" kindref="compound">Converter</ref> * &gt;</type>
+        <definition>std::queue&lt; Converter * &gt; ConfigParser::Parse</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;input_files)</argsstring>
+        <name>Parse</name>
+        <qualifiedname>ConfigParser::Parse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>input_files</declname>
+          <defname>inputFiles</defname>
+        </param>
+        <briefdescription>
+<para>Parses the configuration file and creates a queue of <ref refid="class_converter" kindref="compound">Converter</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of input file names. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A queue of <ref refid="class_converter" kindref="compound">Converter</ref> objects created based on the configuration file.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputFiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of input file names. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A queue of <ref refid="class_converter" kindref="compound">Converter</ref> objects created based on the configuration file. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="30" column="16" bodyfile="3Lab/ConfigParser.cpp" bodystart="33" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_config_parser_1a3328560bcf4f687c80a4d4b4b3be998b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigParser::InitializeRegex</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeRegex</name>
+        <qualifiedname>ConfigParser::InitializeRegex</qualifiedname>
+        <briefdescription>
+<para>Initializes the regular expressions used for parsing the configuration file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ConfigParser.h" line="41" column="10" bodyfile="3Lab/ConfigParser.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="class_config_parser" kindref="compound">ConfigParser</ref> provides a convenient interface for parsing a configuration file using std::regex. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/ConfigParser.h" line="17" column="1" bodyfile="3Lab/ConfigParser.h" bodystart="17" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_config_parser_1af44ac06c93b8779a87a4803c3ca6b090" prot="private" virt="non-virtual"><scope>ConfigParser</scope><name>configFileName</name></member>
+      <member refid="class_config_parser_1a9d373a979d513362304f68641770ad3b" prot="public" virt="non-virtual"><scope>ConfigParser</scope><name>ConfigParser</name></member>
+      <member refid="class_config_parser_1a5b99d0cafd930fa37ca0b61e77136745" prot="private" virt="non-virtual"><scope>ConfigParser</scope><name>distortionRegex</name></member>
+      <member refid="class_config_parser_1a3328560bcf4f687c80a4d4b4b3be998b" prot="private" virt="non-virtual"><scope>ConfigParser</scope><name>InitializeRegex</name></member>
+      <member refid="class_config_parser_1a4d35affa940a4395db70a775f9cc1767" prot="private" virt="non-virtual"><scope>ConfigParser</scope><name>mixRegex</name></member>
+      <member refid="class_config_parser_1a14cb7b6fd77e6015b6a46bf325e773a1" prot="private" virt="non-virtual"><scope>ConfigParser</scope><name>muteRegex</name></member>
+      <member refid="class_config_parser_1a4f129681e1347f00c7b7d510ec68ca7f" prot="public" virt="non-virtual"><scope>ConfigParser</scope><name>Parse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

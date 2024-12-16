@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Sound Processor</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_argument_parser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_config_parser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_converter.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_creater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_distortion_creater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_distortion_option.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_mix_creater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_mix_option.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_mute_creater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_mute_option.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_reader_w_a_v.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_registrar_convertors.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_sound_processor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_w_a_v_header.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_writer_w_a_v.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="_argument_parser_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_argument_parser_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_argument_parser_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_config_parser_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_config_parser_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_config_parser_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_converter_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_converter_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_converter_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_creators_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_creators_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_creators_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_reader_w_a_v_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_reader_w_a_v_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_registraror_convertors_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_sound_processor_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_w_a_v_header_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_w_a_v_header_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_writer_w_a_v_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_writer_w_a_v_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_writer_w_a_v_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

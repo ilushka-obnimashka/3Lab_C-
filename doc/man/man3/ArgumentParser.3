@@ -1,0 +1,128 @@
+.TH "ArgumentParser" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ArgumentParser \- Class \fBArgumentParser\fP provides a convenient interface for parsing command line arguments using the getopt_long(3) function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <ArgumentParser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArgumentParser\fP (int argc, char *argv[])"
+.br
+.RI "Constructor of the \fBArgumentParser\fP class\&. "
+.ti -1c
+.RI "bool \fBParse\fP ()"
+.br
+.RI "Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBGetInputFiles\fP () const"
+.br
+.RI "Gets the list of input files\&. "
+.ti -1c
+.RI "std::string \fBGetOutputFile\fP () const"
+.br
+.RI "Gets the output file name\&. "
+.ti -1c
+.RI "std::string \fBGetConfigFile\fP () const"
+.br
+.RI "Gets the configuration file name\&. "
+.ti -1c
+.RI "const void \fBPrintHelp\fP ()"
+.br
+.RI "Method for printing the help message\&. Will be called when the user runs the program with the -h or --help option\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class \fBArgumentParser\fP provides a convenient interface for parsing command line arguments using the getopt_long(3) function\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ArgumentParser::ArgumentParser (int argc, char * argv[])\fR [inline]\fP"
+
+.PP
+Constructor of the \fBArgumentParser\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargc\fP Counter for the number of command line arguments\&. 
+.br
+\fIargv\fP Pointer to an array of single- or multi-byte strings that contains the program's arguments\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string ArgumentParser::GetConfigFile () const"
+
+.PP
+Gets the configuration file name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The configuration file name\&. 
+.RE
+.PP
+
+.SS "std::vector< std::string > ArgumentParser::GetInputFiles () const"
+
+.PP
+Gets the list of input files\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of input file names\&. 
+.RE
+.PP
+
+.SS "std::string ArgumentParser::GetOutputFile () const"
+
+.PP
+Gets the output file name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The output file name\&. 
+.RE
+.PP
+
+.SS "bool ArgumentParser::Parse ()"
+
+.PP
+Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported\&. Parses the command line arguments\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+true if help command not called, false otherwise\&.
+.RE
+.PP
+This function uses getopt_long to parse the command line arguments and sets the corresponding member variables\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+true if parsing is successful, false if help is requested\&. 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIstd::invalid_argument\fP if there is an error in the arguments\&. 
+.RE
+.PP
+
+.SS "const void ArgumentParser::PrintHelp ()"
+
+.PP
+Method for printing the help message\&. Will be called when the user runs the program with the -h or --help option\&. Prints the help message\&.
+
+.PP
+This function prints the usage information and available options to the standard output\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

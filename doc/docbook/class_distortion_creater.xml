@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_distortion_creater" xml:lang="en-US">
+<title>DistortionCreater Class Reference</title>
+<indexterm><primary>DistortionCreater</primary></indexterm>
+<para>
+
+<para>Class responsible for the creation of Distortion <link linkend="_class_converter">Converter</link>. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Creators.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_converter">Converter</link> * <link linkend="_class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b">CreateConverter</link> (double gain)</para>
+
+<para>Creates a Distortion converter. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_creater">Creater</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">Creater</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>virtual <emphasis role="strong">~Creater</emphasis> ()=default</para>
+
+<para>Virtual destructor. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Class responsible for the creation of Distortion <link linkend="_class_converter">Converter</link>. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b"/><section>
+    <title>CreateConverter()</title>
+<indexterm><primary>CreateConverter</primary><secondary>DistortionCreater</secondary></indexterm>
+<indexterm><primary>DistortionCreater</primary><secondary>CreateConverter</secondary></indexterm>
+<para><computeroutput><link linkend="_class_converter">Converter</link> * DistortionCreater::CreateConverter (double gain)</computeroutput></para><para>
+
+<para>Creates a Distortion converter. </para>
+</para>
+
+<para>Creates a <link linkend="_class_distortion_option">DistortionOption</link> converter.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gain</entry><entry>
+<para>The gain level. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the created <link linkend="_class_converter">Converter</link> object.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gain</entry><entry>
+<para>The gain value for the distortion operation. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to a new <link linkend="_class_distortion_option">DistortionOption</link> object. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__creators_8h">Creators.h</link>3Lab/<link linkend="__creators_8cpp">Creators.cpp</link></section>
+</section>

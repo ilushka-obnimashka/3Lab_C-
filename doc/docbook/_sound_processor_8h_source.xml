@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__sound_processor_8h_source" xml:lang="en-US">
+<title>SoundProcessor.h</title>
+<indexterm><primary>3Lab/SoundProcessor.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__argument_parser_8h">ArgumentParser.h</link>&quot;</emphasis>
+3 
+4 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_sound_processor">SoundProcessor</link>&#32;{
+5 <emphasis role="keyword">public</emphasis>:
+6 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;Control(<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keywordtype">char</emphasis>*&#32;argv[]);
+7 <emphasis role="keyword">private</emphasis>:
+8 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;Processing(<link linkend="_class_argument_parser">ArgumentParser</link>&amp;&#32;argument_parser);
+9 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;HeplPrint();
+10 };
+</programlisting></section>

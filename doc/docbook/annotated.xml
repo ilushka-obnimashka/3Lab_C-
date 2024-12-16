@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_argument_parser">ArgumentParser</link>
+<para>Class <link linkend="_class_argument_parser">ArgumentParser</link> provides a convenient interface for parsing command line arguments using the getopt_long(3) function </para>
+<link linkend="_class_config_parser">ConfigParser</link>
+<para>Class <link linkend="_class_config_parser">ConfigParser</link> provides a convenient interface for parsing a configuration file using std::regex </para>
+<link linkend="_class_converter">Converter</link>
+<para>Base class for audio converters </para>
+<link linkend="_class_creater">Creater</link>
+<para>Base class for factory method. Base class for all creater classes </para>
+<link linkend="_class_distortion_creater">DistortionCreater</link>
+<para>Class responsible for the creation of Distortion <link linkend="_class_converter">Converter</link> </para>
+<link linkend="_class_distortion_option">DistortionOption</link>
+<para>Class for applying distortion to an audio file </para>
+<link linkend="_class_mix_creater">MixCreater</link>
+<para>Class responsible for the creation of Mix converters </para>
+<link linkend="_class_mix_option">MixOption</link>
+<para>Class for mixing two audio files </para>
+<link linkend="_class_mute_creater">MuteCreater</link>
+<para>Class responsible for the creation of Mute <link linkend="_class_converter">Converter</link> </para>
+<link linkend="_class_mute_option">MuteOption</link>
+<para>Class for muting a section of an audio file </para>
+<link linkend="_class_reader_w_a_v">ReaderWAV</link>
+<para>A class to read and handle WAV audio files </para>
+<link linkend="_class_registrar_convertors">RegistrarConvertors</link>
+<para>This .h file implements a class for creating dynamic help about converters in the general code </para>
+<link linkend="_class_sound_processor">SoundProcessor</link><link linkend="_struct_w_a_v_header">WAVHeader</link>
+<para>A structure representing the header of a WAV file </para>
+<link linkend="_class_writer_w_a_v">WriterWAV</link>
+<para>A class to write WAV audio files </para>
+</section>

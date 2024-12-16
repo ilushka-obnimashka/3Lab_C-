@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_mute_option" kind="class" language="C++" prot="public">
+    <compoundname>MuteOption</compoundname>
+    <basecompoundref refid="class_converter" prot="public" virt="non-virtual">Converter</basecompoundref>
+    <includes refid="_converter_8h" local="no">Converter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mute_option_1a27983bc01e15830b9b53fec02971b29c" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MuteOption::left_</definition>
+        <argsstring></argsstring>
+        <name>left_</name>
+        <qualifiedname>MuteOption::left_</qualifiedname>
+        <briefdescription>
+<para>The left boundary for the mute operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="67" column="14" bodyfile="3Lab/Converter.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mute_option_1a910f6c75b97d447e5424f0cb435dfcfc" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MuteOption::right_</definition>
+        <argsstring></argsstring>
+        <name>right_</name>
+        <qualifiedname>MuteOption::right_</qualifiedname>
+        <briefdescription>
+<para>The right boundary for the mute operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="68" column="14" bodyfile="3Lab/Converter.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mute_option_1a9547f6c020349ba76c88e17986665357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MuteOption::MuteOption</definition>
+        <argsstring>(uint32_t left, uint32_t right)</argsstring>
+        <name>MuteOption</name>
+        <qualifiedname>MuteOption::MuteOption</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_mute_option" kindref="compound">MuteOption</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left boundary for the mute operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right boundary for the mute operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="53" column="5" bodyfile="3Lab/Converter.cpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MuteOption::Convert</definition>
+        <argsstring>(std::string input_file, std::string output_file) override</argsstring>
+        <name>Convert</name>
+        <qualifiedname>MuteOption::Convert</qualifiedname>
+        <reimplements refid="class_converter_1aa372ef198028ecc08af6c80462e427cc">Convert</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+<para>Applies the mute operation to the input file and saves the result to the output file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input WAV file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output WAV file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="55" column="10" bodyfile="3Lab/Converter.cpp" bodystart="33" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void MuteOption::help</definition>
+        <argsstring>() const override</argsstring>
+        <name>help</name>
+        <qualifiedname>MuteOption::help</qualifiedname>
+        <reimplements refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b">help</reimplements>
+        <briefdescription>
+<para>Displays help information for the <ref refid="class_mute_option" kindref="compound">MuteOption</ref> converter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="60" column="10" bodyfile="3Lab/Converter.h" bodystart="60" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for muting a section of an audio file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>MuteOption</label>
+        <link refid="class_mute_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Converter</label>
+        <link refid="class_converter"/>
+      </node>
+      <node id="1">
+        <label>MuteOption</label>
+        <link refid="class_mute_option"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="3Lab/Converter.h" line="51" column="1" bodyfile="3Lab/Converter.h" bodystart="51" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86" prot="public" virt="virtual"><scope>MuteOption</scope><name>Convert</name></member>
+      <member refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" prot="public" virt="non-virtual"><scope>MuteOption</scope><name>Converter</name></member>
+      <member refid="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8" prot="public" virt="virtual"><scope>MuteOption</scope><name>help</name></member>
+      <member refid="class_mute_option_1a27983bc01e15830b9b53fec02971b29c" prot="private" virt="non-virtual"><scope>MuteOption</scope><name>left_</name></member>
+      <member refid="class_mute_option_1a9547f6c020349ba76c88e17986665357" prot="public" virt="non-virtual"><scope>MuteOption</scope><name>MuteOption</name></member>
+      <member refid="class_mute_option_1a910f6c75b97d447e5424f0cb435dfcfc" prot="private" virt="non-virtual"><scope>MuteOption</scope><name>right_</name></member>
+      <member refid="class_converter_1a99cea4f852f70999e858e69291464772" prot="public" virt="virtual"><scope>MuteOption</scope><name>~Converter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

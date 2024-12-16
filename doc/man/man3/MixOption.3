@@ -1,0 +1,84 @@
+.TH "MixOption" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MixOption \- Class for mixing two audio files\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Converter\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMixOption\fP (std::string src_file, uint32_t start)"
+.br
+.RI "Constructor for the \fBMixOption\fP class\&. "
+.ti -1c
+.RI "void \fBConvert\fP (std::string input_file, std::string output_file) override"
+.br
+.RI "Applies the mix operation to the input file and saves the result to the output file\&. "
+.ti -1c
+.RI "void \fBhelp\fP () const override"
+.br
+.RI "Displays help information for the \fBMixOption\fP converter\&. "
+.in -1c
+
+Public Member Functions inherited from \fBConverter\fP
+.in +1c
+.ti -1c
+.RI "\fBConverter\fP ()=default"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "virtual \fB~Converter\fP ()=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for mixing two audio files\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MixOption::MixOption (std::string src_file, uint32_t start)"
+
+.PP
+Constructor for the \fBMixOption\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsrc_file\fP The source file to mix\&. 
+.br
+\fIstart\fP The starting point for the mix operation\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void MixOption::Convert (std::string input_file, std::string output_file)\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Applies the mix operation to the input file and saves the result to the output file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput_file\fP The input WAV file\&. 
+.br
+\fIoutput_file\fP The output WAV file\&. 
+.RE
+.PP
+
+.PP
+Implements \fBConverter\fP\&.
+.SS "void MixOption::help () const\fR [inline]\fP, \fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Displays help information for the \fBMixOption\fP converter\&. 
+.PP
+Implements \fBConverter\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

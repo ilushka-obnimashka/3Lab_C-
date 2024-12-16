@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_distortion_creater" kind="class" language="C++" prot="public">
+    <compoundname>DistortionCreater</compoundname>
+    <basecompoundref refid="class_creater" prot="public" virt="non-virtual">Creater</basecompoundref>
+    <includes refid="_creators_8h" local="no">Creators.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_converter" kindref="compound">Converter</ref> *</type>
+        <definition>Converter * DistortionCreater::CreateConverter</definition>
+        <argsstring>(double gain)</argsstring>
+        <name>CreateConverter</name>
+        <qualifiedname>DistortionCreater::CreateConverter</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+<para>Creates a Distortion converter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="class_distortion_option" kindref="compound">DistortionOption</ref> converter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gain level. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the created <ref refid="class_converter" kindref="compound">Converter</ref> object.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gain value for the distortion operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a new <ref refid="class_distortion_option" kindref="compound">DistortionOption</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Creators.h" line="71" column="15" bodyfile="3Lab/Creators.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class responsible for the creation of Distortion <ref refid="class_converter" kindref="compound">Converter</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Creater</label>
+        <link refid="class_creater"/>
+      </node>
+      <node id="1">
+        <label>DistortionCreater</label>
+        <link refid="class_distortion_creater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Creater</label>
+        <link refid="class_creater"/>
+      </node>
+      <node id="1">
+        <label>DistortionCreater</label>
+        <link refid="class_distortion_creater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="3Lab/Creators.h" line="63" column="1" bodyfile="3Lab/Creators.h" bodystart="63" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_distortion_creater_1a9b52e0d9e5862a2ba18cbe5ee6076f4b" prot="public" virt="non-virtual"><scope>DistortionCreater</scope><name>CreateConverter</name></member>
+      <member refid="class_creater_1a55a808445e328c8628db9aca21b892e2" prot="public" virt="non-virtual"><scope>DistortionCreater</scope><name>Creater</name></member>
+      <member refid="class_creater_1a548642211f7478639a26954b037359e0" prot="public" virt="virtual"><scope>DistortionCreater</scope><name>~Creater</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

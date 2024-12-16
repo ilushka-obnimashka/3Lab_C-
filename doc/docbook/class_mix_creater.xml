@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mix_creater" xml:lang="en-US">
+<title>MixCreater Class Reference</title>
+<indexterm><primary>MixCreater</primary></indexterm>
+<para>
+
+<para>Class responsible for the creation of Mix converters. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Creators.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_converter">Converter</link> * <link linkend="_class_mix_creater_1ac72368488344b436dee61ac329ef1889">CreateConverter</link> (uint32_t start, std::string file)</para>
+
+<para>Creates a Mix converter. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_creater">Creater</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">Creater</emphasis> ()=default</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>virtual <emphasis role="strong">~Creater</emphasis> ()=default</para>
+
+<para>Virtual destructor. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Class responsible for the creation of Mix converters. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mix_creater_1ac72368488344b436dee61ac329ef1889"/><section>
+    <title>CreateConverter()</title>
+<indexterm><primary>CreateConverter</primary><secondary>MixCreater</secondary></indexterm>
+<indexterm><primary>MixCreater</primary><secondary>CreateConverter</secondary></indexterm>
+<para><computeroutput><link linkend="_class_converter">Converter</link> * MixCreater::CreateConverter (uint32_t start, std::string name_src_file)</computeroutput></para><para>
+
+<para>Creates a Mix converter. </para>
+</para>
+
+<para>Creates a <link linkend="_class_mix_option">MixOption</link> converter.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>start</entry><entry>
+<para>The start time in seconds. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>file</entry><entry>
+<para>The name of the file to mix. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the created <link linkend="_class_converter">Converter</link> object.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>start</entry><entry>
+<para>The starting point for the mix operation. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name_src_file</entry><entry>
+<para>The name of the source file to mix. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to a new <link linkend="_class_mix_option">MixOption</link> object. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+3Lab/<link linkend="__creators_8h">Creators.h</link>3Lab/<link linkend="__creators_8cpp">Creators.cpp</link></section>
+</section>

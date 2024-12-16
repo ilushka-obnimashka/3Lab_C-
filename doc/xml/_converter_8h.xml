@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_converter_8h" kind="file" language="C++">
+    <compoundname>Converter.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="_reader_w_a_v_8h" local="yes">ReaderWAV.h</includes>
+    <includes refid="_writer_w_a_v_8h" local="yes">WriterWAV.h</includes>
+    <includedby refid="_config_parser_8cpp" local="yes">3Lab/ConfigParser.cpp</includedby>
+    <includedby refid="_config_parser_8h" local="yes">3Lab/ConfigParser.h</includedby>
+    <includedby refid="_converter_8cpp" local="yes">3Lab/Converter.cpp</includedby>
+    <includedby refid="_creators_8cpp" local="yes">3Lab/Creators.cpp</includedby>
+    <includedby refid="_creators_8h" local="yes">3Lab/Creators.h</includedby>
+    <includedby refid="_registraror_convertors_8h" local="yes">3Lab/RegistrarorConvertors.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>3Lab/Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ReaderWAV.h</label>
+        <link refid="_reader_w_a_v_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>WAVHeader.h</label>
+        <link refid="_w_a_v_header_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>WriterWAV.h</label>
+        <link refid="_writer_w_a_v_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>3Lab/ConfigParser.cpp</label>
+        <link refid="_config_parser_8cpp"/>
+      </node>
+      <node id="3">
+        <label>3Lab/ConfigParser.h</label>
+        <link refid="_config_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>3Lab/Converter.cpp</label>
+        <link refid="_converter_8cpp"/>
+      </node>
+      <node id="1">
+        <label>3Lab/Converter.h</label>
+        <link refid="_converter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>3Lab/Creators.cpp</label>
+        <link refid="_creators_8cpp"/>
+      </node>
+      <node id="6">
+        <label>3Lab/Creators.h</label>
+        <link refid="_creators_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>3Lab/RegistrarorConvertors.h</label>
+        <link refid="_registraror_convertors_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_converter" prot="public">Converter</innerclass>
+    <innerclass refid="class_mute_option" prot="public">MuteOption</innerclass>
+    <innerclass refid="class_mix_option" prot="public">MixOption</innerclass>
+    <innerclass refid="class_distortion_option" prot="public">DistortionOption</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_converter_8h_1ab3608fdd3c8f5fc58500df03011a5613" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRESET</definition>
+        <argsstring></argsstring>
+        <name>kRESET</name>
+        <initializer>= &quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="13" column="19" bodyfile="3Lab/Converter.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_converter_8h_1a10327d70c74a48d928572f27e92df537" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kGREEN</definition>
+        <argsstring></argsstring>
+        <name>kGREEN</name>
+        <initializer>= &quot;\033[32m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="14" column="19" bodyfile="3Lab/Converter.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_converter_8h_1a4ba1d7f38ca796df58a8723bd63499cf" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kRED</definition>
+        <argsstring></argsstring>
+        <name>kRED</name>
+        <initializer>= &quot;\033[1;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="15" column="19" bodyfile="3Lab/Converter.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_converter_8h_1a2fd6ff92d1128f0142151fe0c3f81cd2" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string kYELLOW</definition>
+        <argsstring></argsstring>
+        <name>kYELLOW</name>
+        <initializer>= &quot;\033[33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Converter.h" line="16" column="19" bodyfile="3Lab/Converter.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Header file for the <ref refid="class_converter" kindref="compound">Converter</ref> class and its derived classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ReaderWAV.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_writer_w_a_v_8h" kindref="compound">WriterWAV.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRESET<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[0m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kGREEN<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[32m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kRED<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[1;31m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>kYELLOW<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\033[33m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_converter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_converter" kindref="compound">Converter</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_converter_1aaa67c7d2770c60fc2fa85fccb6f8a1fc" kindref="member">Converter</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_converter_1a99cea4f852f70999e858e69291464772" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_converter_1a99cea4f852f70999e858e69291464772" kindref="member">~Converter</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_converter_1aa372ef198028ecc08af6c80462e427cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_converter_1aa372ef198028ecc08af6c80462e427cc" kindref="member">Convert</ref>(std::string<sp/>input_file,<sp/>std::string<sp/>output_file)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_converter_1a3720c9083eee5ca517e63a3f92994e0b" kindref="member">help</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_mute_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mute_option" kindref="compound">MuteOption</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_converter" kindref="compound">Converter</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mute_option_1a9547f6c020349ba76c88e17986665357" kindref="member">MuteOption</ref>(uint32_t<sp/>left,<sp/>uint32_t<sp/>right);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mute_option_1ae10239ac468a503de8a7743f7c9d8c86" kindref="member">Convert</ref>(std::string<sp/>input_file,<sp/>std::string<sp/>output_file)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mute_option_1a7ece9c7268c414dbb9917c84253407d8" kindref="member">help</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>kGREEN<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;MuteOption<sp/>converter:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Provide<sp/>muting<sp/>the<sp/>audio<sp/>from<sp/>&lt;n&gt;<sp/>to<sp/>&lt;m&gt;<sp/>seconds.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Example:<sp/>mute<sp/>1<sp/>4&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>left_;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>right_;<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_mix_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mix_option" kindref="compound">MixOption</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_converter" kindref="compound">Converter</ref><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mix_option_1a9ca76c4eea39165126fc102c63df2d35" kindref="member">MixOption</ref>(std::string<sp/>src_file,<sp/>uint32_t<sp/>start);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mix_option_1a1a405d28acaf4eec83488c7b5cc81ba3" kindref="member">Convert</ref>(std::string<sp/>input_file,<sp/>std::string<sp/>output_file)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mix_option_1a1a7e5a66cde777450761bd2a5b951d9c" kindref="member">help</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>kGREEN<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;MixOption<sp/>converter&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Provide<sp/>mixing<sp/>of<sp/>two<sp/>audio<sp/>files<sp/>into<sp/>one&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Example:<sp/>mix<sp/>$2<sp/>10&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;It<sp/>means<sp/>that<sp/>we<sp/>mixed<sp/>audio<sp/>with<sp/>file<sp/>2<sp/>starting<sp/>from<sp/>10<sp/>seconds&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>src_file_;<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>start_;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AvgSamples(std::vector&lt;int16_t&gt;<sp/>&amp;samples,<sp/>std::vector&lt;int16_t&gt;<sp/>&amp;scr_samples);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_distortion_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_distortion_option" kindref="compound">DistortionOption</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_converter" kindref="compound">Converter</ref><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_distortion_option_1a0573a7d5b80e56836de2279d4a5e3597" kindref="member">DistortionOption</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gain);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distortion_option_1af48ba42d143775f2a9b53241d95411f8" kindref="member">Convert</ref>(std::string<sp/>input_file,<sp/>std::string<sp/>output_file)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distortion_option_1a8f3e534e45bd7ab7702d857187408db0" kindref="member">help</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>kGREEN<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DistortionOption<sp/>converter:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>kRESET<sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Provide<sp/>overdriving<sp/>of<sp/>the<sp/>original<sp/>sound<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Example:<sp/>distortion<sp/>1.5<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gain_;<sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>applyDistortionOption(std::vector&lt;int16_t&gt;<sp/>&amp;samples);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="3Lab/Converter.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__writer_w_a_v_8h_source" xml:lang="en-US">
+<title>WriterWAV.h</title>
+<indexterm><primary>3Lab/WriterWAV.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+9 
+14 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_writer_w_a_v">WriterWAV</link>&#32;{
+15 <emphasis role="keyword">public</emphasis>:
+20 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_writer_w_a_v_1a618dfa393f5df18899beaacb2517ebbb">WriterWAV</link>(std::string&#32;output_file_path)&#32;:&#32;output_file_path_(std::move(output_file_path))&#32;{};
+21 
+25 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_writer_w_a_v_1a7f41488add6aca3694592cc8c30483a6">OpenWAVFile</link>();
+26 
+30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_writer_w_a_v_1a868a0254b91d9ca5cc90751f77834e5b">CloseWAVFile</link>();
+31 
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_writer_w_a_v_1a75fdc5c610f59a64a68327a206c8442f">SaveSamples</link>(std::vector&lt;int16_t&gt;&#32;&amp;samples,&#32;<emphasis role="keywordtype">int</emphasis>&#32;start);
+42 
+43 <emphasis role="keyword">private</emphasis>:
+44 &#32;&#32;&#32;&#32;std::fstream&#32;file_;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+45 &#32;&#32;&#32;&#32;std::string&#32;output_file_path_;&#32;
+46 };
+</programlisting></section>

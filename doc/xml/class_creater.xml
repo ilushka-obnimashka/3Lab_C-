@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_creater" kind="class" language="C++" prot="public">
+    <compoundname>Creater</compoundname>
+    <derivedcompoundref refid="class_distortion_creater" prot="public" virt="non-virtual">DistortionCreater</derivedcompoundref>
+    <derivedcompoundref refid="class_mix_creater" prot="public" virt="non-virtual">MixCreater</derivedcompoundref>
+    <derivedcompoundref refid="class_mute_creater" prot="public" virt="non-virtual">MuteCreater</derivedcompoundref>
+    <includes refid="_creators_8h" local="no">Creators.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_creater_1a55a808445e328c8628db9aca21b892e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Creater::Creater</definition>
+        <argsstring>()=default</argsstring>
+        <name>Creater</name>
+        <qualifiedname>Creater::Creater</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Creators.h" line="19" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creater_1a548642211f7478639a26954b037359e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Creater::~Creater</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Creater</name>
+        <qualifiedname>Creater::~Creater</qualifiedname>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/Creators.h" line="24" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for factory method. Base class for all creater classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Creater</label>
+        <link refid="class_creater"/>
+      </node>
+      <node id="2">
+        <label>DistortionCreater</label>
+        <link refid="class_distortion_creater"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MixCreater</label>
+        <link refid="class_mix_creater"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MuteCreater</label>
+        <link refid="class_mute_creater"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="3Lab/Creators.h" line="14" column="1" bodyfile="3Lab/Creators.h" bodystart="14" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_creater_1a55a808445e328c8628db9aca21b892e2" prot="public" virt="non-virtual"><scope>Creater</scope><name>Creater</name></member>
+      <member refid="class_creater_1a548642211f7478639a26954b037359e0" prot="public" virt="virtual"><scope>Creater</scope><name>~Creater</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

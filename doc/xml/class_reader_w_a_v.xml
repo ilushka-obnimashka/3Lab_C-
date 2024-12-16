@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_reader_w_a_v" kind="class" language="C++" prot="public">
+    <compoundname>ReaderWAV</compoundname>
+    <includes refid="_reader_w_a_v_8h" local="no">ReaderWAV.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_reader_w_a_v_1ab6387a146a59e5c9759a9af672b65d46" prot="private" static="no" mutable="no">
+        <type>std::ifstream</type>
+        <definition>std::ifstream ReaderWAV::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <qualifiedname>ReaderWAV::file_</qualifiedname>
+        <briefdescription>
+<para>File stream for reading the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="81" column="19" bodyfile="3Lab/ReaderWAV.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reader_w_a_v_1a2c03b1c70ca85734327c1cc46d63f70b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ReaderWAV::input_file_path_</definition>
+        <argsstring></argsstring>
+        <name>input_file_path_</name>
+        <qualifiedname>ReaderWAV::input_file_path_</qualifiedname>
+        <briefdescription>
+<para>Path to the input WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="82" column="17" bodyfile="3Lab/ReaderWAV.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reader_w_a_v_1a9d9afa31d97c5bb3825ffbaa8b529c1d" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t ReaderWAV::remaining_audio_data_size_</definition>
+        <argsstring></argsstring>
+        <name>remaining_audio_data_size_</name>
+        <qualifiedname>ReaderWAV::remaining_audio_data_size_</qualifiedname>
+        <briefdescription>
+<para>Remaining size of the audio data in the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="83" column="14" bodyfile="3Lab/ReaderWAV.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reader_w_a_v_1ac1e084e59107cbde24923904af634267" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref> *</type>
+        <definition>struct WAVHeader* ReaderWAV::WAVHeader_</definition>
+        <argsstring></argsstring>
+        <name>WAVHeader_</name>
+        <qualifiedname>ReaderWAV::WAVHeader_</qualifiedname>
+        <briefdescription>
+<para>Pointer to the WAV header structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="84" column="20" bodyfile="3Lab/ReaderWAV.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ReaderWAV::ReaderWAV</definition>
+        <argsstring>(std::string input_file_path)</argsstring>
+        <name>ReaderWAV</name>
+        <qualifiedname>ReaderWAV::ReaderWAV</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>input_file_path</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_reader_w_a_v" kindref="compound">ReaderWAV</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the input WAV file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="17" column="14" bodyfile="3Lab/ReaderWAV.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReaderWAV::OpenWAVFile</definition>
+        <argsstring>()</argsstring>
+        <name>OpenWAVFile</name>
+        <qualifiedname>ReaderWAV::OpenWAVFile</qualifiedname>
+        <briefdescription>
+<para>Opens the WAV file_ for reading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Opens the WAV file for reading. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="22" column="10" bodyfile="3Lab/ReaderWAV.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReaderWAV::CloseWAVFile</definition>
+        <argsstring>()</argsstring>
+        <name>CloseWAVFile</name>
+        <qualifiedname>ReaderWAV::CloseWAVFile</qualifiedname>
+        <briefdescription>
+<para>Closes the WAV file_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Closes the WAV file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="28" column="10" bodyfile="3Lab/ReaderWAV.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReaderWAV::ReadHead</definition>
+        <argsstring>()</argsstring>
+        <name>ReadHead</name>
+        <qualifiedname>ReaderWAV::ReadHead</qualifiedname>
+        <briefdescription>
+<para>Reads the header of the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="33" column="10" bodyfile="3Lab/ReaderWAV.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ReaderWAV::CheckingFileValidity</definition>
+        <argsstring>() const</argsstring>
+        <name>CheckingFileValidity</name>
+        <qualifiedname>ReaderWAV::CheckingFileValidity</qualifiedname>
+        <briefdescription>
+<para>Validates that the WAV file is in the proper format and has specific properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks the validity of the WAV file.</para>
+<para>This method checks the header of the WAV file to ensure that it is a valid WAV file and that it meets the required properties for this program. Specifically, it checks:<itemizedlist>
+<listitem><para>The chunk ID is &quot;RIFF&quot; and the RIFF type ID is &quot;WAVE&quot;.</para>
+</listitem><listitem><para>The format tag is PCM (1).</para>
+</listitem><listitem><para>The number of channels is 1 (mono audio).</para>
+</listitem><listitem><para>The sample rate is 44100 Hz.</para>
+</listitem><listitem><para>The bits per sample is 16.</para>
+</listitem></itemizedlist>
+</para>
+<para>If any of these conditions are not met, the method throws a std::runtime_error with an appropriate message. If all conditions are met, the method returns true.</para>
+<para><simplesect kind="return"><para>true if the WAV file is valid and meets the required properties. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the WAV file is not valid or does not meet the required properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the file is a valid WAV file, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="52" column="10" bodyfile="3Lab/ReaderWAV.cpp" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ReaderWAV::GetSamples</definition>
+        <argsstring>(std::vector&lt; int16_t &gt; &amp;samples, uint32_t start, uint32_t end)</argsstring>
+        <name>GetSamples</name>
+        <qualifiedname>ReaderWAV::GetSamples</qualifiedname>
+        <param>
+          <type>std::vector&lt; int16_t &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Reads a portion of audio samples from the WAV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the audio samples from the WAV file.</para>
+<para>This method reads a specified range of audio samples from the WAV file and stores them in the provided vector. The range is defined by the start and end seconds. The method calculates the offset in the file where the audio samples start and reads the samples into the vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of int16_t where the audio samples will be stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting second from which to begin reading audio samples. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ending second up to which to read audio samples. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the samples were successfully read, false otherwise.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to store the samples. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start time in seconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end time in seconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if samples were successfully read, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="66" column="10" bodyfile="3Lab/ReaderWAV.cpp" bodystart="64" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref> *</type>
+        <definition>WAVHeader * ReaderWAV::GetWAVHeader</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWAVHeader</name>
+        <qualifiedname>ReaderWAV::GetWAVHeader</qualifiedname>
+        <briefdescription>
+<para>Retrieves the WAV header. This method returns a pointer to the WAVHeader_. WAV Header defined in file &quot;WAVHeader.h&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the WAV header of the file.</para>
+<para><simplesect kind="return"><para>A pointer to the <ref refid="struct_w_a_v_header" kindref="compound">WAVHeader</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="73" column="15" bodyfile="3Lab/ReaderWAV.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ReaderWAV::GetSizeFileInSec</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSizeFileInSec</name>
+        <qualifiedname>ReaderWAV::GetSizeFileInSec</qualifiedname>
+        <briefdescription>
+<para>Calculates the size of the WAV file in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the size of the file in seconds.</para>
+<para><simplesect kind="return"><para>The duration of the audio data in seconds.</para>
+</simplesect>
+<simplesect kind="return"><para>The size of the file in seconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3Lab/ReaderWAV.h" line="78" column="9" bodyfile="3Lab/ReaderWAV.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class to read and handle WAV audio files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3Lab/ReaderWAV.h" line="11" column="1" bodyfile="3Lab/ReaderWAV.h" bodystart="11" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_reader_w_a_v_1acbff9b51afd07eff263b3a7c0c14a230" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>CheckingFileValidity</name></member>
+      <member refid="class_reader_w_a_v_1a726d7fa9cc02967c064985c1487321fa" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>CloseWAVFile</name></member>
+      <member refid="class_reader_w_a_v_1ab6387a146a59e5c9759a9af672b65d46" prot="private" virt="non-virtual"><scope>ReaderWAV</scope><name>file_</name></member>
+      <member refid="class_reader_w_a_v_1a9fd66bdaac9e11f0ea3ea64ab6b4f750" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>GetSamples</name></member>
+      <member refid="class_reader_w_a_v_1af75aa91878df2c24afb5646bf244323f" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>GetSizeFileInSec</name></member>
+      <member refid="class_reader_w_a_v_1af4bfc648f45dff4c0356ffa2edce1bf4" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>GetWAVHeader</name></member>
+      <member refid="class_reader_w_a_v_1a2c03b1c70ca85734327c1cc46d63f70b" prot="private" virt="non-virtual"><scope>ReaderWAV</scope><name>input_file_path_</name></member>
+      <member refid="class_reader_w_a_v_1a6a6ac0dc724315a44252779495b85596" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>OpenWAVFile</name></member>
+      <member refid="class_reader_w_a_v_1a41d7ecb1c6790f79c520d6ce0623c4ca" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>ReaderWAV</name></member>
+      <member refid="class_reader_w_a_v_1af830b5a8e7f297d9cd067f45274d77d1" prot="public" virt="non-virtual"><scope>ReaderWAV</scope><name>ReadHead</name></member>
+      <member refid="class_reader_w_a_v_1a9d9afa31d97c5bb3825ffbaa8b529c1d" prot="private" virt="non-virtual"><scope>ReaderWAV</scope><name>remaining_audio_data_size_</name></member>
+      <member refid="class_reader_w_a_v_1ac1e084e59107cbde24923904af634267" prot="private" virt="non-virtual"><scope>ReaderWAV</scope><name>WAVHeader_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

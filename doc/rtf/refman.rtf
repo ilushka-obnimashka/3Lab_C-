@@ -1,0 +1,3502 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\info 
+{\title {\comment Sound Processor  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+0.1 \par
+}}Sound Processor}
+{\comment Generated by doxygen 1.12.0.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Sound Processor}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 0.1\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ArgumentParser\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ConfigParser\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Converter\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABT \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+DistortionOption\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+MixOption\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+MuteOption\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+Creater\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACE \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+DistortionCreater\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+MixCreater\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+MuteCreater\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+ReaderWAV\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+RegistrarConvertors\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+SoundProcessor\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+WAVHeader\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+WriterWAV\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ArgumentParser} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ArgumentParser} provides a convenient interface for parsing command line arguments using the getopt_long(3) function })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ConfigParser} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ConfigParser} provides a convenient interface for parsing a configuration file using std::regex })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Converter} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for audio converters })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Creater} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for factory method. Base class for all creater classes })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b DistortionCreater} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Distortion {\b Converter} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b DistortionOption} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for applying distortion to an audio file })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b MixCreater} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mix converters })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b MixOption} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for mixing two audio files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b MuteCreater} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mute {\b Converter} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b MuteOption} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for muting a section of an audio file })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ReaderWAV} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to read and handle WAV audio files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b RegistrarConvertors} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This .h file implements a class for creating dynamic help about converters in the general code })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b SoundProcessor} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b WAVHeader} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A structure representing the header of a WAV file })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b WriterWAV} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to write WAV audio files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b 3Lab/{\b ArgumentParser.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ArgumentParser} class })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b ArgumentParser.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ArgumentParser} class })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b ConfigParser.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ConfigParser} class })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b ConfigParser.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ConfigParser} class })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b Converter.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b Converter} class and its derived classes })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b Converter.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b Converter} class and its derived classes })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b Creators.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the creator classes for different converter types })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b Creators.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This file contains the declaration of the {\b Creater} base class and its derived classes: {\b MuteCreater}, {\b MixCreater}, and {\b DistortionCreater} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b ReaderWAV.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ReaderWAV} class for reading WAV files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b ReaderWAV.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b RegistrarorConvertors.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b SoundProcessor.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b WAVHeader.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file defining the structure of a WAV file header })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b WriterWAV.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b WriterWAV} class for writing WAV files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b 3Lab/{\b WriterWAV.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b WriterWAV} class, which handles writing WAV audio files })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ArgumentParser Class Reference\par \pard\plain 
+{\tc\tcl2 \v ArgumentParser}
+{\xe \v ArgumentParser}
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ArgumentParser} provides a convenient interface for parsing command line arguments using the getopt_long(3) function. }}\par
+{
+{\f2 #include <ArgumentParser.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ArgumentParser} (int argc, char *argv[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor of the {\b ArgumentParser} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Parse} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::vector< std::string > {\b GetInputFiles} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the list of input files. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b GetOutputFile} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the output file name. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b GetConfigFile} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the configuration file name. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const void {\b PrintHelp} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Method for printing the help message. Will be called when the user runs the program with the -h or \'96help option. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ArgumentParser} provides a convenient interface for parsing command line arguments using the getopt_long(3) function. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v ArgumentParser\:ArgumentParser}
+{\xe \v ArgumentParser\:ArgumentParser}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ArgumentParser::ArgumentParser (int argc, char * argv[]){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor of the {\b ArgumentParser} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i argc} \cell }{Counter for the number of command line arguments. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i argv} \cell }{Pointer to an array of single- or multi-byte strings that contains the program's arguments. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GetConfigFile\:ArgumentParser}
+{\xe \v ArgumentParser\:GetConfigFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string ArgumentParser::GetConfigFile () const}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the configuration file name. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+The configuration file name. \par
+}}}}
+{\xe \v GetInputFiles\:ArgumentParser}
+{\xe \v ArgumentParser\:GetInputFiles}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::vector< std::string > ArgumentParser::GetInputFiles () const}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the list of input files. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A vector of input file names. \par
+}}}}
+{\xe \v GetOutputFile\:ArgumentParser}
+{\xe \v ArgumentParser\:GetOutputFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string ArgumentParser::GetOutputFile () const}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the output file name. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+The output file name. \par
+}}}}
+{\xe \v Parse\:ArgumentParser}
+{\xe \v ArgumentParser\:Parse}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool ArgumentParser::Parse ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Method for parsing argv_ using getopt_long(3), char * short_option_, struct option long_options_[4] - command line options that need to be supported. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Parses the command line arguments.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true if help command not called, false otherwise.\par
+}}This function uses getopt_long to parse the command line arguments and sets the corresponding member variables.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true if parsing is successful, false if help is requested. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i std::invalid_argument} \cell }{if there is an error in the arguments. \cell }
+{\row }
+}
+}}
+{\xe \v PrintHelp\:ArgumentParser}
+{\xe \v ArgumentParser\:PrintHelp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const void ArgumentParser::PrintHelp ()}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Method for printing the help message. Will be called when the user runs the program with the -h or \'96help option. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Prints the help message.\par
+This function prints the usage information and available options to the standard output. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b ArgumentParser.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b ArgumentParser.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ConfigParser Class Reference\par \pard\plain 
+{\tc\tcl2 \v ConfigParser}
+{\xe \v ConfigParser}
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ConfigParser} provides a convenient interface for parsing a configuration file using std::regex. }}\par
+{
+{\f2 #include <ConfigParser.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ConfigParser} (const std::string &config_file_name)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b ConfigParser} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::queue< {\b Converter} * > {\b Parse} (const std::vector< std::string > &input_files)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Parses the configuration file and creates a queue of {\b Converter} objects. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ConfigParser} provides a convenient interface for parsing a configuration file using std::regex. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v ConfigParser\:ConfigParser}
+{\xe \v ConfigParser\:ConfigParser}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ConfigParser::ConfigParser (const std::string & configFileName)}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b ConfigParser} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i config_file_name} \cell }{The name of the configuration file to parse.\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i configFileName} \cell }{The name of the configuration file to parse. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Parse\:ConfigParser}
+{\xe \v ConfigParser\:Parse}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::queue< {\b Converter} * > ConfigParser::Parse (const std::vector< std::string > & inputFiles)}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Parses the configuration file and creates a queue of {\b Converter} objects. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_files} \cell }{A vector of input file names. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A queue of {\b Converter} objects created based on the configuration file.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i inputFiles} \cell }{A vector of input file names. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A queue of {\b Converter} objects created based on the configuration file. \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b ConfigParser.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b ConfigParser.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Converter Class Reference\par \pard\plain 
+{\tc\tcl2 \v Converter}
+{\xe \v Converter}
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for audio converters. }}\par
+{
+{\f2 #include <Converter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Converter} ()=default{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Converter} ()=default{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default destructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\b Convert} (std::string input_file, std::string output_file)=0\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pure virtual function to convert audio files. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\b help} () const =0\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pure virtual function to display help information. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for audio converters. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Convert\:Converter}
+{\xe \v Converter\:Convert}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void Converter::Convert (std::string input_file, std::string output_file){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pure virtual function to convert audio files. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_file} \cell }{The input WAV file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i output_file} \cell }{The output WAV file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reader} \cell }{The {\b ReaderWAV} object to read the input file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i writer} \cell }{The {\b WriterWAV} object to write the output file. \cell }
+{\row }
+}
+}{
+Implemented in {\b DistortionOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b MixOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b MuteOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v help\:Converter}
+{\xe \v Converter\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void Converter::help () const{\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pure virtual function to display help information. }}\par
+{
+Implemented in {\b DistortionOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACB \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b MixOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACC \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b MuteOption} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACD \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Creater Class Reference\par \pard\plain 
+{\tc\tcl2 \v Creater}
+{\xe \v Creater}
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for factory method. Base class for all creater classes. }}\par
+{
+{\f2 #include <Creators.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Creater} ()=default{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Creater} ()=default{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Virtual destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for factory method. Base class for all creater classes. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+DistortionCreater Class Reference\par \pard\plain 
+{\tc\tcl2 \v DistortionCreater}
+{\xe \v DistortionCreater}
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Distortion {\b Converter}. }}\par
+{
+{\f2 #include <Creators.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Converter} * {\b CreateConverter} (double gain)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Distortion converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Creater}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Virtual destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Distortion {\b Converter}. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CreateConverter\:DistortionCreater}
+{\xe \v DistortionCreater\:CreateConverter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Converter} * DistortionCreater::CreateConverter (double gain)}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Distortion converter. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a {\b DistortionOption} converter.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i gain} \cell }{The gain level. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to the created {\b Converter} object.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i gain} \cell }{The gain value for the distortion operation. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to a new {\b DistortionOption} object. \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+DistortionOption Class Reference\par \pard\plain 
+{\tc\tcl2 \v DistortionOption}
+{\xe \v DistortionOption}
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for applying distortion to an audio file. }}\par
+{
+{\f2 #include <Converter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DistortionOption} (double gain)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b DistortionOption} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Convert} (std::string input_file, std::string output_file) override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the distortion operation to the input file and saves the result to the output file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b help} () const override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b DistortionOption} converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Converter}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for applying distortion to an audio file. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v DistortionOption\:DistortionOption}
+{\xe \v DistortionOption\:DistortionOption}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DistortionOption::DistortionOption (double gain)}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b DistortionOption} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i gain} \cell }{The gain value for the distortion operation. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Convert\:DistortionOption}
+{\xe \v DistortionOption\:Convert}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void DistortionOption::Convert (std::string input_file, std::string output_file){\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the distortion operation to the input file and saves the result to the output file. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_file} \cell }{The input WAV file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i output_file} \cell }{The output WAV file. \cell }
+{\row }
+}
+}{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABW \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v help\:DistortionOption}
+{\xe \v DistortionOption\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void DistortionOption::help () const{\f2 [inline]}, {\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b DistortionOption} converter. }}\par
+{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MixCreater Class Reference\par \pard\plain 
+{\tc\tcl2 \v MixCreater}
+{\xe \v MixCreater}
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mix converters. }}\par
+{
+{\f2 #include <Creators.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Converter} * {\b CreateConverter} (uint32_t start, std::string file)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Mix converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Creater}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Virtual destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mix converters. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CreateConverter\:MixCreater}
+{\xe \v MixCreater\:CreateConverter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Converter} * MixCreater::CreateConverter (uint32_t start, std::string name_src_file)}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Mix converter. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a {\b MixOption} converter.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The start time in seconds. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i file} \cell }{The name of the file to mix. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to the created {\b Converter} object.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The starting point for the mix operation. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name_src_file} \cell }{The name of the source file to mix. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to a new {\b MixOption} object. \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MixOption Class Reference\par \pard\plain 
+{\tc\tcl2 \v MixOption}
+{\xe \v MixOption}
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for mixing two audio files. }}\par
+{
+{\f2 #include <Converter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b MixOption} (std::string src_file, uint32_t start)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b MixOption} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Convert} (std::string input_file, std::string output_file) override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the mix operation to the input file and saves the result to the output file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b help} () const override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b MixOption} converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Converter}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for mixing two audio files. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v MixOption\:MixOption}
+{\xe \v MixOption\:MixOption}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+MixOption::MixOption (std::string src_file, uint32_t start)}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b MixOption} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i src_file} \cell }{The source file to mix. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The starting point for the mix operation. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Convert\:MixOption}
+{\xe \v MixOption\:Convert}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MixOption::Convert (std::string input_file, std::string output_file){\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the mix operation to the input file and saves the result to the output file. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_file} \cell }{The input WAV file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i output_file} \cell }{The output WAV file. \cell }
+{\row }
+}
+}{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABW \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v help\:MixOption}
+{\xe \v MixOption\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MixOption::help () const{\f2 [inline]}, {\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b MixOption} converter. }}\par
+{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MuteCreater Class Reference\par \pard\plain 
+{\tc\tcl2 \v MuteCreater}
+{\xe \v MuteCreater}
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mute {\b Converter}. }}\par
+{
+{\f2 #include <Creators.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Converter} * {\b CreateConverter} (uint32_t start, uint32_t end)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Mute converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Creater}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Creater} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Virtual destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mute {\b Converter}. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CreateConverter\:MuteCreater}
+{\xe \v MuteCreater\:CreateConverter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Converter} * MuteCreater::CreateConverter (uint32_t left, uint32_t right)}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Mute converter. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a {\b MuteOption} converter.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The start time in seconds. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i end} \cell }{The end time in seconds. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to the created {\b Converter} object.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i left} \cell }{The left boundary for the mute operation. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i right} \cell }{The right boundary for the mute operation. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to a new {\b MuteOption} object. \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Creators.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MuteOption Class Reference\par \pard\plain 
+{\tc\tcl2 \v MuteOption}
+{\xe \v MuteOption}
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for muting a section of an audio file. }}\par
+{
+{\f2 #include <Converter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b MuteOption} (uint32_t left, uint32_t right)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b MuteOption} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Convert} (std::string input_file, std::string output_file) override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the mute operation to the input file and saves the result to the output file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b help} () const override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b MuteOption} converter. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b Converter}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~Converter} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Default destructor. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for muting a section of an audio file. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v MuteOption\:MuteOption}
+{\xe \v MuteOption\:MuteOption}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+MuteOption::MuteOption (uint32_t left, uint32_t right)}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b MuteOption} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i left} \cell }{The left boundary for the mute operation. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i right} \cell }{The right boundary for the mute operation. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Convert\:MuteOption}
+{\xe \v MuteOption\:Convert}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MuteOption::Convert (std::string input_file, std::string output_file){\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Applies the mute operation to the input file and saves the result to the output file. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_file} \cell }{The input WAV file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i output_file} \cell }{The output WAV file. \cell }
+{\row }
+}
+}{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAABW \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v help\:MuteOption}
+{\xe \v MuteOption\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MuteOption::help () const{\f2 [inline]}, {\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Displays help information for the {\b MuteOption} converter. }}\par
+{
+Implements {\b Converter} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b Converter.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ReaderWAV Class Reference\par \pard\plain 
+{\tc\tcl2 \v ReaderWAV}
+{\xe \v ReaderWAV}
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to read and handle WAV audio files. }}\par
+{
+{\f2 #include <ReaderWAV.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ReaderWAV} (std::string input_file_path)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b ReaderWAV} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OpenWAVFile} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Opens the WAV file_ for reading. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CloseWAVFile} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closes the WAV file_. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b ReadHead} (){\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads the header of the WAV file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b CheckingFileValidity} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Validates that the WAV file is in the proper format and has specific properties. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b GetSamples} (std::vector< int16_t > &samples, uint32_t start, uint32_t end)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads a portion of audio samples from the WAV file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b WAVHeader} * {\b GetWAVHeader} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves the WAV header. This method returns a pointer to the WAVHeader_. WAV Header defined in file "WAVHeader.h". }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b GetSizeFileInSec} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calculates the size of the WAV file in seconds. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to read and handle WAV audio files. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v ReaderWAV\:ReaderWAV}
+{\xe \v ReaderWAV\:ReaderWAV}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ReaderWAV::ReaderWAV (std::string input_file_path){\f2 [inline]}, {\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b ReaderWAV} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i input_file_path} \cell }{The path to the input WAV file. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CheckingFileValidity\:ReaderWAV}
+{\xe \v ReaderWAV\:CheckingFileValidity}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool ReaderWAV::CheckingFileValidity () const}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Validates that the WAV file is in the proper format and has specific properties. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks the validity of the WAV file.\par
+This method checks the header of the WAV file to ensure that it is a valid WAV file and that it meets the required properties for this program. Specifically, it checks:{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+The chunk ID is "RIFF" and the RIFF type ID is "WAVE".\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+The format tag is PCM (1).\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+The number of channels is 1 (mono audio).\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+The sample rate is 44100 Hz.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+The bits per sample is 16.\par}
+If any of these conditions are not met, the method throws a std::runtime_error with an appropriate message. If all conditions are met, the method returns true.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true if the WAV file is valid and meets the required properties. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i std::runtime_error} \cell }{if the WAV file is not valid or does not meet the required properties.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+True if the file is a valid WAV file, false otherwise. \par
+}}}}
+{\xe \v CloseWAVFile\:ReaderWAV}
+{\xe \v ReaderWAV\:CloseWAVFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ReaderWAV::CloseWAVFile ()}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closes the WAV file_. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closes the WAV file. \par
+}}
+{\xe \v GetSamples\:ReaderWAV}
+{\xe \v ReaderWAV\:GetSamples}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool ReaderWAV::GetSamples (std::vector< int16_t > & samples, uint32_t start, uint32_t end)}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads a portion of audio samples from the WAV file. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the audio samples from the WAV file.\par
+This method reads a specified range of audio samples from the WAV file and stores them in the provided vector. The range is defined by the start and end seconds. The method calculates the offset in the file where the audio samples start and reads the samples into the vector.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i samples} \cell }{A reference to a vector of int16_t where the audio samples will be stored. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The starting second from which to begin reading audio samples. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i end} \cell }{The ending second up to which to read audio samples. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true if the samples were successfully read, false otherwise.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i samples} \cell }{The vector to store the samples. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The start time in seconds. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i end} \cell }{The end time in seconds. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+True if samples were successfully read, false otherwise. \par
+}}}}
+{\xe \v GetSizeFileInSec\:ReaderWAV}
+{\xe \v ReaderWAV\:GetSizeFileInSec}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ReaderWAV::GetSizeFileInSec () const}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calculates the size of the WAV file in seconds. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the size of the file in seconds.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+The duration of the audio data in seconds.\par
+The size of the file in seconds. \par
+}}}}
+{\xe \v GetWAVHeader\:ReaderWAV}
+{\xe \v ReaderWAV\:GetWAVHeader}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b WAVHeader} * ReaderWAV::GetWAVHeader () const}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves the WAV header. This method returns a pointer to the WAVHeader_. WAV Header defined in file "WAVHeader.h". }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gets the WAV header of the file.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A pointer to the {\b WAVHeader} object. \par
+}}}}
+{\xe \v OpenWAVFile\:ReaderWAV}
+{\xe \v ReaderWAV\:OpenWAVFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ReaderWAV::OpenWAVFile ()}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Opens the WAV file_ for reading. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Opens the WAV file for reading. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/ReaderWAV.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b ReaderWAV.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+RegistrarConvertors Class Reference\par \pard\plain 
+{\tc\tcl2 \v RegistrarConvertors}
+{\xe \v RegistrarConvertors}
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This .h file implements a class for creating dynamic help about converters in the general code. }}\par
+{
+{\f2 #include <RegistrarorConvertors.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b RegistrarConvertors} ({\b RegistrarConvertors} &other)=delete{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deleted copy constructor to prevent copying of the Singleton instance. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b operator=} (const {\b RegistrarConvertors} &)=delete{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deleted assignment operator to prevent assignment of the Singleton instance. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RegisterConverter} (std::unique_ptr< {\b Converter} > converter)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Registers a converter. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b printHelp} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Prints help information for all registered converters. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static {\b RegistrarConvertors} & {\b GetInstance} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the single instance of the {\b RegistrarConvertors} class. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This .h file implements a class for creating dynamic help about converters in the general code. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\b RegistrarConvertors} class implements the Singleton pattern to manage a collection of converters.\par
+This class ensures that only one instance of {\b RegistrarConvertors} exists throughout the application. It provides methods to register converters and print help information about them.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+See also\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\f2 Singleton Pattern Documentation} \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GetInstance\:RegistrarConvertors}
+{\xe \v RegistrarConvertors\:GetInstance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RegistrarConvertors} & RegistrarConvertors::GetInstance (){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the single instance of the {\b RegistrarConvertors} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This method ensures that only one instance of the class is created.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+The single instance of the {\b RegistrarConvertors} class. \par
+}}}}
+{\xe \v printHelp\:RegistrarConvertors}
+{\xe \v RegistrarConvertors\:printHelp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RegistrarConvertors::printHelp (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Prints help information for all registered converters. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This method iterates through the collection of converters and calls their help method. \par
+}}
+{\xe \v RegisterConverter\:RegistrarConvertors}
+{\xe \v RegistrarConvertors\:RegisterConverter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RegistrarConvertors::RegisterConverter (std::unique_ptr< {\b Converter} > converter){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Registers a converter. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This method adds a converter to the internal collection of converters.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i converter} \cell }{A unique pointer to a {\b Converter} object. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/RegistrarorConvertors.h\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SoundProcessor Class Reference\par \pard\plain 
+{\tc\tcl2 \v SoundProcessor}
+{\xe \v SoundProcessor}
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b Control} (int argc, char *argv[]){\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/SoundProcessor.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/SoundProcessor.cpp\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+WAVHeader Struct Reference\par \pard\plain 
+{\tc\tcl2 \v WAVHeader}
+{\xe \v WAVHeader}
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A structure representing the header of a WAV file. }}\par
+{
+{\f2 #include <WAVHeader.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b chunk_id} [4]{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Chunk ID. Indicates that the file is a RIFF file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b chunk_data_size}{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Size of the RIFF chunk data (file size minus the first 8 bytes). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b riff_type_id} [4]{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Format type ID. Indicates that the file is a WAVE file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b chunk1_id} [4]{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Format sub-chunk ID. Indicates that the following sub-chunk contains format information. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b chunk1_data_size}{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Size of the format sub-chunk in bytes. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b format_tag}{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Audio format code (1 = PCM). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b num_channels}{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Number of audio channels (1 = mono, 2 = stereo, etc.). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b sample_rate}{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sampling frequency in Hz (e.g., 44100 for CD-quality audio). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b byte_rate}{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Byte rate (sampleRate * numChannels * bitsPerSample / 8). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b block_align}{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Block align (numChannels * bitsPerSample / 8). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b bits_per_sample}{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Bits per sample (e.g., 8, 16, 24, or 32). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b chunk2_id} [4]{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Data sub-chunk ID. Indicates that the following sub-chunk contains audio data. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b chunk2_data_size}{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Size of the audio data in bytes. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A structure representing the header of a WAV file. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This structure describes the format and characteristics of audio data stored in a WAV file. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b WAVHeader.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+WriterWAV Class Reference\par \pard\plain 
+{\tc\tcl2 \v WriterWAV}
+{\xe \v WriterWAV}
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to write WAV audio files. }}\par
+{
+{\f2 #include <WriterWAV.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b WriterWAV} (std::string output_file_path)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b WriterWAV} class. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b OpenWAVFile} (){\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Opens the WAV file for writing. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b CloseWAVFile} (){\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closes the WAV file. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SaveSamples} (std::vector< int16_t > &samples, int start)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes audio samples to the WAV file. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to write WAV audio files. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v WriterWAV\:WriterWAV}
+{\xe \v WriterWAV\:WriterWAV}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+WriterWAV::WriterWAV (std::string output_file_path){\f2 [inline]}, {\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the {\b WriterWAV} class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i output_file_path} \cell }{The path to the output WAV file. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v SaveSamples\:WriterWAV}
+{\xe \v WriterWAV\:SaveSamples}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void WriterWAV::SaveSamples (std::vector< int16_t > & samples, int start)}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes audio samples to the WAV file. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Saves audio samples to the WAV file.\par
+This method writes the provided audio samples to the WAV file starting from the specified position. The offset is calculated based on the sample rate and the starting position.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i samples} \cell }{A reference to a vector of int16_t containing the audio samples to be written. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start} \cell }{The starting second from which to begin writing audio samples. \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b WriterWAV.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3Lab/{\b WriterWAV.cpp}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/ArgumentParser.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ArgumentParser.cpp}
+{\xe \v 3Lab/ArgumentParser.cpp}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ArgumentParser} class. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <getopt.h>}\par
+{\f2 #include <string>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <stdexcept>}\par
+{\f2 #include "ArgumentParser.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRED} = "\\033[1;31m"{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRESET} = "\\033[0m"{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kYELLOW} = "\\033[33m"{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ArgumentParser} class. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/ArgumentParser.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ArgumentParser.h}
+{\xe \v 3Lab/ArgumentParser.h}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ArgumentParser} class. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <getopt.h>}\par
+{\f2 #include <vector>}\par
+{\f2 #include <string>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ArgumentParser}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ArgumentParser} provides a convenient interface for parsing command line arguments using the getopt_long(3) function. }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ArgumentParser} class. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ArgumentParser.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ArgumentParser.h}
+{\xe \v 3Lab/ArgumentParser.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+6 {\cf21 #ifndef ARGUMENTPARSER_H}\par
+7 {\cf21 #define ARGUMENTPARSER_H}\par
+8 \par
+9 {\cf21 #include <getopt.h>}\par
+10 {\cf21 #include <vector>}\par
+11 {\cf21 #include <string>}\par
+12 \par
+16 {\cf17 class }ArgumentParser \{\par
+17 {\cf17 public}:\par
+23     ArgumentParser({\cf18 int} argc, {\cf18 char} *argv[])\par
+24         : argc_(argc), argv_(argv), short_option_({\cf22 "c:h"}), output_file_(std::string({\cf22 ""})), input_files_() \{\par
+25         long_options_[0] = \{{\cf22 "config"}, 1, {\cf17 nullptr}, {\cf23 'c'}\};\par
+26         long_options_[1] = \{{\cf22 "help"}, 0, {\cf17 nullptr}, {\cf23 'h'}\};\par
+27         long_options_[2] = \{{\cf17 nullptr}, 0, {\cf17 nullptr}, 0\};\par
+28     \}\par
+29 \par
+35     {\cf18 bool} Parse();\par
+36 \par
+41     std::vector<std::string> GetInputFiles() {\cf17 const};\par
+42 \par
+47     std::string GetOutputFile() {\cf17 const};\par
+48 \par
+53     std::string GetConfigFile() {\cf17 const};\par
+54 \par
+58     {\cf17 const} {\cf18 void} PrintHelp();\par
+59 \par
+60 {\cf17 private}:\par
+61     {\cf18 int} argc_;                      \par
+62     {\cf18 char} **argv_;                   \par
+63     {\cf17 const} {\cf18 char} *short_option_;      \par
+64     {\cf17 struct }option long_options_[3]; \par
+65 \par
+66     std::vector<std::string> input_files_; \par
+67     std::string config_file_;              \par
+68     std::string output_file_;              \par
+69 \};\par
+70 \par
+71 {\cf21 #endif }{\cf20 // ARGUMENTPARSER_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/ConfigParser.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ConfigParser.cpp}
+{\xe \v 3Lab/ConfigParser.cpp}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ConfigParser} class. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "ConfigParser.h"}\par
+{\f2 #include "Converter.h"}\par
+{\f2 #include "Creators.h"}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ConfigParser} class. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/ConfigParser.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ConfigParser.h}
+{\xe \v 3Lab/ConfigParser.h}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ConfigParser} class. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include <vector>}\par
+{\f2 #include <queue>}\par
+{\f2 #include <regex>}\par
+{\f2 #include "Converter.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ConfigParser}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class {\b ConfigParser} provides a convenient interface for parsing a configuration file using std::regex. }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b ConfigParser} class. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ConfigParser.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ConfigParser.h}
+{\xe \v 3Lab/ConfigParser.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+6 {\cf21 #ifndef CONFIGPARSER_H}\par
+7 {\cf21 #define CONFIGPARSER_H}\par
+8 {\cf21 #include <string>}\par
+9 {\cf21 #include <vector>}\par
+10 {\cf21 #include <queue>}\par
+11 {\cf21 #include <regex>}\par
+12 {\cf21 #include "Converter.h"}\par
+13 \par
+17 {\cf17 class }ConfigParser \{\par
+18 {\cf17 public}:\par
+23     ConfigParser({\cf17 const} std::string& config_file_name);\par
+24 \par
+30     std::queue<Converter*> Parse({\cf17 const} std::vector<std::string>& input_files);\par
+31 \par
+32 {\cf17 private}:\par
+33     std::string configFileName; \par
+34     std::regex muteRegex;       \par
+35     std::regex mixRegex;        \par
+36     std::regex distortionRegex; \par
+37 \par
+41     {\cf18 void} InitializeRegex();\par
+42 \};\par
+43 \par
+44 {\cf21 #endif }{\cf20 // CONFIGPARSER_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/Converter.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Converter.cpp}
+{\xe \v 3Lab/Converter.cpp}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b Converter} class and its derived classes. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <algorithm>}\par
+{\f2 #include <string>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <filesystem>}\par
+{\f2 #include <cmath>}\par
+{\f2 #include "Converter.h"}\par
+{\f2 #include "WAVHeader.h"}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b Converter} class and its derived classes. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/Converter.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Converter.h}
+{\xe \v 3Lab/Converter.h}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b Converter} class and its derived classes. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <vector>}\par
+{\f2 #include <string>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include "ReaderWAV.h"}\par
+{\f2 #include "WriterWAV.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Converter}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for audio converters. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MuteOption}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for muting a section of an audio file. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MixOption}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for mixing two audio files. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b DistortionOption}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class for applying distortion to an audio file. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRESET} = "\\033[0m"{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kGREEN} = "\\033[32m"{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRED} = "\\033[1;31m"{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kYELLOW} = "\\033[33m"{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b Converter} class and its derived classes. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Converter.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Converter.h}
+{\xe \v 3Lab/Converter.h}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+6 {\cf21 #pragma once}\par
+7 {\cf21 #include <vector>}\par
+8 {\cf21 #include <string>}\par
+9 {\cf21 #include <iostream>}\par
+10 {\cf21 #include "ReaderWAV.h"}\par
+11 {\cf21 #include "WriterWAV.h"}\par
+12 \par
+13 {\cf17 const} std::string kRESET = {\cf22 "\\033[0m"};\par
+14 {\cf17 const} std::string kGREEN = {\cf22 "\\033[32m"};\par
+15 {\cf17 const} std::string kRED = {\cf22 "\\033[1;31m"};\par
+16 {\cf17 const} std::string kYELLOW = {\cf22 "\\033[33m"};\par
+17 \par
+21 {\cf17 class }Converter \{\par
+22 {\cf17 public}:\par
+26     Converter() = {\cf19 default};\par
+27 \par
+31     {\cf17 virtual} ~Converter() = {\cf19 default};\par
+32 \par
+40     {\cf17 virtual} {\cf18 void} Convert(std::string input_file, std::string output_file) = 0;\par
+41 \par
+45     {\cf17 virtual} {\cf18 void} help() {\cf17 const} = 0;\par
+46 \};\par
+47 \par
+51 {\cf17 class }MuteOption : {\cf17 public} Converter \{\par
+52 {\cf17 public}:\par
+53     MuteOption(uint32_t left, uint32_t right);\par
+54 \par
+55     {\cf18 void} Convert(std::string input_file, std::string output_file) {\cf17 override};\par
+56 \par
+60     {\cf18 void} help(){\cf17  const override }\{\par
+61         std::cout << kGREEN << {\cf22 "MuteOption converter: "} << kRESET << std::endl;\par
+62         std::cout << {\cf22 "Provide muting the audio from <n> to <m> seconds."} << std::endl;\par
+63         std::cout << {\cf22 "Example: mute 1 4"} << std::endl;\par
+64     \}\par
+65 \par
+66 {\cf17 private}:\par
+67     uint32_t left_; \par
+68     uint32_t right_; \par
+69 \};\par
+70 \par
+74 {\cf17 class }MixOption : {\cf17 public} Converter \{\par
+75 {\cf17 public}:\par
+76     MixOption(std::string src_file, uint32_t start);\par
+77 \par
+78     {\cf18 void} Convert(std::string input_file, std::string output_file) {\cf17 override};\par
+79 \par
+83     {\cf18 void} help(){\cf17  const override }\{\par
+84         std::cout << kGREEN << {\cf22 "MixOption converter"} << kRESET << std::endl;\par
+85         std::cout << {\cf22 "Provide mixing of two audio files into one"} << std::endl;\par
+86         std::cout << {\cf22 "Example: mix $2 10"} << std::endl;\par
+87         std::cout << {\cf22 "It means that we mixed audio with file 2 starting from 10 seconds"} << std::endl;\par
+88     \}\par
+89 \par
+90 {\cf17 private}:\par
+91     std::string src_file_; \par
+92     uint32_t start_; \par
+93 \par
+99     {\cf18 void} AvgSamples(std::vector<int16_t> &samples, std::vector<int16_t> &scr_samples);\par
+100 \};\par
+101 \par
+105 {\cf17 class }DistortionOption : {\cf17 public} Converter \{\par
+106     {\cf17 public}:\par
+107         DistortionOption({\cf18 double} gain);\par
+108         {\cf18 void} Convert(std::string input_file, std::string output_file) {\cf17 override};\par
+109 \par
+113     {\cf18 void} help(){\cf17  const override }\{\par
+114         std::cout << kGREEN << {\cf22 "DistortionOption converter: "} << kRESET <<std::endl;\par
+115         std::cout << {\cf22 "Provide overdriving of the original sound "} << std::endl;\par
+116         std::cout << {\cf22 "Example: distortion 1.5 "} << std::endl;\par
+117     \}\par
+118 \par
+119 {\cf17 private}:\par
+120     {\cf18 double} gain_; \par
+121 \par
+126     {\cf18 void} applyDistortionOption(std::vector<int16_t> &samples);\par
+127 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/Creators.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Creators.cpp}
+{\xe \v 3Lab/Creators.cpp}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the creator classes for different converter types. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Creators.h"}\par
+{\f2 #include "Converter.h"}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the creator classes for different converter types. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/Creators.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Creators.h}
+{\xe \v 3Lab/Creators.h}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This file contains the declaration of the {\b Creater} base class and its derived classes: {\b MuteCreater}, {\b MixCreater}, and {\b DistortionCreater}. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "Converter.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Creater}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Base class for factory method. Base class for all creater classes. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MuteCreater}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mute {\b Converter}. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MixCreater}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Mix converters. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b DistortionCreater}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class responsible for the creation of Distortion {\b Converter}. }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This file contains the declaration of the {\b Creater} base class and its derived classes: {\b MuteCreater}, {\b MixCreater}, and {\b DistortionCreater}. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Creators.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/Creators.h}
+{\xe \v 3Lab/Creators.h}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+6 {\cf21 #pragma once}\par
+7 {\cf21 #include <string>}\par
+8 {\cf21 #include "Converter.h"}\par
+9 \par
+14 {\cf17 class }Creater \{\par
+15 {\cf17 public}:\par
+19     Creater() = {\cf19 default};\par
+20 \par
+24     {\cf17 virtual} ~Creater() = {\cf19 default};\par
+25 \};\par
+26 \par
+31 {\cf17 class }MuteCreater : {\cf17 public} Creater \{\par
+32 {\cf17 public}:\par
+40     Converter* CreateConverter(uint32_t start, uint32_t end);\par
+41 \};\par
+42 \par
+47 {\cf17 class }MixCreater : {\cf17 public} Creater \{\par
+48 {\cf17 public}:\par
+56     Converter* CreateConverter(uint32_t start, std::string file);\par
+57 \};\par
+58 \par
+63 {\cf17 class }DistortionCreater : {\cf17 public} Creater \{\par
+64 {\cf17 public}:\par
+71     Converter* CreateConverter({\cf18 double} gain);\par
+72 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/ReaderWAV.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ReaderWAV.cpp}
+{\xe \v 3Lab/ReaderWAV.cpp}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ReaderWAV} class for reading WAV files. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "ReaderWAV.h"}\par
+{\f2 #include "WAVHeader.h"}\par
+{\f2 #include <iostream>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRED} = "\\033[1;31m"{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRESET} = "\\033[0m"{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kYELLOW} = "\\033[33m"{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b ReaderWAV} class for reading WAV files. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ReaderWAV.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/ReaderWAV.h}
+{\xe \v 3Lab/ReaderWAV.h}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include <fstream>}\par
+3 {\cf21 #include <vector>}\par
+4 {\cf21 #include <cstdint>}\par
+5 {\cf21 #include "WAVHeader.h"}\par
+6 \par
+11 {\cf17 class }ReaderWAV \{\par
+12 {\cf17 public}:\par
+17     {\cf17 explicit} ReaderWAV(std::string input_file_path) : input_file_path_(std::move(input_file_path)) \{\};\par
+18 \par
+22     {\cf18 void} OpenWAVFile();\par
+23 \par
+28     {\cf18 void} CloseWAVFile();\par
+29 \par
+33     {\cf18 void} ReadHead();\par
+34 \par
+52     {\cf18 bool} CheckingFileValidity() {\cf17 const};\par
+53 \par
+66     {\cf18 bool} GetSamples (std::vector<int16_t> &samples, uint32_t start, uint32_t end);\par
+67 \par
+73     WAVHeader *GetWAVHeader() {\cf17 const};\par
+78     {\cf18 int} GetSizeFileInSec() {\cf17 const};\par
+79 \par
+80 {\cf17 private}:\par
+81     std::ifstream file_;          \par
+82     std::string input_file_path_; \par
+83     uint64_t remaining_audio_data_size_; \par
+84     {\cf17 struct }WAVHeader *WAVHeader_; \par
+85 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+RegistrarorConvertors.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/RegistrarorConvertors.h}
+{\xe \v 3Lab/RegistrarorConvertors.h}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+4 {\cf21 #pragma once}\par
+5 {\cf21 #include <memory>}\par
+6 {\cf21 #include <vector>}\par
+7 {\cf21 #include "Converter.h"}\par
+16 {\cf17 class }RegistrarConvertors \{\par
+17 {\cf17 public}:\par
+21     RegistrarConvertors(RegistrarConvertors& other) = {\cf17 delete};\par
+22 \par
+26     {\cf18 void} operator=({\cf17 const} RegistrarConvertors&) = {\cf17 delete};\par
+27 \par
+35     {\cf17 static} RegistrarConvertors& GetInstance();\par
+36 \par
+44     {\cf18 void} RegisterConverter(std::unique_ptr<Converter> converter) \{\par
+45         converters_.push_back(std::move(converter));\par
+46     \}\par
+47 \par
+53     {\cf18 void} printHelp() \{\par
+54         {\cf19 for} ({\cf17 const} {\cf17 auto}& converter : converters_) \{\par
+55             converter->help();\par
+56         \}\par
+57     \}\par
+58 \par
+59 {\cf17 private}:\par
+63     {\cf17 static} std::unique_ptr<RegistrarConvertors> singleton_;\par
+64 \par
+68     RegistrarConvertors() = {\cf19 default};\par
+69 \par
+73     std::vector<std::unique_ptr<Converter>> converters_;\par
+74 \};\par
+75 \par
+79 std::unique_ptr<RegistrarConvertors> RegistrarConvertors::singleton_ = {\cf17 nullptr};\par
+80 \par
+88 RegistrarConvertors& RegistrarConvertors::GetInstance() \{\par
+89     {\cf19 if} (singleton_ == {\cf17 nullptr}) \{\par
+90         singleton_ = std::unique_ptr<RegistrarConvertors>({\cf17 new} RegistrarConvertors());\par
+91     \}\par
+92     {\cf19 return} *singleton_;\par
+93 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+SoundProcessor.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/SoundProcessor.h}
+{\xe \v 3Lab/SoundProcessor.h}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include "ArgumentParser.h"}\par
+3 \par
+4 {\cf17 class }SoundProcessor \{\par
+5 {\cf17 public}:\par
+6     {\cf18 void} Control({\cf18 int} argc, {\cf18 char}* argv[]);\par
+7 {\cf17 private}:\par
+8     {\cf18 void} Processing(ArgumentParser& argument_parser);\par
+9     {\cf18 void} HeplPrint();\par
+10 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/WAVHeader.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/WAVHeader.h}
+{\xe \v 3Lab/WAVHeader.h}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file defining the structure of a WAV file header. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cstdint>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b WAVHeader}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A structure representing the header of a WAV file. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+#define {\b FIXED_SAMPLE_RATE}\~ 44100{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file defining the structure of a WAV file header. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+WAVHeader.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/WAVHeader.h}
+{\xe \v 3Lab/WAVHeader.h}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #include <cstdint>}\par
+7 {\cf21 #pragma once}\par
+8 {\cf21 #define FIXED_SAMPLE_RATE 44100}\par
+9 \par
+15 {\cf17 struct }WAVHeader \{\par
+16     {\cf20 // RIFF Chunk}\par
+17     {\cf18 char} chunk_id[4];        \par
+18     uint32_t chunk_data_size;   \par
+19     {\cf18 char} riff_type_id[4];    \par
+20 \par
+21     {\cf20 // format sub-chunk}\par
+22     uint8_t chunk1_id[4];       \par
+23     uint32_t chunk1_data_size;  \par
+24     uint16_t format_tag;        \par
+25     uint16_t num_channels;      \par
+26     uint32_t sample_rate;       \par
+27     uint32_t byte_rate;         \par
+28     uint16_t block_align;       \par
+29     uint16_t bits_per_sample;   \par
+30 \par
+31     {\cf20 /* "data" sub-chunk */}\par
+32     uint8_t chunk2_id[4];       \par
+33     uint32_t chunk2_data_size;  \par
+34 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/WriterWAV.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/WriterWAV.cpp}
+{\xe \v 3Lab/WriterWAV.cpp}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b WriterWAV} class for writing WAV files. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include "WAVHeader.h"}\par
+{\f2 #include "WriterWAV.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRED} = "\\033[1;31m"{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kRESET} = "\\033[0m"{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string {\b kYELLOW} = "\\033[33m"{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Implementation of the {\b WriterWAV} class for writing WAV files. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+3Lab/WriterWAV.h File Reference\par \pard\plain 
+{\tc\tcl2 \v 3Lab/WriterWAV.h}
+{\xe \v 3Lab/WriterWAV.h}
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b WriterWAV} class, which handles writing WAV audio files. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <fstream>}\par
+{\f2 #include <vector>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b WriterWAV}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A class to write WAV audio files. }}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file for the {\b WriterWAV} class, which handles writing WAV audio files. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+WriterWAV.h\par \pard\plain 
+{\tc\tcl2 \v 3Lab/WriterWAV.h}
+{\xe \v 3Lab/WriterWAV.h}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+Go to the documentation of this file.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+6 {\cf21 #pragma once}\par
+7 {\cf21 #include <fstream>}\par
+8 {\cf21 #include <vector>}\par
+9 \par
+14 {\cf17 class }WriterWAV \{\par
+15 {\cf17 public}:\par
+20     {\cf17 explicit} WriterWAV(std::string output_file_path) : output_file_path_(std::move(output_file_path)) \{\};\par
+21 \par
+25     {\cf18 void} OpenWAVFile();\par
+26 \par
+30     {\cf18 void} CloseWAVFile();\par
+31 \par
+41     {\cf18 void} SaveSamples(std::vector<int16_t> &samples, {\cf18 int} start);\par
+42 \par
+43 {\cf17 private}:\par
+44     std::fstream file_;          \par
+45     std::string output_file_path_; \par
+46 \};\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

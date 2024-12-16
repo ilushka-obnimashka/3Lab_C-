@@ -1,0 +1,65 @@
+.TH "Converter" 3 "Version 0.1" "Sound Processor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Converter \- Base class for audio converters\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Converter\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConverter\fP ()=default"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "virtual \fB~Converter\fP ()=default"
+.br
+.RI "Default destructor\&. "
+.ti -1c
+.RI "virtual void \fBConvert\fP (std::string input_file, std::string output_file)=0"
+.br
+.RI "Pure virtual function to convert audio files\&. "
+.ti -1c
+.RI "virtual void \fBhelp\fP () const =0"
+.br
+.RI "Pure virtual function to display help information\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class for audio converters\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Converter::Convert (std::string input_file, std::string output_file)\fR [pure virtual]\fP"
+
+.PP
+Pure virtual function to convert audio files\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput_file\fP The input WAV file\&. 
+.br
+\fIoutput_file\fP The output WAV file\&. 
+.br
+\fIreader\fP The \fBReaderWAV\fP object to read the input file\&. 
+.br
+\fIwriter\fP The \fBWriterWAV\fP object to write the output file\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBDistortionOption\fP, \fBMixOption\fP, and \fBMuteOption\fP\&.
+.SS "virtual void Converter::help () const\fR [pure virtual]\fP"
+
+.PP
+Pure virtual function to display help information\&. 
+.PP
+Implemented in \fBDistortionOption\fP, \fBMixOption\fP, and \fBMuteOption\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sound Processor from the source code\&.

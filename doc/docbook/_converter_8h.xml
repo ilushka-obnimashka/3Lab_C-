@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__converter_8h" xml:lang="en-US">
+<title>3Lab/Converter.h File Reference</title>
+<indexterm><primary>3Lab/Converter.h</primary></indexterm>
+<para>
+
+<para>Header file for the <link linkend="_class_converter">Converter</link> class and its derived classes. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;vector&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &quot;ReaderWAV.h&quot;<?linebreak?>#include &quot;WriterWAV.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_converter">Converter</link></para>
+
+<para>Base class for audio converters. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mute_option">MuteOption</link></para>
+
+<para>Class for muting a section of an audio file. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mix_option">MixOption</link></para>
+
+<para>Class for mixing two audio files. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_distortion_option">DistortionOption</link></para>
+
+<para>Class for applying distortion to an audio file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="__converter_8h_1ab3608fdd3c8f5fc58500df03011a5613"/>const std::string <emphasis role="strong">kRESET</emphasis> = &quot;\033[0m&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="__converter_8h_1a10327d70c74a48d928572f27e92df537"/>const std::string <emphasis role="strong">kGREEN</emphasis> = &quot;\033[32m&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="__converter_8h_1a4ba1d7f38ca796df58a8723bd63499cf"/>const std::string <emphasis role="strong">kRED</emphasis> = &quot;\033[1;31m&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="__converter_8h_1a2fd6ff92d1128f0142151fe0c3f81cd2"/>const std::string <emphasis role="strong">kYELLOW</emphasis> = &quot;\033[33m&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Header file for the <link linkend="_class_converter">Converter</link> class and its derived classes. </para>
+</section>
+</section>
