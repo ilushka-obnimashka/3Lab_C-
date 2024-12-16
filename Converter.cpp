@@ -2,7 +2,7 @@
  * @file Converter.cpp
  * @brief Implementation of the Converter class and its derived classes.
  */
-
+#include <algorithm>
 #include <string>
 #include <iostream>
 #include <filesystem>
@@ -17,7 +17,8 @@
  */
 MuteOption::MuteOption(uint32_t left, uint32_t right) {
     if (left > right) {
-        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET << std::endl;
+        std::cerr << kYELLOW << "Error: Left boundary is greater than right boundary. Swapping them." << kRESET <<
+                std::endl;
         std::swap(left, right);
     }
     left_ = left;
@@ -30,6 +31,7 @@ MuteOption::MuteOption(uint32_t left, uint32_t right) {
  * @param output_file The output WAV file.
  */
 void MuteOption::Convert(std::string input_file, std::string output_file) {
+
     std::cout << kGREEN << "mute " << left_ << " " << right_ << kRESET << std::endl;
 
     if (!std::filesystem::exists(input_file)) {
@@ -44,7 +46,17 @@ void MuteOption::Convert(std::string input_file, std::string output_file) {
 
     std::filesystem::copy(input_file, output_file, std::filesystem::copy_options::overwrite_existing);
 
-    int count_sec = left_ - right_;
+    ReaderWAV src_reader(input_file);
+    src_reader.OpenWAVFile();
+    src_reader.ReadHead();
+
+    if (!src_reader.CheckingFileValidity()) {
+        std::cerr << kRED << "Source file is not a valid WAV format" << kRESET << std::endl;
+        std::cerr << kRED << "Problem file: " << input_file << kRESET << std::endl;
+        exit(3);
+    }
+
+    int count_sec = right_ - left_;
 
     WriterWAV writer(output_file);
     writer.OpenWAVFile();
@@ -62,7 +74,8 @@ void MuteOption::Convert(std::string input_file, std::string output_file) {
  * @param src_file The source file to mix.
  * @param start The starting point for the mix operation.
  */
-MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {}
+MixOption::MixOption(std::string src_file, uint32_t start) : src_file_(src_file), start_(start) {
+}
 
 /**
  * @brief Applies the mix operation to the input file and saves the result to the output file.
@@ -88,6 +101,7 @@ void MixOption::Convert(std::string input_file, std::string output_file) {
     src_reader.ReadHead();
     if (!src_reader.CheckingFileValidity()) {
         std::cerr << kRED << "Source file is not a valid WAV format" << kRESET << std::endl;
+        std::cerr << kRED << "Problem file: " << src_file_ << kRESET << std::endl;
         exit(3);
     }
 
@@ -96,6 +110,7 @@ void MixOption::Convert(std::string input_file, std::string output_file) {
     reader.ReadHead();
     if (!reader.CheckingFileValidity()) {
         std::cerr << kRED << "Input file is not a valid format" << kRESET << std::endl;
+        std::cerr << kRED << "Problem file: " << input_file << kRESET << std::endl;
         exit(3);
     }
 
@@ -193,9 +208,9 @@ void DistortionOption::Convert(std::string input_file, std::string output_file) 
  * @param samples The samples to apply the distortion to.
  */
 void DistortionOption::applyDistortionOption(std::vector<int16_t> &samples) {
-    for (auto &sample : samples) {
-        double normalizedSample = sample / 32767;
+    for (auto &sample: samples) {
+        double normalizedSample = sample / 32767.0;
         double distortedSample = std::tanh(gain_ * normalizedSample);
-        sample = static_cast<int16_t>(distortedSample * 32767);
+        sample = static_cast<int16_t>(std::clamp(distortedSample * 32767.0, -32768.0, 32767.0));
     }
 }

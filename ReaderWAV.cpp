@@ -44,11 +44,11 @@ void ReaderWAV::ReadHead() {
 bool ReaderWAV::CheckingFileValidity() const {
     if (std::string((WAVHeader_->chunk_id), 4) != "RIFF" || std::string(WAVHeader_->riff_type_id, 4) != "WAVE") {
         std::cerr << kRED << "The file is not a valid WAV format!" << kRESET << std::endl;
-        exit(2);
+        return false;
     } else if (!((WAVHeader_->format_tag == 1) && (WAVHeader_->num_channels == 1) &&
                  (WAVHeader_->sample_rate == 44100) && (WAVHeader_->bits_per_sample == 16))) {
         std::cerr << kRED << "This program supports only PCM, mono audio, 16 bit, sampling rate 44100!" << kRESET << std::endl;
-        exit(2);
+        return false;
     } else {
         return true;
     }
@@ -102,5 +102,6 @@ WAVHeader* ReaderWAV::GetWAVHeader() const {
  * @return The size of the file in seconds.
  */
 int ReaderWAV::GetSizeFileInSec() const {
+    std::cout << this->input_file_path_ << std:: endl;
     return WAVHeader_->chunk2_data_size / (2 * WAVHeader_->sample_rate);
 }
